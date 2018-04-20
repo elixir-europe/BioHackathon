@@ -1,2 +1,2 @@
 # BioHackathon
-Repository with information about the BioHackathon supported by ELIXIR. This repository contains information about the BioHackathon as well as all the materials for the event.
+This repository is meant for the participants of the BioHackathon hosted in Paris in Nov 2018 to share ideas, create issues, manage projects, publish materials, create code, etc.
