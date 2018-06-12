@@ -1,0 +1,1 @@
+# Support tools for rapid adoption of compact identifiers in the publishing process

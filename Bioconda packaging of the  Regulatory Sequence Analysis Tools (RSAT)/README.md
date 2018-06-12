@@ -1,0 +1,1 @@
+# Bioconda packaging of the  Regulatory Sequence Analysis Tools (RSAT)
