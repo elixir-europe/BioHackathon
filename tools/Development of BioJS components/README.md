@@ -1,4 +1,4 @@
-# Development of BioJS components and there integration into Galaxy.
+# Development of BioJS components and their integration into Galaxy.
 
 ### Representative: Yo Yehudi
 
