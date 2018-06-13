@@ -1,6 +1,6 @@
 # Development of a catalog of federated SPARQL queries in the field of Rare Diseases
 
-### Representative: Marc Hanauer
+### Representative: Marc Hanauer
 
 ## Community
 ---

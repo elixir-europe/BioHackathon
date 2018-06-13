@@ -1,6 +1,6 @@
 # CWL support in Galaxy
 
-### Representative: Hervé Ménager
+### Representative: Hervé Ménager
 
 ## Community
 ---

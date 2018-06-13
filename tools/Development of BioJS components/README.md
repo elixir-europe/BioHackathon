@@ -1,6 +1,6 @@
 # Development of BioJS components and there integration into Galaxy.
 
-### Representative: Yo Yehudi
+### Representative: Yo Yehudi
 
 ## Community
 ---

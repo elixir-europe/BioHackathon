@@ -1,6 +1,6 @@
 # C-SPARQL powered querying pipeline of bioRxiv publications 
 
-### Representative: Mustafa Anil Tuncel
+### Representative: Mustafa Anil Tuncel
 
 ## Community
 ---

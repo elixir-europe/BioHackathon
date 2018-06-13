@@ -1,6 +1,6 @@
 # Galaxy training material improvement and extension
 
-### Representative: Bérénice Batut
+### Representative: Bérénice Batut
 
 ## Community
 ---

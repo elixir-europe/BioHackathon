@@ -1,6 +1,6 @@
 # Prototyping the new PSICQUIC 2.0
 
-### Representative: Noemi del Toro
+### Representative: Noemi del Toro
 
 ## Community
 ---

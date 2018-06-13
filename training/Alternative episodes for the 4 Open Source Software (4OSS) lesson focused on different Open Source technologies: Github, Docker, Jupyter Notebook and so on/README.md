@@ -1,6 +1,6 @@
 # Alternative episodes for the 4 Open Source Software (4OSS) lesson focused on different Open Source technologies: Github, Docker, Jupyter Notebook and so on 
 
-### Representative: Mateusz Kuzak
+### Representative: Mateusz Kuzak
 
 ## Community
 ---

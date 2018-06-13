@@ -1,6 +1,6 @@
 # OmicsPath: Finding Relevant omics datasets using pathway information
 
-### Representative: Yasset Perez-Riverol
+### Representative: Yasset Perez-Riverol
 
 ## Community
 ---

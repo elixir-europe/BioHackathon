@@ -1,6 +1,6 @@
 # Improve Orphanet disease description knowledge  by Phenotypic automated recognition using Monarch PhenoScrapper
 
-### Representative: Marc Hanauer
+### Representative: Marc Hanauer
 
 ## Community
 ---

@@ -1,6 +1,6 @@
 # bio.tools & EDAM drop-in hackathon & discussions
 
-### Representative: Jon Ison
+### Representative: Jon Ison
 
 ## Community
 ---

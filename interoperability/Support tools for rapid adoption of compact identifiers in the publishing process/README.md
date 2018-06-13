@@ -1,6 +1,6 @@
 # Support tools for rapid adoption of compact identifiers in the publishing process
 
-### Representative: Manuel Bernal Llinares
+### Representative: Manuel Bernal Llinares
 
 ## Community
 ---

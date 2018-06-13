@@ -1,6 +1,6 @@
 # Development of a GA4GH-compliant, language-agnostic workflow execution service
 
-### Representative: Alexander Kanitz
+### Representative: Alexander Kanitz
 
 ## Community
 ---

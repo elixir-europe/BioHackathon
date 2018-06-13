@@ -1,6 +1,6 @@
 # Data clearinghouse, validation and curation of BioSamples/ENA/Breeding API endpoints/MAR databases
 
-### Representative: Luca Cherubin
+### Representative: Luca Cherubin
 
 ## Community
 ---

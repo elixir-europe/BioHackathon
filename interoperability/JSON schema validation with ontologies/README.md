@@ -1,6 +1,6 @@
 # JSON schema validation with ontologies
 
-### Representative: Simon Jupp
+### Representative: Simon Jupp
 
 ## Community
 ---

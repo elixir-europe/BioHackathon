@@ -1,6 +1,6 @@
 # Bioconda packaging of the  Regulatory Sequence Analysis Tools (RSAT)
 
-### Representative: Jacques van Helden
+### Representative: Jacques van Helden
 
 ## Community
 ---
