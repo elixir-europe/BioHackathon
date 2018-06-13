@@ -19,7 +19,7 @@ ELIXIR Interoperability Platform as visualization and parser tools as those comp
 ---
 BioJS is a community-based project compiling JavaScript widgets and modular components to visualize and process biological data using web technologies, making it easier to integrate them to your own website. BioJS provides a registry showcase so users can search components and see them in action. 
 
-BioJS started in 2012 and has grown via Google Summer of Code (GSoC) where BioJS has participated standalone in 2014 and 2016. 2015 BioJS and the Galaxy project joined forces and created a tool to automatically convert BioJS components into Galaxy’s visualisation system. We would like to work on further Galaxy integration either update the conversion tool or sketch out how BioJS components could natively fit into Galaxy Vis system.
+BioJS started in 2012 and has grown via Google Summer of Code (GSoC) where BioJS has participated standalone in 2014 and 2016. 2015 BioJS and the Galaxy project joined forces and created a tool to automatically convert BioJS components into Galaxy’s visualisation system. We would like to work on further Galaxy integration and either update the conversion tool or sketch out how BioJS components could natively fit into Galaxy Vis system.
 
 
 ## Expected outcomes
@@ -30,7 +30,7 @@ BioJS started in 2012 and has grown via Google Summer of Code (GSoC) where BioJS
 - New webcomponents. Any component is welcome, for instance
 Bioschemas-related
 Galaxy converter
-- Planning to native Galaxy-BioJS integration
+- Planning native Galaxy-BioJS integration
 - Improving documentation around BioJS
 
 
