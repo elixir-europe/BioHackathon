@@ -43,7 +43,7 @@ Docker community
 ## Related works and references
 ---
 
-- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-paula-andrea-martinez.md
+- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-allegra-via.md
 - https://mybinder.org/
 - http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
 - https://f1000research.com/articles/6-876/v1
@@ -51,7 +51,7 @@ Docker community
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
-- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-paula-andrea-martinez.md
+- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-allegra-via.md
 - https://github.com/coderefinery/jupyter
 - https://github.com/jupyterhub/binderhub
 - https://softdev4research.github.io/recommendations/
