@@ -1,0 +1,1 @@
+# ProtVista (protein annotation viewer) extension using Bioschemas data.

@@ -1,0 +1,1 @@
+# From Biotea to Bioschemas: definition of profiles required to represent scholarly publications.
