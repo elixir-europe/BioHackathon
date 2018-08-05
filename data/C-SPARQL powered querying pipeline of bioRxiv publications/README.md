@@ -32,7 +32,7 @@ We try to ease this burden by providing a system to continuously analyses new ar
 ---
 
 programmers (Java, Javascript, Nodejs, RDF), domain expert (query language design)
-**Expected hacking days**: 2 days
+**Expected hacking days**: 5 days
 
 ## Related works and references
 ---
