@@ -5,7 +5,7 @@
 ## Community
 ---
 
-ELIXIR-Switzerland
+ELIXIR-Europe
 
 ## Leads
 ---
