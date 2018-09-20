@@ -1,6 +1,6 @@
 # Application of RDF-based models and tools for enhancing interoperable use of biomedical resources
 
-### Representative: Hirokazu Chiba
+### Representative: Hirokazu Chiba
 
 ## Community
 ---
@@ -9,7 +9,11 @@ DBCLS
 
 ## Leads
 ---
-Hirokazu Chiba , Toshiaki Katayama , Tazro Ohta , Shuichi Kawashima , Atsuko Yamaguchi 
+- Hirokazu Chiba
+- Toshiaki Katayama
+- Tazro Ohta
+- Shuichi Kawashima
+- Atsuko Yamaguchi 
 
 ## Background information
 ---
@@ -18,36 +22,37 @@ DBCLS has contributed to developing RDF-based data models and tools collaboratin
 ## Expected outcomes
 ---
 
-Development of applications using Med2RDF datasets
-Interoperable use case of BioSamples model
-Use case of NBDC RDF portal as FAIR data
-Application of LOD Surfer
-Application of SPANG
-Application of SPARQList
-Application of TogoStanza
+- Development of applications using Med2RDF datasets
+- Interoperable use case of BioSamples model
+- Use case of NBDC RDF portal as FAIR data
+- Application of LOD Surfer
+- Application of SPANG
+- Application of SPARQList
+- Application of TogoStanza
 
 ## Expected audience
 ---
 
 Developers using RDF/SPARQL/JavaScript, ontologists, biomedical researchers
+
 **Expected hacking days**: 4 days
 
 ## Related works and references
 ---
 
-[Med2RDF website](http://med2rdf.org/)
-[RDF portal](https://integbio.jp/rdf/)
-[SPANG website](http://spang.dbcls.jp/)
-[TogoStanza website](http://togostanza.org/)
+- [Med2RDF website](http://med2rdf.org/)
+- [RDF portal](https://integbio.jp/rdf/)
+- [SPANG website](http://spang.dbcls.jp/)
+- [TogoStanza website](http://togostanza.org/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
-https://github.com/med2rdf
-https://github.com/LODSurfer
-https://github.com/dbcls/spang
-https://github.com/dbcls/sparqlist
-https://github.com/togostanza
+- https://github.com/med2rdf
+- https://github.com/LODSurfer
+- https://github.com/dbcls/spang
+- https://github.com/dbcls/sparqlist
+- https://github.com/togostanza
 
 ## Hackers
 ---
