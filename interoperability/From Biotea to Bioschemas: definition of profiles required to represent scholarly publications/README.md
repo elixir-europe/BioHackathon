@@ -12,7 +12,7 @@ Bioschemas, BioHackathon Japan
 Alexander Garcia  
 Olga Giraldo  
 Federico Lopez  
-Leyla Garcia 
+Leyla Garcia  
 Dietrich Rebholz-Schuhmann
 
 ## Background information
