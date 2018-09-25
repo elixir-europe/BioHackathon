@@ -30,8 +30,8 @@ We expect to first identify community expectations of training materials, second
 * Training coordinators
 * Trainers
 * Trainees
-* Anyone interested in or with knowledge on FAIR principles and passionate about training
-**Expected hacking days**: 4 days
+* Anyone interested in or with knowledge on FAIR principles and passionate about training  
+**Expected hacking days**: 2-4 days
 
 ## Related works and references
 ---
@@ -44,6 +44,14 @@ We expect to first identify community expectations of training materials, second
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
+## Tasks
+---
+Not sure how long we will get during the Paris BioHackathon, but some ideas here
+1. Brainstorming on what FAIR means for training materials
+2. Brainstorming on how to assess FAIRness for training materials
+3. Brainstorming on challenges and how to deal with them
+4. Brainstorming on metrics to assess FAIRness for training materials
+5. Some agreements and plan on how to follow
 
 
 ## Hackers
