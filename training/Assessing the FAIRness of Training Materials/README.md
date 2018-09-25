@@ -44,7 +44,7 @@ We expect to first identify community expectations of training materials, second
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
-## Tasks
+## Tentative tasks
 ---
 Not sure how long we will get during the Paris BioHackathon, but some ideas here
 1. Brainstorming on what FAIR means for training materials
