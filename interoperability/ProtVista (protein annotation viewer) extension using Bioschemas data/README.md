@@ -61,7 +61,7 @@ Notes:
 * Tasks 2 and 4 require 1
 * Task 4 can be done with mocked data just to see how the adapter works
 * Task 5 requires 4
-* Ideally 1 and 2 would be the minimum and 4 would be great!
+* Ideally 1 and at least one resource on 2 would be the minimum and 4 would be great!
 
 ## Hackers
 ---
