@@ -49,7 +49,7 @@ People interested in
 
 [ProtVista web components](https://github.com/ebi-webcomponents)
 
-## Tasks
+## Tentative tasks
 ---
 1. Review and adjust the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/) as needed
 2. Get some protein related sources marked up with the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/), e.g., InterPro, UniProt, maybe CATH
@@ -61,6 +61,7 @@ Notes:
 * Tasks 2 and 4 require 1
 * Task 4 can be done with mocked data just to see how the adapter works
 * Task 5 requires 4
+* Ideally 1 and 2 would be the minimum and 4 would be great!
 
 ## Hackers
 ---
