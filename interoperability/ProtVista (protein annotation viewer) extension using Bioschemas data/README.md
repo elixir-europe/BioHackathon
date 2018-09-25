@@ -33,7 +33,7 @@ People interested in
 * Bioschemas
 * Visualization, BioJS
 * Web components
-* Protein annotations
+* Protein annotations  
 **Expected hacking days**: 4 days
 
 ## Related works and references
