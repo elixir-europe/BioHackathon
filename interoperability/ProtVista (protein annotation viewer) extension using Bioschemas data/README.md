@@ -66,4 +66,5 @@ Notes:
 ## Hackers
 ---
 * Gustavo Salazar, mainly task 1 and 2, maybe task 4  
-* Leyla Garcia, mainly for taks 1  
+* Leyla Garcia, mainly taks 1  
+* Federico López, mainly feedback on 4
