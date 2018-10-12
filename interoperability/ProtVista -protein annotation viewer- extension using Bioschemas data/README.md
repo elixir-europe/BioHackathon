@@ -49,19 +49,23 @@ People interested in
 
 [ProtVista web components](https://github.com/ebi-webcomponents)
 
-## Tentative tasks
+## Roadmap
 ---
-1. Review and adjust the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/) as needed
-2. Get some protein related sources marked up with the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/), e.g., InterPro, UniProt, maybe CATH
-3. Implement a way to retrieve protein annotations from marked up resources, maybe crawler, indexer or so
-4. Implement a ProtVista adapter to transform Bioschemas ProteinAnnotation data. See [ProtVista web components repo](https://github.com/ebi-webcomponents/nightingale), particularly those packages ending on -adapter, e.g., [protvista-structure-adapter](https://github.com/ebi-webcomponents/nightingale/tree/master/packages/protvista-structure-adapter)
-5. Implement a proof-of-concept using at least one Bioschemas ProteinAnnotation source and the adapter to render a [protvista-track](https://github.com/ebi-webcomponents/nightingale/tree/master/packages/protvista-track) with real or mocked up data
+1. Review and understand the [Bioschemas BioChemEntity type](http://bioschemas.org/types/BioChemEntity/), identify whether any change is required
+2. Review and adjust the [Bioschemas Protein profile](http://bioschemas.org/specifications/Protein/) as needed
+3. Review and adjust the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/) as needed
+4. Get some protein related sources marked up with the [Bioschemas Protein profile](http://bioschemas.org/specifications/Protein/), e.g., InterPro, UniProt, CATH, in order to get information about the sequence and so (at least the sequence is needed by ProtVista)
+5. Get some protein related sources marked up with the [Bioschemas ProteinAnnotation profile](http://bioschemas.org/specifications/ProteinAnnotation/), e.g., InterPro, UniProt, CATH
+6. Implement a way to retrieve protein annotations from marked up resources, maybe crawler, indexer or so
+7. Implement a ProtVista adapter to transform Bioschemas ProteinAnnotation data. See [ProtVista web components repo](https://github.com/ebi-webcomponents/nightingale), particularly those packages ending on -adapter, e.g., [protvista-structure-adapter](https://github.com/ebi-webcomponents/nightingale/tree/master/packages/protvista-structure-adapter)
+8. Implement a proof-of-concept using at least one Bioschemas ProteinAnnotation source and the adapter to render a [protvista-track](https://github.com/ebi-webcomponents/nightingale/tree/master/packages/protvista-track) with real or mocked up data
 
 Notes:
-* Tasks 2 and 4 require 1
-* Task 4 can be done with mocked data just to see how the adapter works
-* Task 5 requires 4
-* Ideally 1 and at least one resource on 2 would be the minimum and 4 would be great!
+* Tasks 4 and 5 require 1, 2 and 3
+* Task 6 requires 4 or 5
+* Task 7 can be done with mocked data just to see how the adapter works
+* Task 8 requires 7
+* Ideally 1, 2 and 3 should be achieved during the BioHackathon, great if we get at least one marked up resource for 4 and 5, amazing if some advances on 6 are done, and wonderful if we get to 7 and 8!
 
 ## Hackers
 ---
