@@ -145,6 +145,7 @@ The final day will be reserved to finishing off, and discussing and planning nex
 ## More ...
 We can work on other topics, depending upon interest and progress as we proceed, *e.g.*:
 
+* integration of crawling and pulling data into bio.tools, *e.g.* plugin-mechanism, so that other communities can write crawlers and annotate tools automatically
 * workflows in bio.tools: modelling, visualisation and curation
 * evaluation of [EDAM Browser](https://ifb-elixirfr.github.io/edam-browser/) (see [GitHub](https://github.com/IFB-ElixirFr/edam-browser)) ontology browser; issues, features and next steps
 * bio.tools content from an end-user perspective: annotation consistency, EDAM coverage, content views *etc*
