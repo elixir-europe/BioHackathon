@@ -46,15 +46,13 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 
 [Biotea repository](https://github.com/biotea)
 
-## Tentative tasks
+## Tasks
 ---
-1. Review publication repos including schema.org to see what elements ther mark up
-2. Create draft specifications
-3. Get feedback on specifications
-
-Notes
-* 1 and 2 could be done before the hacking
-* 3 needs a community so the hacking is ideal for it
+1. Revise publication repositories currently including schema.org markup to see what elements they are marking up
+2. Find suitable types on schema.org (in addition to those already in use)
+3. Map Biotea model to schema.org
+4. Define draft profile specifications
+5. Get feedback on specifications
 
 ## Hackers
 ---
