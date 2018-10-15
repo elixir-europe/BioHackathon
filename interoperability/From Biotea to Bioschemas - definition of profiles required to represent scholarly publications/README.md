@@ -50,9 +50,9 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 ---
 1. Revise publication repositories currently including schema.org markup to see what elements they are marking up
 2. Find suitable types on schema.org (in addition to those already in use)
-3. Map Biotea model to schema.org
-4. Define draft profile specifications
-5. Get feedback on specifications
+3. [Map Biotea model to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
+4. [Define draft profile specifications](./profiles/readme.md)
+5. Get feedback on specifications (Please use the GitHub issues with the label biotea2bioschemas)
 
 ## Hackers
 ---
