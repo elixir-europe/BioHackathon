@@ -1,6 +1,6 @@
-# Improve Orphanet disease description knowledge by Phenotypic automated recognition using Scrapping toolkits.
+# Improve Orphanet disease description knowledge by phenotypic automated recognition using scrapping toolkits.
 
-### Representative: Marc Hanauer
+### Representative: David Lagorce , Marc Hanauer
 
 ## Community
 ---
@@ -9,6 +9,7 @@ Orphanet INSERM US14 - Elixir FR - Excelerate WP8 Rare diseases
 
 ## Leads
 ---
+- David Lagorce
 - Marc Hanauer
 
 ## Background information
@@ -28,7 +29,7 @@ The aim of this proposal, by using several toolkits, will help us to try to:
 ## Expected audience
 ---
 
-programmers, ontologists- Python, Web APIXML - XML, JSON, RDF files formats.  
+programmers, ontologists- Python, Web API - XML, JSON, RDF files formats.  
 **Expected hacking days**: 4 days
 
 ## Related works and references
