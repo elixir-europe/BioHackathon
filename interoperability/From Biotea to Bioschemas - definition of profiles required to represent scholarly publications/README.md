@@ -53,7 +53,3 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 3. [Map Biotea model to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
 4. [Define draft profile specifications](./profiles/readme.md)
 5. Get feedback on specifications (Please use the GitHub issues with the label biotea2bioschemas)
-
-## Hackers
----
-
