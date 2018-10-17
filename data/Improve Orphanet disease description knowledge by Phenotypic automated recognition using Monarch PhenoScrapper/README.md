@@ -1,4 +1,4 @@
-# Improve Orphanet disease description knowledge  by Phenotypic automated recognition using Monarch PhenoScrapper
+# Improve Orphanet disease description knowledge by Phenotypic automated recognition using Scrapping toolkits.
 
 ### Representative: Marc Hanauer
 
@@ -20,13 +20,15 @@ The site has a huge audience, around 1 million unique visitors/month and 8 langu
 ## Expected outcomes
 ---
 
-Orphanet provides more than 60000 diseases/HPO annotations for around 3000 described diseases. The annotations are curated by experts. We will try to 1) speed-up the process by using  phenotypic scrapper on Orphanet textual information / or pubmed publication
+Orphanet provides for around 3000 described diseases more than 60000 diseases/HPO annotations curated by experts.
+The aim of this proposal, by using several toolkits, will help us to try to: 
+1) speed-up the process of annotation with Orphanet textual information / or pubmed publication as input.
 2) improve the curation process by comparaison between the automated recognition and the annotations already provided by Orphanet.
 
 ## Expected audience
 ---
 
-programmers, ontologists : Python, RDF, sparql, XML, java
+programmers, ontologists- Python, Web APIXML - XML, JSON, RDF files formats.  
 **Expected hacking days**: 4 days
 
 ## Related works and references
