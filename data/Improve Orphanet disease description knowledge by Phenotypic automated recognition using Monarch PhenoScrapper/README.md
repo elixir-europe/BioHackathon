@@ -30,32 +30,46 @@ The aim of this proposal, by using several toolkits, will help us to try to:
 
 To this end, throught a dedicated pipeline we propose to text-mine data from our database and/or from elsewhere (url, text files) in order to scrap HPO terms.
 
-## Expected audience
----
-
-programmers, ontologists- Python, Web API - XML, JSON, RDF files formats.  
-**Expected hacking days**: 4 days
-
 ## Approaches to reach goals
 
 1) Phenopacket-Scrapper:
+
 Extracts information from life-science websites and texts, generating phenopackets with the extracted information and correct external ontology references.
+
 https://github.com/monarch-initiative/phenopacket-scraper-core
+
 https://github.com/monarch-initiative/phenopacket-scraper-webapp
+
 https://github.com/monarch-initiative/phenopacket-scraper-api
 
+
 2) Phenomics-hippo
+
 This is a search browser written in React JS to provide a user interface for Phenomics backend services (Phantom)
+
 https://github.com/KCCG/phenomics-hippo
 
 3) MER
+
 MER is a tool which given any lexicon and any input text returns the list of terms recognized in the text, including their exact location (annotations). MER is a Named-Entity Recognition tool which given any lexicon and any input text returns the list of terms recognized in the text, including their exact location (annotations) and link entities with a given ontology 
+
 http://labs.rd.ciencias.ulisboa.pt/mer/
+
 https://github.com/lasigeBioTM/MER
 
-IHP
+
+3) IHP
+
 Framework for identifying Human Phenotype entities
+
 https://github.com/lasigeBioTM/IHP
+
+## Expected audience
+---
+
+programmers, ontologists - Python, Web API - XML, JSON, RDF files formats.
+
+**Expected hacking days**: 4 days
 
 ## Related works and references
 ---
