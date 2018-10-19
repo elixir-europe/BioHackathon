@@ -54,10 +54,16 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 4. [Define draft profile specifications](./profiles/readme.md)
 5. Get feedback on specifications (Please use the GitHub issues with the label biotea2bioschemas)
 
+## Skills
+---
+* Knowledge/interest on structured metadata for scholarly publications
+* Knowledge/interest on [Biotea](https://peerj.com/articles/4201/)
+* Knowledge/interest on [Bioschemas](http://bioschemas.org/)
+
 ## How to participate
 ---
 * Have a look to the [Biotea model and mapping to Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
-* Look at the [profiles folder](./profiles/readme.md)
+* Go to the [profiles folder](./profiles/readme.md)
 * Select the ones you want to contribute to
 * Fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
 * Upload them to or link them from the corresponding folder named as <your-name-profile>
