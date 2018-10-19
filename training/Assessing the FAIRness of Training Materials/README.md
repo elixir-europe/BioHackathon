@@ -54,6 +54,17 @@ Not sure how long we will get during the Paris BioHackathon, but some ideas here
 5. Some agreements and plan on how to follow
 
 
-## Hackers
+## Skills
 ---
+* Knowledge/interest on FAIR principles
+* Knowledge/interest on training materials
+* Knowledge/interest on structured metadata schemas such as [schema.org](https://schema.org/) and [Bioschemas](http://bioschemas.org/)
+
+## How to participat
+---
+* There has been some brainstorming already on going as part of Elixir activities on the Training Platform. Please have a look to the content of this project space (right here where you are) and go through the available documents to get familiar with summaries of previous discussions
+* Join us to brainstorming
+* If you cannot join the live brainstorming, still keep an eye to this space and share your comments or doubts via GitHub issues, please use the label "project: FAIR training"
+
+Thanks for collaborating!
 
