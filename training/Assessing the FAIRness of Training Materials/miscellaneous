@@ -1,0 +1,9 @@
+# Training material definition
+
+Any resource that is used for training purposes, e.g., datasets, slides or videos.
+
+# Goals by adding FAIR to training materials
+
+* Make training materials reusable. By reusable we mean that someone else other than the initial creator can get the training 
+material data and metadata in order to replicate the training activity. We suppose a similar/compatible/equivalent set of skills 
+required to replicate the training activity supported by FAIR training materials.
