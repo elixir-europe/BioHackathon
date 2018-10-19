@@ -67,5 +67,6 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 * Select the ones you want to contribute to
 * Fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
 * Upload them to or link them from the corresponding folder named as <your-name-profile>
+* Any comments or so you want to share, please do so via GitHub issues using the label "project: biotea2bioschemas"
 
 Thanks for your collaboration!
