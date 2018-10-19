@@ -40,6 +40,7 @@ We expect to first identify community expectations of training materials, second
 2. [A design framework and exemplar metrics for FAIRness](https://www.biorxiv.org/content/early/2017/12/01/225490) 
 3. [“How to make training FAIR”](https://docs.google.com/document/d/1wrKUyD_GSq1HakpaOpU8u7KOReBk4S6BpYFDBziaBN0/edit)
 4. [Bioschemas TrainingMaterial specification](http://bioschemas.org/specifications/TrainingMaterial/specification/)
+5. [GO FAIR principles explained](https://www.go-fair.org/fair-principles/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
