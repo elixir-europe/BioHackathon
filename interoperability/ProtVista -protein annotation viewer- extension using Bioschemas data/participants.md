@@ -2,10 +2,10 @@
 ---
 * Gustavo Salazar (4ndr01d3)
   * JavaScript, web components
-  * Bioschemas ProteinAnnotation profile, InterPro markup, ProtVista adapter
+  * Adjust Bioschemas ProteinAnnotation profile, mark up InterPro new website
 * Leyla Garcia (ljgarcia)
   * Bioschemas
-  * Bioschemas Protein profile
+  * Adjust Bioschemas Protein profile
 * Denise Carvalho
   * Bioschemas
-  * Bioschemas Gene profile
+  * Adjust Bioschemas Gene profile
