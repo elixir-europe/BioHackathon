@@ -9,7 +9,7 @@ Orphanet INSERM US14 - ELixir FR - Excelerate WP8 RD use case
 
 ## Leads
 ---
-Marc Hanauer
+Marc Hanauer, Andra Waagmeester
 
 ## Background information
 ---
@@ -27,6 +27,29 @@ Orphanet provides an ontology (ORDO) for rare diseases and also an ontological m
 
 programmes, ontologists : python, java, RDF/OWL, Sparql
 **Expected hacking days**: 3 days
+
+## Approaches to reach goals
+1) Identify relevant resource in the RD field, available through SPARQL Endpoint
+Starting point: EBI, Uniprot, Wikidata, Bioportal, Bio2RDF, neXtProt
+
+https://www.ebi.ac.uk/rdf/services/sparql
+https://sparql.uniprot.org/sparql
+https://sparql.nextprot.org/
+https://github.com/bio2rdf/bio2rdf-scripts/wiki
+
+
+2) Setup user friendly web interface to :
+a) manage/comment datasource
+b) provide sample queries for each datasource
+c) edit and manage queries
+
+https://github.com/comunica
+http://jupyter.org/
+https://pypi.org/project/sparqlkernel/
+
+3) Modelise several SPARQL Federated Queries
+
+Tasks can be done in parallel
 
 ## Related works and references
 ---
