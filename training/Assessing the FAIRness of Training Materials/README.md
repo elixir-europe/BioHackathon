@@ -13,7 +13,7 @@ Denise Carvalho-Silva ,
 Victoria Dominguez Del Angel ,
 Michel Dumontier , 
 Mateusz Kuzak , 
-Celia van Gelder , 
+Celia van Gelder
 
 ## Background information
 ---
@@ -37,7 +37,7 @@ We expect to first identify community expectations of training materials, second
 * Trainers
 * Trainees
 * Anyone interested in or with knowledge on FAIR principles and passionate about training  
-**Expected hacking days**: 2-4 days
+**Expected hacking days**: 2 days
 
 ## Related works and references
 ---
