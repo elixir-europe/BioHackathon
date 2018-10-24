@@ -23,6 +23,12 @@ The FAIR metrics working group (http://fairmetrics.org) developed the framework 
 ---
 
 We expect to first identify community expectations of training materials, second catalogue new  training-specific metrics, third perform a FAIRness assessment of existing training materials with existing and new metrics, and fourth evaluate how Bioschemas TrainingMaterial specification works regarding the identified metrics. This work aim to complement efforts started by FAIR metrics group (see references 1 and 2).
+* A definition on what a training material is 
+* A list of participants
+* A list of training material resources
+* Assessment on training materials FAIRness using current metrics
+* Reflection on challenges when assessing training material FAIRness
+* A set of trining materials specific metrics
 
 ## Expected audience
 ---
@@ -51,7 +57,7 @@ Not sure how long we will get during the Paris BioHackathon, but some ideas here
 1. Brainstorming on what FAIR means for training materials
 2. Brainstorming on how to assess FAIRness for training materials
 3. Brainstorming on challenges and how to deal with them
-4. Brainstorming on metrics to assess FAIRness for training materials
+4. Brainstorming on metrics to assess FAIRness for training materials (based on the existing ones)
 5. Some agreements and plan on how to follow
 
 
