@@ -33,19 +33,28 @@ programmes, ontologists : python, java, RDF/OWL, Sparql
 Starting point: EBI, Uniprot, Wikidata, Bioportal, Bio2RDF, neXtProt
 
 https://www.ebi.ac.uk/rdf/services/sparql
+
 https://sparql.uniprot.org/sparql
+
 https://sparql.nextprot.org/
+
 https://github.com/bio2rdf/bio2rdf-scripts/wiki
 
 
 2) Setup user friendly web interface to :
 a) manage/comment datasource
+
 b) provide sample queries for each datasource
+
 c) edit and manage queries
 
+
 https://github.com/comunica
+
 http://jupyter.org/
+
 https://pypi.org/project/sparqlkernel/
+
 
 3) Modelise several SPARQL Federated Queries
 
