@@ -53,11 +53,11 @@ Supply chain management in BioSamples
   1. How would BioSamples benefit from blockchain technologies: How would the distributed ledger be used across industry and     academia? (9-12). 
       - Skills: BioSamples. 
       - Output: BioSamples workflow.
-  2. Designing and implementing a business network application (.bna) on Hyperledger Composer for the project: version 1 and 2.
-    - Define assets and participants (13-14).
-    - Define transactions and logic in JS (13-19). 
-          - Skills: JS. 
-          - Output: BioSamples.bna
+  2. Designing and implementing a business network application (.bna) on Hyperledger Composer for the project.
+      - Define assets and participants (13-14).
+      - Define transactions and logic in JS (13-19). 
+      - Skills: JS. 
+      - Output: BioSamples.bna
 
 #### Day 3
 Supply chain management in BioSamples
