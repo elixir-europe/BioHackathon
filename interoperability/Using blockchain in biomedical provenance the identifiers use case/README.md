@@ -16,15 +16,15 @@ The Pistoia Alliance (www.pistoiaalliance.org)
 
 ## Background information
 ---
-Blockchain is a collection of technologies (cryptographic security, decentralization, digital registry, smart contracts, rules and incentives to collaborate among institutions with different levels of trust) that is currently being tested in different industries and organizations (financial, government, shipping,...). In the context of OpenScience blockchain provides provenance, transparency, availability, and replicability. Our hacking proposal reuses blockchain tech, Hyperledger in particular, to manage samples in the biomedical domain. We are currently looking at BioSamples as a system that stores and supplies descriptions and metadata about biological samples for industry and academica. The system can be augmented in order to track not only the samples through a workflow but also the protocols that create the samples. That is a Software-as-a-Service version of LIMS (laboratory information managemet system). In addition, having a blockchain for BioSamples will also make it possible to establish a reward mechanisms that incentivises the creation & curation of samples, so helping to drive improved trust and reputation.
+Blockchain is a collection of technologies (cryptographic security, decentralization, digital registry, smart contracts, rules and incentives to collaborate among institutions with different levels of trust) that is currently being tested in different industries and organizations (financial, government, shipping,...). OpenScience requires provenance, transparency, and availability. Blockchain delivers the trust layer in OpenScience. Our hacking proposal reuses blockchain tech, Hyperledger in particular, to support provenance and sample supply chain management. We are currently looking at BioSamples as a system that stores and supplies descriptions and metadata about biological samples for industry and academica. The system can be used to track samples through a workflow and provide additional layers of security to the identifiers. In addition, having a blockchain for BioSamples will also make it possible to establish a reward mechanisms that incentivises the creation & curation of samples, so helping to drive improved trust and reputation.
 
 ## Expected outcomes
 ---
 
-- Identify the added value of Blockchain technologies on BioSamples and similar sample management tools.
-- Create a business case (PoC) implemented on Hyperledger Composer that includes the data standards and current functionalities of BioSamples.
-- Extend BioSamples to include Protocols.
-- High-level design of the (Fabric) network that will support the business case. Define a roadmap so that deployment over Hyperledger Fabric is achievable within the next months. 
+- Identify the added value of Blockchain technologies on BioSamples and similar sample management tools. 
+- Create a prototype on Hyperledger Composer of a Business Network (BNA) that includes the data standards and current functionalities (workflows) of BioSamples.
+- High-level design of the (Fabric) network that will support the BNA.
+- Extend BioSamples to include other complementary digital assets: protocols, laboratory notebooks (if time permits).
 
 Our code will also contribute to the https://github.com/Blockchain4openscience/sample-networks project. We also expect to start the discussion about using blockchain technology for keeping the trail of evidence in the annotation process.  
 
@@ -35,12 +35,46 @@ Bioinformaticians, chemoinformaticians, data scientists, researchers with some p
 
 **Expected hacking days**: 4 days
 
-### Tasks (days)
+### Tasks 
 
-1. Tutorial on Blockchain technologies and Hyperledger Composer. Evaluationg how would BioSamples benefit from blockchain technologies.  
-2. Designing a distributed ledger for BioSamples and similar sample management tools for deployment in Hyperledger Fabric. Designing and implementing a business network application on Hyperledger Composer for the project.
-3. Usability of the ledger, designing front-end and extensions to other complmentary digital assets (protocols, laboratory notebooks).
-4. Documenting (GitHub repo) and writting-up a presentation for the project.
+#### Day 1
+Blockchain technologies and Biosamples (data and workflows)
+  1. Tutorial on Blockchain technologies (9-11)
+  2. Tutorial on Hyperledger Composer (11-12, 13-15). 
+  3. Sample use cases: Blockchain4openscience and Digital Diplomas. 
+      - Skills: JS. 
+      - Output: learn Composer-Playground.
+  4. Understanding BioSamples: data management and workflows (15-19).
+      - Skills: BioSamples. 
+      - Output: Identify data structures and workflows.
+
+#### Day 2
+Supply chain management in BioSamples
+  1. How would BioSamples benefit from blockchain technologies: How would the distributed ledger be used across industry and     academia? (9-12). 
+      - Skills: BioSamples. 
+      - Output: BioSamples workflow.
+  2. Designing and implementing a business network application (*.bna) on Hyperledger Composer for the project: version 1 and 2.
+    2.1. Define assets and participants (13-14).
+    2.2. Define transactions and logic in JS (13-19). 
+          - Skills: JS. 
+          - Output: BioSamples.bna
+
+#### Day 3
+Supply chain management in BioSamples
+  1. Write-up first report and document (*.bna) for PoC on Composer-Playground (9-11:30). 
+  2. Report (11:30-12).
+  3. High-level introduction to Hyperledger Fabric. (13-15).
+  4. Designing a distributed ledger for BioSamples and similar sample management tools for deployment in Hyperledger Fabric   (15-19). 
+      - Output: Value chain in Biosamples (organization, channels..)
+  4. Designing front-ends (15-19). 
+      - Skills: AngularJS. 
+      - Output: Mock-ups.
+
+#### Day 4
+Presentation and roadmap
+  1. Writing-up a presentation for the project (9-11:30).
+  2. Report (11:30-12).
+  3. Documenting (GitHub repo) and roadmap.
 
 ## Related works and references
 ---
