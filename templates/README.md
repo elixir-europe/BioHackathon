@@ -14,6 +14,6 @@ Whichever format you use, we ask you to upload your slides (preferably in pdf fo
 | Format | Template | Remark |
 |--------|-------------------------------------|--------------------|
 | Google Slides | <https://goo.gl/2MXpMq> | Make a copy in your own Google Drive account |
-| Powerpoint (pptx) |   |  |
-| OpenOffice (odp) |    |   |
+| Powerpoint (pptx) | [Biohackathon-presentation_template.odp](Biohackathon-presentation_template.odp)  |  |
+| OpenOffice (odp) | [Biohackathon-presentation_template.pptx](Biohackathon-presentation_template.pptx)   |   |
 
