@@ -28,15 +28,12 @@ The bioconda packaging will provide an effort-less installation of the RSAT suit
 
 RSAT team: knowledge of current installation of RSAT. Potential participants: 
 
-1. Jacques van Helden (Aix-Marseille Université, Marseille, France), 
-2. Morgane Thomas-Chollier (Ecole Normale Supérieure, Paris, France), 
-3. Bruno Contreras (ARAID & Estación Experimental de Aula Dei-CSIC, Zaragoza, Spain). 
+1. [Jacques van Helden](http://jacques.van-helden.perso.luminy.univ-amu.fr/) (Aix-Marseille Université, Marseille, France), 
 
 Conda packaging: Unix environment, Docker images. Potential hackers (to be confirmed): 
 
-1. Gildas Le Corguillé (Station Biologique de Roscoff, France), 
-2. Anthony Bretaudeau (Université de Rennes, France)
-3. Other specialists might be sollicitated in ELIXIR bioconda task force.
+1. [Loic Gouarin](https://www.math.u-psud.fr/~gouarin/) (Université Orsay Paris Sud, France) 
+2. [Aurélien Naldi](https://www.ibens.ens.fr/spip.php?article273) (Ecole Normale Supérieure, Paris, France)
 
 **Expected hacking days**: 4 days, 3 days
 
