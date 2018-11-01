@@ -62,14 +62,14 @@ RSAT git repository  is currently restricted to the development team, but the so
 ## Biohackathon presentation
 
 - pdf: <https://goo.gl/dNoiCQ>
-- Google Slides: <https://goo.gl/8GYT4J>
+- Google Slides: <https://goo.gl/4a1RXe>
 
-<!---
 ## Optional template for Biohackathon presentations
 
-- Google Slides: 
+- Google Slides: <https://goo.gl/pS9fX3>
+
+<!--
 - Powerpoint: 
 - LibreOffice: 
 -->
-
 
