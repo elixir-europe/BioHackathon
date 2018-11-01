@@ -53,3 +53,21 @@ RSAT git repository  is currently restricted to the development team, but the so
 ## Hackers
 ---
 
+1. [Jacques van Helden](http://jacques.van-helden.perso.luminy.univ-amu.fr/) (Aix-Marseille Université, Marseille, France), 
+2. [Loic Gouarin](https://www.math.u-psud.fr/~gouarin/) (Université Orsay Paris Sud, France) 
+4. [Aurélien Naldi](https://www.ibens.ens.fr/spip.php?article273) (Ecole Normale Supérieure, Paris, France)
+
+## Biohackathon presentation
+---
+
+- pdf: <https://goo.gl/dNoiCQ>
+- Google Slides: <https://goo.gl/8GYT4J>
+
+## Optional template for Biohackathon presentations
+
+- Google Slides: 
+- Powerpoint: 
+- LibreOffice: 
+
+
+
