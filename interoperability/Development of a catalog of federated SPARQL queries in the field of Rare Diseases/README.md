@@ -30,7 +30,7 @@ programmes, ontologists : python, java, RDF/OWL, Sparql
 
 ## Approaches to reach goals
 1) Identify relevant resource in the RD field, available through SPARQL Endpoint
-Starting point: EBI, Uniprot, Wikidata, Bioportal, Bio2RDF, neXtProt
+Starting point: EBI, Uniprot, Wikidata, Bioportal, Bio2RDF, neXtProt...
 
 https://www.ebi.ac.uk/rdf/services/sparql
 
@@ -40,14 +40,30 @@ https://sparql.nextprot.org/
 
 https://github.com/bio2rdf/bio2rdf-scripts/wiki
 
+Reactome
+https://www.ebi.ac.uk/rdf/services/sparql
+
+
+Disgenet
+http://www.disgenet.org
+http://rdf.disgenet.org/sparql/
+
+
+wikipathway
+https://www.wikipathways.org/index.php/Help:WikiPathways_Sparql_queries
+http://sparql.wikipathways.org/
+
 
 2) Setup user friendly web interface to :
+
 a) manage/comment datasource
 
 b) provide sample queries for each datasource
 
 c) edit and manage queries
 
+YAS GUI
+http://about.yasgui.org/
 
 https://github.com/comunica
 
