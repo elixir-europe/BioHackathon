@@ -13,7 +13,7 @@ Whichever format you use, we ask you to upload your slides (preferably in pdf fo
 
 | Format | Template | Remark |
 |--------|-------------------------------------|--------------------|
-| Google Slides | <https://goo.gl/2MXpMq> | Make a copy in your own Google Drive account |
 | OpenOffice | [Biohackathon-presentation_template.odp](Biohackathon-presentation_template.odp)  |  |
 | Powerpoint | [Biohackathon-presentation_template.pptx](Biohackathon-presentation_template.pptx)   |   |
+| Google Slides | <https://goo.gl/2MXpMq> | Make a copy in your own Google Drive account |
 
