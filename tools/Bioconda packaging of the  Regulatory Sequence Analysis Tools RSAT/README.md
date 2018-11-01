@@ -61,7 +61,7 @@ RSAT git repository  is currently restricted to the development team, but the so
 ---
 ## Biohackathon presentation
 
-- pdf: <https://goo.gl/dNoiCQ>
+- [RSAT to bioconda (pdf)](RSAT-to-bioconda.pdf)
 - Google Slides: <https://goo.gl/4a1RXe>
 
 ## Optional template for Biohackathon presentations
