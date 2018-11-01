@@ -1,6 +1,6 @@
 # Deposition of Research Assets between FAIRDOM SEEK's and other public deposition services
 
-### Representative: Stuart Owen
+## Representative: Stuart Owen
 
 ## Community
 ---
@@ -9,10 +9,7 @@ Data
 
 ## Leads
 ---
-Stuart Owen ,
-Finn Bacall ,
-Alan Williams ,
-Hadas Leonov 
+Stuart Owen 
 
 ## Background information
 ---
@@ -38,12 +35,15 @@ We’d hope to end with a clearer idea of future design decisions; solutions to 
 ---
 
 Programmers, Ruby, Ruby on Rails, JSON, JSON API, Research Objects
-**Expected hacking days**: 4 days
+**Expected hacking days**: 2.5 days
 
 ## Related works and references
 ---
 
-[FAIRDOM website](https://fair-dom.org), [FAIRDOMHub](https://fairdomhub.org), [Research Objects](http://www.researchobject.org/), [JSON API specification](http://jsonapi.org/)
+* [FAIRDOM website](https://fair-dom.org)
+* [FAIRDOMHub](https://fairdomhub.org)
+* [Research Objects](http://www.researchobject.org/)
+* [JSON API specification](http://jsonapi.org/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
