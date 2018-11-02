@@ -4,6 +4,7 @@
 
 ![](images/cover_art.png)
 
+[Introduction slides](http://bebatut.fr/talks/18/11_12_biohackathon/)
 
 ## Community
 ---
@@ -47,13 +48,14 @@ Instructors and anyone eager to develop Galaxy-related training material. No spe
 ![](images/qr-code-small.png)
 
 - [Cell paper about the Galaxy Training Material effort](https://www.sciencedirect.com/science/article/pii/S2405471218302308)
+- [Introduction slides](http://bebatut.fr/talks/18/11_12_biohackathon/)
 
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
 - [Galaxy Training Material GitHub](https://github.com/galaxyproject/training-material)
-- [Galaxy](https://github.com/galaxyproject/galaxy)
+- [Galaxy Github](https://github.com/galaxyproject/galaxy)
 
 ## Hackers
 ---
