@@ -19,9 +19,11 @@ Galaxy community, Training platform
 
 ## Background information
 ---
-[Galaxy](https://galaxyproject.org) is an open-source web framework for easy-to-use, reproducible and shareable computational life science research, with >100 public Galaxy servers. Training is an integral part of the Galaxy community. In collaboration with [GOBLET](https://www.mygoblet.org/) and the [ELIXIR Training Platform](https://www.elixir-europe.org/platforms/training), the [Galaxy Training Network](https://galaxyproject.org/teach/gtn/) is developing open, peer-reviewed and FAIR training material: >80 tutorials developed by >100 contributors, available at https://training.galaxyproject.org, to deliver training for scientists, developers and system administrators. The material is complemented by metadata to automatically populate the ELIXIR training portal (TeSS) and to describe the technical infrastructure needed to run the tutorial (e.g. tools, data, workflows, etc.).
+[Galaxy](https://galaxyproject.org) is an open-source web framework for easy-to-use, reproducible and shareable computational life science research, with >100 public Galaxy servers. Training is an integral part of the Galaxy community. In collaboration with [GOBLET](https://www.mygoblet.org/) and the [ELIXIR Training Platform](https://www.elixir-europe.org/platforms/training), the [Galaxy Training Network](https://galaxyproject.org/teach/gtn/) is developing open, peer-reviewed and FAIR training material: >80 tutorials developed by >100 contributors, available at https://training.galaxyproject.org, to deliver training for scientists, developers and system administrators. The material is complemented by metadata to automatically populate the [ELIXIR training portal (TeSS)](https://tess.elixir-europe.org/) and to describe the technical infrastructure needed to run the tutorial (e.g. tools, data, workflows, etc.).
 
+![](images/infra.png)
 
+The project is aimed at making the contribution process as easy as possible, so that no specific knowledge or skills are required.
 
 ## Expected outcomes
 ---
