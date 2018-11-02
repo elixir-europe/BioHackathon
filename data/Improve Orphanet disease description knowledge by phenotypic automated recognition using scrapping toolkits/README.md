@@ -25,10 +25,10 @@ The site has a huge audience, around 1 million unique visitors/month and 8 langu
 
 Orphanet provides for around 3000 described diseases more than 60000 diseases/HPO annotations curated by experts.
 The aim of this proposal, by using several toolkits, will help us to try to: 
-1) speed-up the process of annotation with Orphanet textual information / or pubmed publication as input.
-2) improve the curation process by comparaison between the automated recognition and the annotations already provided by Orphanet.
+1) Speed-up the process of disease-HPO annotation by using text-mining recognition on Orphanet textual information / or pubmed publication. 
+2) Improve the curation process by comparison between the automated recognition and the annotations already provided by Orphanet.
 
-To this end, throught a dedicated pipeline we propose to text-mine data from our database and/or from elsewhere (url, text files) in order to scrap HPO terms.
+To this end, through a dedicated pipeline we propose to text-mine data from our database and/or from elsewhere (url, text files) in order to scrap HPO terms.
 
 ## Approaches to reach goals
 
@@ -67,7 +67,7 @@ https://github.com/lasigeBioTM/IHP
 ## Expected audience
 ---
 
-programmers, ontologists - Python, Web API - XML, JSON, RDF files formats.
+programmers, developers - Python, ReactJS, Web APIs - XML, JSON, RDF/owl files formats.
 
 **Expected hacking days**: 4 days
 
