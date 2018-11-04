@@ -4,10 +4,10 @@ This repository is meant for the participants of the BioHackathon hosted in Pari
 
 ## Additional info
 
-- (Optional) templates for project presentations: 
+- (Optional) [templates](templates) for project presentations: 
 
-    - Powerpoint]() 
-    - [LibreOffice]()
+    - Powerpoint](templates/Biohackathon-presentation_template.pptx) 
+    - [LibreOffice](templates/Biohackathon-presentation_template.odp)
     - [Google Slides]()
 
 - Biohackathon Web site: <http://bh2018paris.info>
