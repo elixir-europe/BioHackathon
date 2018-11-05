@@ -10,26 +10,35 @@ The ELIXIR Galaxy Community and the ELIXIR Metabolomics Community
 
 - Gildas Le Corguillé 
 - Yvan Le Bras
-- Helena Rasche 
+- Helena Rasche ([hxr@informatik.uni-freiburg.de](mailto:hxr@informatik.uni-freiburg.de) [github](https://github.com/erasche), [chat on gitter](https://gitter.im/erasche))
 
-## Background information
+## Background Information
 
-Shiny (https://shiny.rstudio.com) is a powerful R package to display and interact with data (e.g. visualisation of raw data, statistics, geographic information system, ...). The Galaxy Interactive Environment (GIE) feature allows to run Shiny inside of Galaxy, isolated within Docker containers. Several projects are currently interested in embracing and enhancing Shiny-IEs: Galaxy-E (ELIXIR-FR) for ecology and Workflow4Metabolomics (ELIXIR-FR) for metabolomics research. Additionally a GIE for RStudio exists providing an environment for developing R code, integration between these two GIEs could provide an enhanced workflow for developing novel Shiny GIEs within Galaxy.
+[Shiny](https://shiny.rstudio.com) is a powerful R package to display and interact with data (e.g. visualisation of raw data, statistics, geographic information system, ...). [Galaxy Interactive Environments](https://docs.galaxyproject.org/en/master/admin/special_topics/interactive_environments.html) allows running Shiny inside of [Galaxy](https://galaxyproject.org), isolated within [Docker containers](https://docker.com). Several projects are currently interested in embracing and enhancing Shiny-IEs: pGalaxy-E](https://github.com/65MO/Galaxy-E) (ELIXIR-FR) for ecology and [Workflow4Metabolomics](http://workflow4metabolomics.org/) (ELIXIR-FR) for metabolomics research. Additionally a GIE for RStudio exists providing an environment for developing R code, integration between these two GIEs could provide an enhanced workflow for developing novel Shiny GIEs within Galaxy.
+
+![How GIEs Work](https://docs.galaxyproject.org/en/master/_images/interactive_environments.png)
 
 
 ## Expected outcomes
 
-Improvement in the integration of RShiny and RStudio  within the Galaxy framework:. 
- - From the administrator point-of-view by improving the documentation and by ease the installation steps
- - Allow a better flexibility between the Galaxy framework and the GIE: working with multiple datasets and/or dataset collections
+We have lots of plans for this week:
 
-Solve some participants problems during some Bring Your Own Issues sessions
+- Administration
+  - Simplify/Automate installation of IEs
+  - Improve flexibility, allow working with Datasets Collections and multiple Datasets
+- Technology
+  - Implement Galaxy FUSE driver and a Docker Volume plugin to allow running IEs without shared filesystem
+- Documentation
+  - Document installation and configuration of IEs
+  - Document newly built Docker Volume plugin
+- Participant Issues
+  - Solve some participants problems during some "Bring Your Own Issues" sessions
 
 ## Expected audience
 
-Developers and DevOps
+Developers, DevOps, System Administratorys
 
-Skills needed (and/or):
+Skills wanted (and/or):
  - Galaxy Framework
  - Container technologies: Docker or Singularity
  - R, RShiny
