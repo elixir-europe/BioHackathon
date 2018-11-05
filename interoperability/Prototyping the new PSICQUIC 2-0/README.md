@@ -69,5 +69,5 @@ Programmers. Previous knowledge in Java, Spring and Solr is recommended but not 
 
 ## Hackers
 ---
-Elisabet Barrera
-John Zobolas
+- Elisabet Barrera
+- John Zobolas
