@@ -54,7 +54,7 @@ We have many ideas for this week, and participants can work on a wide range of t
   - Add new topics, new tutorials
   - Training Handbook for instructors
   - Test existing tutorials and make improvements or [file issues](https://github.com/galaxyproject/training-material/issues)
-    - [list of tutorials needing some love](https://github.com/galaxyproject/training-material/issues/80://github.com/galaxyproject/training-material/issues/807)
+    - [List of tutorials needing some love](https://github.com/galaxyproject/training-material/issues/80://github.com/galaxyproject/training-material/issues/807)
   - Review [open pull requests](https://github.com/galaxyproject/training-material/pulls)
 
 - **Global Infrastructure**
@@ -73,7 +73,7 @@ We have many ideas for this week, and participants can work on a wide range of t
   - Support for Instructors
   - [Share your training philosophy](https://github.com/galaxyproject/training-material/issues/1056) and tips to help other instructors
 
-For those looking for ideas for things to work on this week, checkout the [open issues and pull requests with the *cofest* label](https://github.com/galaxyproject/training-material/labels/CoFest).
+For those looking for ideas for things to work on this week, check out the [open issues and pull requests with the *cofest* label](https://github.com/galaxyproject/training-material/labels/CoFest).
 
 ![](images/cofest.png)
 
@@ -82,9 +82,9 @@ For those looking for ideas for things to work on this week, checkout the [open 
 ## Expected audience
 ---
 
-We welcome everybody to join our hackathon this week, instructors and anyone else eager to develop Galaxy-related training material.
+We welcome everybody to join our hackathon this week; instructors, and anyone else eager to develop Galaxy-related training material.
 
-No specific knowledge or skills are required, just motivation! There are extensive [training materials](https://galaxyproject.github.io/training-material/topics/contributing://galaxyproject.github.io/training-material/topics/contributing/) that will help you to learn everything you need to know about contributing to this project, and of course many community members are present here this week and happy to help answer any questions.
+**No specific knowledge or skills are required, just motivation!** There are extensive [training materials](https://galaxyproject.github.io/training-material/topics/contributing://galaxyproject.github.io/training-material/topics/contributing/) that will help you to learn everything you need to know about contributing to this project, and of course many community members are present here this week and happy to answer any questions.
 
 
 **Why should you join?**
