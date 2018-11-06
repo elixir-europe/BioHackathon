@@ -49,7 +49,7 @@ http://www.disgenet.org
 http://rdf.disgenet.org/sparql/
 
 
-wikipathway
+wikipathways
 https://www.wikipathways.org/index.php/Help:WikiPathways_Sparql_queries
 http://sparql.wikipathways.org/
 
@@ -70,6 +70,9 @@ https://github.com/comunica
 http://jupyter.org/
 
 https://pypi.org/project/sparqlkernel/
+
+Wikibase
+https://github.com/wmde/wikibase-docker
 
 
 3) Modelise several SPARQL Federated Queries
