@@ -20,17 +20,20 @@ Orphanet is a website dedicated to rare diseases, providing several kind of info
 The site has a huge audience, around 1 million unique visitors/month and 8 languages.
 
 ![Orphanet](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Development%20of%20a%20catalog%20of%20federated%20SPARQL%20queries%20in%20the%20field%20of%20Rare%20Diseases/images/Orphanet.png)
+The database content is linked to the Orphanet nomenclature. We produce or aggregate textual information, expertised and manually curated. Clinical description of disease is done by using HPO (Human Phenotype Ontology) terms. 
 
- Orphanet produce also the Orphanet Rare Diseases Ontology and clinical description of diseases using HPO ontology. Each disease concept has a unique, stable, identifier (Orphacode) which could be used to identify diseases in health information system. The orphacode has been integrated in several countries.
+![Orphanet_Map](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Development%20of%20a%20catalog%20of%20federated%20SPARQL%20queries%20in%20the%20field%20of%20Rare%20Diseases/images/ORPHANET-map.png)
 
+ Orphanet produce also the Orphanet Rare Diseases Ontology. Each disease concept has a unique, stable, identifier (Orphacode) which could be used to identify diseases in health information system. The orphacode has been integrated in several countries.
 
+![Codification](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Development%20of%20a%20catalog%20of%20federated%20SPARQL%20queries%20in%20the%20field%20of%20Rare%20Diseases/images/map-codificationOrpha2018.jpg/map-codificationOrpha2018.jpg)
 ## Expected outcomes
 ---
 
 Orphanet provides for around 3000 described diseases more than 60000 diseases/HPO annotations curated by experts.
 The aim of this proposal, by using several toolkits, will help us to try to: 
-1) Speed-up the process of disease-HPO annotation by using text-mining recognition on Orphanet textual information / or pubmed publication. 
-2) Improve the curation process by comparison between the automated recognition and the annotations already provided by Orphanet.
+1) Speed-up the process of disease-HPO annotation by using text-mining recognition on Orphanet textual information / or pubmed publication. We will try to extract automatically HPO terms in publication.
+2) Improve the curation process by comparison between the automated recognition and the annotations already provided by Orphanet. (detecting missing terms etc.)
 
 To this end, through a dedicated pipeline we propose to text-mine data from our database and/or from elsewhere (url, text files) in order to scrap HPO terms.
 
