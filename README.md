@@ -55,9 +55,9 @@ Updated information can be found on the website on the [travel section](http://b
 Feel free to add your travelling arrangements to this [spreadsheet](https://docs.google.com/spreadsheets/d/1A93q7WguYwzQZ0ImhsyL0bwTvgVj3-JF48aK6Ew5T7w/edit#gid=1988643929) to organise yourselves any shared transport
 ### On arrival  
 Please sign up in reception (see picture) and find us at the “Club house” on the first floor to register for the event ([map of the venue](https://www.chateauform.com/wp-content/uploads/2015/10/plan_masse_berges-de-seine_gb-V3.pdf)). Reception might ask you to leave your luggage with them while they get ready your accommodation.
-## Delegate package
+### Delegate package
 Your delegate package includes 1.- Breakfast (only for those who stay overnight), lunch, dinner, 2x snacks, 2.- unlimited drinks and fruits during the day, and 3.- access to the venue facilities (swimming pool, gym, sauna, games… ).
-## Claiming travel expenses
+### Claiming travel expenses
 If you are entitled to claim travel expenses please keep the hard copies of the tickets and use the public transport or the most economical option. Detailed information about how to claim travel expenses will be provided during the event.
  
 ## Other
