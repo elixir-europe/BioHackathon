@@ -8,8 +8,8 @@ The ELIXIR Galaxy Community and the ELIXIR Metabolomics Community
 
 ## Leads
 
-- Gildas Le Corguillé 
-- Yvan Le Bras
+- Gildas Le Corguillé ([github](lecorguille))
+- Yvan Le Bras ([github](yvanlebras))
 - Helena Rasche ([hxr@informatik.uni-freiburg.de](mailto:hxr@informatik.uni-freiburg.de) [github](https://github.com/erasche), [chat on gitter](https://gitter.im/erasche))
 
 ## Background Information
@@ -44,17 +44,34 @@ Skills wanted (and/or):
  - R, RShiny
  - D3.js, Plotly
  - Nginx, NodeJS
- 
-**Expected hacking days**: 3 days, 2 days
 
-## Related works and references
+**Expected hacking days**: 2 days ...
 
+## GitHub or any other public repositories of your FOSS products
 
-## GitHub or any other public repositories of your FOSS products (if any)
+### Workflow4Metabolomics
 
-[Workflow4Metabolomics GIE base container for Shiny](https://github.com/workflow4metabolomics/gie-shiny),[Workflow4Metabolomics GIE for Chromatograms Visualisation](https://github.com/workflow4metabolomics/gie-shiny-chromato),
-[Galaxy-E GIE for Shiny](https://github.com/65MO/Galaxy-E/tree/master/GIE),
-[Galaxy GIE for RStudio](https://github.com/erasche/docker-rstudio-notebook/)
+![GIE Chromatograms](images/gie-shiny-chromato/gie-shiny-chromato3.png)
+
+- [Workflow4Metabolomics GIE base container for Shiny](https://github.com/workflow4metabolomics/gie-shiny)
+- [Workflow4Metabolomics GIE for Chromatograms Visualisation](https://github.com/workflow4metabolomics/gie-shiny-chromato)
+
+### Galaxy-E
+
+![GIE GIS](images/gie-shiny-GIS/geoexplorer.jpg)
+
+- [Galaxy-E GIE for Shiny](https://github.com/65MO/Galaxy-E/tree/master/GIE)
+
+### Galaxy GIE for RStudio
+
+![GIE RStudio](https://galaxyproject.github.io/training-material/topics/dev/images/vis_IE_rstudio.png)
+
+- [Galaxy GIE for RStudio](https://github.com/erasche/docker-rstudio-notebook/)
 
 
 ## Hackers
+
+- Helena Rasche ([hxr@informatik.uni-freiburg.de](mailto:hxr@informatik.uni-freiburg.de) [github](https://github.com/erasche), [chat on gitter](https://gitter.im/erasche))
+- Romain Dallet ([github](RomainDallet))
+- Gildas Le Corguillé ([github](lecorguille))
+- Yvan Le Bras ([github](yvanlebras))
