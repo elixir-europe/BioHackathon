@@ -18,10 +18,11 @@ The site has a huge audience, around 1 million unique visitors/month and 8 langu
 ![Orphanet](images/Orphanet.png)
 
 The database content is linked to the Orphanet nomenclature
-![Orphanet_Map(images/ORPHANET-map.png]
+![Orphanet_Map] (images/ORPHANET-map.png)
 
 and we provide several dataset, also accessible on our platform Orphadata https://www.orphadata.org
-![Orphadata] (images/Screenshot_Orphadata.png)
+
+![Orphadata](images/Screenshot_Orphadata.png)
 
 Orphanet produce also the Orphanet Rare Diseases Ontology and clinical description of diseases using HPO ontology. Each disease concept has a unique, stable, identifier (Orphacode) which could be used to identify diseases in health information system. The orphacode has been integrated in several countries.
 ![Codification](images/map-codificationOrpha2018.jpg)
@@ -34,7 +35,9 @@ Orphanet provides an ontology (ORDO) for rare diseases and also an ontological m
 ![HOOM](images/HOOM-ORDO.png)
 
 http://www.orphadata.org/cgi-bin/sparql.html
+
 Blazegraph docker with ORDO and HOOM
+
 http://www.orphadata.org/cgi-bin/docker/blazegraph_ordo_v2.6_hoom_v1.1.tar.gz
 
 We will try to leverage the knowledge of RD by the uses of accessible sparql endpoint (EBI, wikidata, wikipathway, bio2rdf etc.) and provides a catalogue of relevant federated sparql queries
