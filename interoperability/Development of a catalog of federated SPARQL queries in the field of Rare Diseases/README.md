@@ -18,7 +18,8 @@ The site has a huge audience, around 1 million unique visitors/month and 8 langu
 ![Orphanet](images/Orphanet.png)
 
 The database content is linked to the Orphanet nomenclature
-![Orphanet_Map] (images/ORPHANET-map.png)
+
+![Orphanet_Map](images/ORPHANET-map.png)
 
 and we provide several dataset, also accessible on our platform Orphadata https://www.orphadata.org
 
