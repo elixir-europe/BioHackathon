@@ -43,18 +43,18 @@ Docker community
 ## Related works and references
 ---
 
-- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-allegra-via.md
-- https://mybinder.org/
-- http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb
-- https://f1000research.com/articles/6-876/v1
+- [Four simple recommendations to encourage best practices in research software](https://f1000research.com/articles/6-876/v1)
+- [Lesson development for Open Source Software best practices adoption](https://doi.org/10.5281/zenodo.1420462)
+- [mybinder](https://mybinder.org/)
+- [example Jupyter notebook](http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
 
-- https://github.com/carpentries/carpentrycon/blob/master/Sessions/2018-05-31/08-Lightning-Talks-Session-5/2-abstract-allegra-via.md
-- https://github.com/coderefinery/jupyter
-- https://github.com/jupyterhub/binderhub
-- https://softdev4research.github.io/recommendations/
+- [4OSS lesson](https://softdev4research.github.io/4OSS-lesson/)
+- [Jupter Notebook lesson in Code Refinery](https://github.com/coderefinery/jupyter)
+- [build a binder](https://build-a-binder.github.io)
+- [4OSS recommendations](https://softdev4research.github.io/recommendations/)
 
 
 ## Hackers
