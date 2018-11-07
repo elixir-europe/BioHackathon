@@ -61,5 +61,7 @@ Your delegate package includes 1.- Breakfast (only for those who stay overnight)
 If you are entitled to claim travel expenses please keep the hard copies of the tickets and use the public transport or the most economical option. Detailed information about how to claim travel expenses will be provided during the event.
  
 ## Other
+
 ### Presentation templates for project representatives
-Optional [templates](https://github.com/elixir-europe/BioHackathon/blob/master/templates) are available to prepare project presentations for the symposium.
+
+Optional [templates](_templates) are available to prepare project presentations for the symposium.
