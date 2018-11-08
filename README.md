@@ -8,11 +8,11 @@ This repository is meant for the participants of the BioHackathon hosted in Pari
 ## Communications
 ### BioHackathon chat
 We have created a [Gitter community channel](https://gitter.im/bh2018paris) with a common room for all the participants (Lobby) and specific rooms per project.
-* It would be great you could use this communication channel so people from different projects and outside the BioHackathon will be able to follow the BioHackahton parallel activities.
+* It would be great you could use this communication channel so people from different projects and outside the BioHackathon will be able to follow the BioHackathon parallel activities.
 * If you want to use your own channel is fine, but then make a note inside your Gitter room so people will be able to follow. 
 * Please use the Gitter channel especially during the symposium to ask and answer questions.
 ### Twitter 
-The twitter hashtag for the BioHacakthon is #bh2018paris. Feel free to use as well the @biohackathon ‏handle.
+The twitter hashtag for the BioHackathon is #bh2018paris. Feel free to use as well the @biohackathon ‏handle.
 ### Organising committee
 We will be watching the [Gitter community channel](https://gitter.im/bh2018paris) but if you have a more private question or comment for the organising committee please send an email to bh2018paris@elixir-europe.org
 ### Finding people and skills
@@ -22,7 +22,7 @@ David Salgado has kindly compile the skills of the participants and the skills r
 ### Agenda
 Updated information can be found and will be updated on the [programme section](http://bh2018paris.info/programme.html) of the website.
 ### Symposium
-The first afternoon is dedicated to learning about the different projects proposed at the BioHackahton. We have 10 minutes per presentation. We have 28 presentation and we are almost 150 people, so we decided not to have time for questions and anwsers after the talks but encorage participants to use the [Gitter community channel](https://gitter.im/bh2018paris) and the coffee breaks to ask questions.
+The first afternoon is dedicated to learning about the different projects proposed at the BioHackathon. We have 10 minutes per presentation. We have 28 presentation and we are almost 150 people, so we decided not to have time for questions and anwsers after the talks but encorage participants to use the [Gitter community channel](https://gitter.im/bh2018paris) and the coffee breaks to ask questions.
 ### Hacking time
 People might move around and participate in several projects.
 * Project leads are expected to guide and facilitate work among participants. Look for a project lead if you want more information about how to engage with a project.
@@ -40,11 +40,11 @@ We all aim to meet at the end of the BioHackathon for a 90 minutes sprint to wri
 
 ## Projects
 ### Project content, plans and materials
-Please use this [BioHackahton GitHub repository](https://github.com/elixir-europe/BioHackathon) and your GitHub project folder to store materials, code, outcomes or anything useful related to the project.
+Please use this [BioHackathon GitHub repository](https://github.com/elixir-europe/BioHackathon) and your GitHub project folder to store materials, code, outcomes or anything useful related to the project.
 * If you want to use your own repository is fine, but then make a note inside your GitHub project folder so people will be able to follow. 
-* All project leads should have admin privileges in the BioHackahton GitHub repository. If you are not yet a collaborator please ask a project lead or Ricardo <arcila@ebi.ac.uk> to add your GitHub username to the repository and give you writing privileges.
+* All project leads should have admin privileges in the BioHackathon GitHub repository. If you are not yet a collaborator please ask a project lead or Ricardo <arcila@ebi.ac.uk> to add your GitHub username to the repository and give you writing privileges.
 ### New projects
-Though we defined and prioritised a set of projects, following the spirit of the Biohacakthon new ideas and projects are welcome. If you want to move forward a new project please feel free to create a new project folder and project page. Please also let the Organising Committee <bh2018paris@elixir-europe.org> know to be able to make the links in the website and include the new projects in the reporting cycle.
+Though we defined and prioritised a set of projects, following the spirit of the BioHackathon new ideas and projects are welcome. If you want to move forward a new project please feel free to create a new project folder and project page. Please also let the Organising Committee <bh2018paris@elixir-europe.org> know to be able to make the links in the website and include the new projects in the reporting cycle.
 
 ## Logistics 
 ### Participants and accommodation at the venue
