@@ -4,12 +4,13 @@
 
 ## Community
 ---
-
 IntAct/IMEx (Elixir Core Resource)
 
 ## Leads
 ---
-Noemi del Toro 
+- Noemi del Toro
+- John Zobolas
+- Elisabet Barrera
 
 ## Background information
 ---
@@ -69,5 +70,4 @@ Programmers. Previous knowledge in Java, Spring and Solr is recommended but not 
 
 ## Hackers
 ---
-- Elisabet Barrera
-- John Zobolas
+
