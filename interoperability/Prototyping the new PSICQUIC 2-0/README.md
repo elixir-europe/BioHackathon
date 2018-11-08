@@ -37,15 +37,15 @@ One major advantage of hosting the information as a single distributed network i
 
 The output of the BioHackathon is expected to be in the two main components of PSICQUIC 2.0. Both components could be developed in parallel and be integrated at the end.
  
-myPSICQUIC
+### myPSICQUIC
 
 Due to the complexity of the molecular interaction data, the data must be validated before it is uploaded to a PSICQUIC server. Currently, there is an online tool that offers that validation (https://www.ebi.ac.uk/intact/validator/start.xhtml). The participants will need to work on the extension of the current validator by offering the option to upload the data at the end of the validation process (if this has been successful). Apart from the different changes at the front-end to incorporate the new functionality, the data transfer from the validator to the PSICQUIC server will need to be implemented.
  
-PSICQUIC Cluster
+### PSICQUIC Cluster
 
 Currently, the reference implementation of PSICQUIC is based in a previous version of Apache Solr (http://lucene.apache.org/solr) that gives all the capabilities of indexing and searching molecular interaction data under the hood. During the hackathon it is expected that the participants will be involved in the migration of Solr from the current standalone version to SolrCloud with the extra capabilities that it provides (https://lucene.apache.org/solr/guide/7_3/getting-started-with-solrcloud.html). This will allow the continued use of Solr at the back-end and allow updating PSICQUIC to a distributed architecture.
  
-Other possible outcomes
+### Other possible outcomes
 
 Due to the nature of the data some participants interested in network visualization could collaborate on the development of reusable web components for interaction network visualization. 
 At the same time, improving existing clients like PSICQUIC view by integrating identifiers.org (http://identifiers.org/) for referencing external data, or developing new PSICQUIC clients in other languages like R or Python could be an interesting outcomes for the participants of the hackathon.
