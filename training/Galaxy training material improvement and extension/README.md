@@ -52,9 +52,9 @@ We have many ideas for this week, and participants can work on a wide range of t
 
 - **Content**
   - Add new topics, new tutorials
-  - Training Handbook for instructors
+  - [Training Handbook for instructors](https://github.com/galaxyproject/training-material/pull/1101)
   - Test existing tutorials and make improvements or [file issues](https://github.com/galaxyproject/training-material/issues)
-    - [List of tutorials needing some love](https://github.com/galaxyproject/training-material/issues/80://github.com/galaxyproject/training-material/issues/807)
+    - [List of tutorials needing some love](https://github.com/galaxyproject/training-material/issues/807)
   - Review [open pull requests](https://github.com/galaxyproject/training-material/pulls)
 
 - **Global Infrastructure**
@@ -73,9 +73,7 @@ We have many ideas for this week, and participants can work on a wide range of t
   - Support for Instructors
   - [Share your training philosophy](https://github.com/galaxyproject/training-material/issues/1056) and tips to help other instructors
 
-For those looking for ideas for things to work on this week, check out the [open issues and pull requests with the *cofest* label](https://github.com/galaxyproject/training-material/labels/CoFest).
-
-![](images/cofest.png)
+For those looking for ideas for things to work on this week, check out the [open issues and pull requests with the *cofest* label](https://github.com/galaxyproject/training-material/labels/CoFest): ![](images/cofest.png)
 
 
 
