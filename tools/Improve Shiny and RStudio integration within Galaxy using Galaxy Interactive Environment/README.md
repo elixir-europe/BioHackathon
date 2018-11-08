@@ -75,3 +75,8 @@ Skills wanted (and/or):
 - Romain Dallet ([github](RomainDallet))
 - Gildas Le Corguillé ([github](lecorguille))
 - Yvan Le Bras ([github](yvanlebras))
+
+## Slides
+
+- 12/11/2018: [Presentation](https://docs.google.com/presentation/d/1iXeSg2QkgJGv_rbe_v03hzY0GIZkvMkBA2-VTO3-70k/edit?usp=sharing)
+
