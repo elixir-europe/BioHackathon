@@ -57,13 +57,14 @@ Programmers. Previous knowledge in Java, Spring and Solr is recommended but not 
 
 ## Tasks
 ---
-###Topic: myPSICQUIC
+### Topic: myPSICQUIC
+
 *PSI-MI Validator extension
-*Front-end tasks
-*Modernize current web application to new Javascript Framework technologies (large size)
-*Extend interface to give the option to upload the data to PSICQUIC at the end of the validation process (small size)
-*Back-end tasks
-*Trigger indexing process to upload the data to PSICQUIC at the end of the validation process (medium size)
+ *Front-end tasks
+  *Modernize current web application to new Javascript Framework technologies (large size)
+  *Extend interface to give the option to upload the data to PSICQUIC at the end of the validation process (small size)
+ *Back-end tasks
+  *Trigger indexing process to upload the data to PSICQUIC at the end of the validation process (medium size)
  
 Topic: PSICQUIC Cluster
 *Migration to SolrCloud
@@ -72,7 +73,7 @@ Topic: PSICQUIC Cluster
 *Update/rewrite current indexing libraries to be compatible with the latest version of Apache Solr
 *Update/rewrite calls from the PSICQUIC web service to Solr
  
-Topic: PSICQUIC View
+### Topic: PSICQUIC View
 *Front-end tasks
 *Modernise current web application with new Javascript Framework technologies (large size)
 *Re-style the whole project with Foundation zurb or similar following RWD (responsive web design).
@@ -80,18 +81,18 @@ Topic: PSICQUIC View
 *Migrate the current graph view in the results page to cytoscape.js, paying special attention to the graph model that cytoscape use.
 *Integrate identifiers.org (http://identifiers.org/) for referencing external data
 
-Topic: PSICQUIC Clients
+### Topic: PSICQUIC Clients
 *Develop/update PSICQUIC clients in other languages like R or Python
 *New PSICQUIC client that translates causal data to a ‘network’ .sif file
 
-Topic: PSICQUIC Extension
+### Topic: PSICQUIC Extension
 *Extends PSICQUIC to support miTab 2.8 (work currently in progress)
 *Back-end tasks
 *Extend psi-jami library to incorporate the new miTab 2.8 standard format (causalTAB)
 *Have a working miTab 2.8 dataset solr-indexed
 *Create a new PSICQUIC service based in miTab 2.8 in a test server and add it to the registry 
 
-Topic: PSICQUIC Outputs
+### Topic: PSICQUIC Outputs
 *Back-end tasks
 *Support miJson (molecular interaction json format)
 *Support .sif (single interactions file)
