@@ -1,5 +1,7 @@
 # Improve Shiny and RStudio integration within Galaxy using Galaxy Interactive Environment
 
+[![Join the chat at https://gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy](https://gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy.svg)](https://gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Representative: Gildas Le Corguillé
 
 ## Community
