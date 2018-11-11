@@ -103,7 +103,7 @@ Tasks can be done in parallel
 ## Tasks management
 Kaban scrumblr
 http://scrumblr.ca/bh2018-orphanet
-![Kaban](images/kaban.png)
+![Kanban](images/kanban.png)
 
 ## Related works and references
 ---
