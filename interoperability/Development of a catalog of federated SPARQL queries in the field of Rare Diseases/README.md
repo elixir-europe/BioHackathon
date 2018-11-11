@@ -1,3 +1,6 @@
+[![Join the chat at https://gitter.im/bh2018paris/13-SPARQL-RareDiseases](https://gitter.im/bh2018paris/13-SPARQL-RareDiseases.svg)](https://gitter.im/bh2018paris/13-SPARQL-RareDiseases?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+
 # Development of a catalog of federated SPARQL queries in the field of Rare Diseases
 
 ### Representative: Marc Hanauer
