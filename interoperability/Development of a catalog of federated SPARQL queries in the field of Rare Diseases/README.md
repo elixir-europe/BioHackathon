@@ -100,6 +100,11 @@ https://github.com/wmde/wikibase-docker
 
 Tasks can be done in parallel
 
+## Tasks management
+Kaban scrumblr
+http://scrumblr.ca/bh2018-orphanet
+![Kaban](images/kaban.png)
+
 ## Related works and references
 ---
 
