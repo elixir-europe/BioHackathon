@@ -16,7 +16,7 @@ Leyla Garcia
 
 ## Background information
 ---
-Drug discovery pipelines are immensely expensive in time and resources, which are wasted if a drug is rejected due to toxicities discovered in late stages. Better pathway effect prediction tools would enable scientists to qualify protein targets in early stages with more confidence, resulting in higher success rates. Using UniProt, HPO, pathway, protein interaction data and more, we will explore mapping and integration approaches to build a knowledge network of these data. This will help create tools for scientists to better understand effects of drugs on potential protein targets in multiple pathways.
+Drug discovery pipelines are immensely expensive in time and resources, which are wasted if a drug is rejected due to toxicities discovered in late stages. Better pathway effect prediction tools would enable scientists to qualify protein targets in early stages with more confidence, resulting in higher success rates. Using UniProt, HPO, pathway, protein interaction data and more, we will explore mapping and integration approaches to build a "queryable" structure (dataset, knowledge network,..)  of these data. This will help create tools for scientists to better understand effects of drugs on potential protein targets in multiple pathways.
 
 ## Expected outcomes
 ---

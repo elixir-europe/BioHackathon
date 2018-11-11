@@ -1,6 +1,6 @@
 # Putting structured data into individual entry pages in biological database
 
-### Representative: Jun-ichi Onami
+### Representative: Jun-ichi Onami (Sorry! changed to... ) -> Tatsuya Kushida, Shigeru Yatsuzuka
 
 ## Community
 ---

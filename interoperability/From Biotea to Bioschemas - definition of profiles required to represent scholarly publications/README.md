@@ -46,16 +46,27 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 
 [Biotea repository](https://github.com/biotea)
 
-## Tentative tasks
+## Tasks
 ---
-1. Review publication repos including schema.org to see what elements ther mark up
-2. Create draft specifications
-3. Get feedback on specifications
+1. Revise publication repositories currently including schema.org markup to see what elements they are marking up
+2. Find suitable types on schema.org (in addition to those already in use)
+3. [Map Biotea model to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
+4. [Define draft profile specifications](./profiles/readme.md)
+5. Get feedback on specifications (Please use the GitHub issues with the label biotea2bioschemas)
 
-Notes
-* 1 and 2 could be done before the hacking
-* 3 needs a community so the hacking is ideal for it
-
-## Hackers
+## Skills
 ---
+* Knowledge/interest on structured metadata for scholarly publications
+* Knowledge/interest on [Biotea](https://peerj.com/articles/4201/)
+* Knowledge/interest on [Bioschemas](http://bioschemas.org/)
 
+## How to participate
+---
+* Have a look to the [Biotea model and mapping to Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
+* Go to the [profiles folder](./profiles/readme.md)
+* Select the ones you want to contribute to
+* Fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
+* Upload them to or link them from the corresponding folder named as <your-name-profile>
+* Any comments or so you want to share, please do so via GitHub issues using the label "project: biotea2bioschemas"
+
+Thanks for your collaboration!

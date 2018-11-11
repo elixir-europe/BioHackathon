@@ -13,7 +13,7 @@ Denise Carvalho-Silva ,
 Victoria Dominguez Del Angel ,
 Michel Dumontier , 
 Mateusz Kuzak , 
-Celia van Gelder , 
+Celia van Gelder
 
 ## Background information
 ---
@@ -23,6 +23,12 @@ The FAIR metrics working group (http://fairmetrics.org) developed the framework 
 ---
 
 We expect to first identify community expectations of training materials, second catalogue new  training-specific metrics, third perform a FAIRness assessment of existing training materials with existing and new metrics, and fourth evaluate how Bioschemas TrainingMaterial specification works regarding the identified metrics. This work aim to complement efforts started by FAIR metrics group (see references 1 and 2).
+* A definition on what a training material is 
+* A list of participants
+* A list of training material resources
+* Assessment on training materials FAIRness using current metrics
+* Reflection on challenges when assessing training material FAIRness
+* A set of trining materials specific metrics
 
 ## Expected audience
 ---
@@ -31,7 +37,7 @@ We expect to first identify community expectations of training materials, second
 * Trainers
 * Trainees
 * Anyone interested in or with knowledge on FAIR principles and passionate about training  
-**Expected hacking days**: 2-4 days
+**Expected hacking days**: 2 days
 
 ## Related works and references
 ---
@@ -40,6 +46,7 @@ We expect to first identify community expectations of training materials, second
 2. [A design framework and exemplar metrics for FAIRness](https://www.biorxiv.org/content/early/2017/12/01/225490) 
 3. [“How to make training FAIR”](https://docs.google.com/document/d/1wrKUyD_GSq1HakpaOpU8u7KOReBk4S6BpYFDBziaBN0/edit)
 4. [Bioschemas TrainingMaterial specification](http://bioschemas.org/specifications/TrainingMaterial/specification/)
+5. [GO FAIR principles explained](https://www.go-fair.org/fair-principles/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
@@ -50,10 +57,21 @@ Not sure how long we will get during the Paris BioHackathon, but some ideas here
 1. Brainstorming on what FAIR means for training materials
 2. Brainstorming on how to assess FAIRness for training materials
 3. Brainstorming on challenges and how to deal with them
-4. Brainstorming on metrics to assess FAIRness for training materials
+4. Brainstorming on metrics to assess FAIRness for training materials (based on the existing ones)
 5. Some agreements and plan on how to follow
 
 
-## Hackers
+## Skills
 ---
+* Knowledge/interest on FAIR principles
+* Knowledge/interest on training materials
+* Knowledge/interest on structured metadata schemas such as [schema.org](https://schema.org/) and [Bioschemas](http://bioschemas.org/)
+
+## How to participate
+---
+* There has is an Elixir group working on FAIRness materials, contact us if you want to participate there
+* Join us during the BioHackathon on Tuesday for our brainstorming, assessment exercises and reflection activities
+* If you cannot join the live brainstorming, still keep an eye to this space and share your comments or doubts via GitHub issues, please use the label "project: FAIR training"
+
+Thanks for collaborating!
 

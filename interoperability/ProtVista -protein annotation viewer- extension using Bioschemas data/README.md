@@ -1,6 +1,6 @@
 # ProtVista (protein annotation viewer) extension using Bioschemas data
 
-### Representative: Leyla Garcia
+### Representative: Gustavo Salazar
 
 ## Community
 ---
@@ -67,7 +67,18 @@ Notes:
 * Task 8 requires 7
 * Ideally 1, 2 and 3 should be achieved during the BioHackathon, great if we get at least one marked up resource for 4 and 5, amazing if some advances on 6 are done, and wonderful if we get to 7 and 8!
 
-## Hackers
+## Skills
 ---
-* Gustavo Salazar
-* Leyla Garcia, mainly taks 1, 2 and 3
+* [Bioschemas](http://bioschemas.org/)
+* JavaScript, web components, lerna
+* [ProtVista](https://github.com/ebi-webcomponents/nightingale)
+* For marking up resources, crawling and indexing, skills vary but all require software development knowledge
+
+## How to participate
+---
+* Go to the [participants list](./participants.md) 
+* Add your name with GitHub user, skills, and tasks you want to participate at 
+* Have a quick chat with Gustavo to coordinate activities
+
+Thanks for collaborating!
+

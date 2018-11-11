@@ -57,6 +57,7 @@ Ontologists
 - [Human Cell Atlas metadata schema validation](https://github.com/HumanCellAtlas/ingest-validator)
 - [EMBL-EBI Unified submission interface](https://github.com/EMBL-EBI-SUBS/json-schema-validator)
 - [HipSci publication](https://www.ebi.ac.uk/biostudies/studies/S-BSST16) 
+- [Breeding API](https://www.brapi.org)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
@@ -65,7 +66,12 @@ Ontologists
 - [EMBL-EBI Unified submission interface](https://github.com/EMBL-EBI-SUBS/json-schema-validator)
 - [MarRef data exchange with Bioschemas proof of concept](https://github.com/EBIBioSamples/bioschemas_marref_demo)
 - [Bioschemas specifications](https://github.com/BioSchemas/specifications)
+- [MIAPPE Specifications](https://github.com/MIAPPE/MIAPPE/tree/v1.1-rfc)
+- [MIAPPE Ontology](https://github.com/MIAPPE/MIAPPE-ontology)
+- [Elixir plant search Crawler/data harvester)](https://github.com/elixir-europe/plant-brapi-etl-data-lookup-gnpis)
 
 ## Hackers
+- Guillaume Cornut
+- ...
 ---
 

@@ -2,6 +2,9 @@
 
 ### Representative: Adrien Coulet
 
+## Hacking task presentation
+https://drive.google.com/open?id=1ZH3WGHSZZgsasPGeShjqE-wMahwhGi-b
+
 ## Community
 ---
 
@@ -34,7 +37,7 @@ This may include enriching of our initial linked data, adding provenance element
 ---
 
 Python programmers, RDF fans, FAIR evangelists, AI enthousiasts
-**Expected hacking days**: 3 days, flexible
+
 
 ## Related works and references
 ---
