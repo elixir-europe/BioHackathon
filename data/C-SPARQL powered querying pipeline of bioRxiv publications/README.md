@@ -1,4 +1,4 @@
-# C-SPARQL powered querying pipeline of bioRxiv publications 
+# Building an ontology for biology publications in real-time using event stream processing
 
 ### Representative: Mustafa Anil Tuncel
 
@@ -28,26 +28,41 @@ We try to ease this burden by providing a system to continuously analyses new ar
 
 2) A notification system with a powerful query-language to perform complex pattern matching and thus focusing the user on the most relevant subset of topics within the stream of publications.
 
+3) An interface to allow users to perform SPARQL queries on the continuously updated publications ontology.
+
 ## Expected audience
 ---
 
-programmers (Java, Javascript, Nodejs, RDF), domain expert (query language design)
+Call for additional expertise from biohackathon attendees
+* NLP experts to extract biological information from text
+* Experience in web-technologies
+* Biologists for domain knowledge e.g. what information to parse from the publications
+* People with curiosity :) <br>
 **Expected hacking days**: 5 days
+
+## Tasks
+* Retrieving stream data from ArXiv/BioarXiv feeds using twitter stream api
+* Retrieving the pdf/latex of the publication from ArXiv/BioarXiv/PubMed
+* Extracting information from the latex/pdf files
+* Creating/reusing the ontology
+* Updating the ontology whenever a new paper is published
+* Starting the sparql server (apache jena fuseki, python flask/rdflib, etc.)
+* User interface
+* Querying page UI
+* Results in both text and graph
 
 ## Related works and references
 ---
 
+- https://github.com/RDFLib/rdflib
 - http://bioschemas.org/
 - https://github.com/streamreasoning/CSPARQL-engine
 - https://developer.twitter.com/en/docs/tutorials/consuming-streaming-data.html
+- https://jena.apache.org/documentation/fuseki2/
 
-## GitHub or any other public repositories of your FOSS products (if any)
----
-
-- https://github.com/anilbey
-- https://github.com/kpj
-- https://github.com/dryak
 
 ## Hackers
 ---
-
+- https://github.com/anilbey
+- https://github.com/kpj
+- https://github.com/dryak
