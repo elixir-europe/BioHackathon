@@ -41,6 +41,8 @@ Several aspects of the service are up for improvements, according to preference/
   - Setting up [Gunicorn](https://gunicorn.org/) & [NGINX](https://www.nginx.com/) HTTP servers
   - Write [Kubernetes](https://kubernetes.io/) deployment scripts
 
+For more info, see the [**SLIDES** for the project](https://docs.google.com/presentation/d/1Ui1Any_jMM0FD-OvFSq-dY0h7L6PWGnrdmZTO5VKRuI/edit?usp=sharing).
+
 If you have any **QUESTIONS**, please write us in the Gitter channel: https://gitter.im/bh2018paris/15-GA4GH-WES
 
 ## Expected audience
