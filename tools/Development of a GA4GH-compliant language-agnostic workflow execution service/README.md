@@ -23,20 +23,20 @@ Currently, WES-ELIXIR only supports CWL workflows as [`cwl-tes`](https://github.
 ## Expected outcomes (needs more work!)
 ---
 Several aspects of the service are up for improvements, according to preference/skills. They are organized into distinct work packages, each of which could be tackled by small groups of people (up to 4), depending on availability. The work packages are listed below, each with a few keywords/brief explanations:
-* WP1: Pluggable workflow engines
+* **WP1: Pluggable workflow engines**
   - Refactor and harmonize the service to be able to run different workflow engines next to each other; define API/requirements for supporting future workflow engines
   - Handle mapping of workflow types (e.g. CWL, WDL) and versions to workflow engines
   - Start writing workflow run submission functions and log parsers for [Cromwell](https://software.broadinstitute.org/wdl/) & [Nextflow](https://www.nextflow.io/)
-* WP2: Task distribution
+* **WP2: Task distribution**
   - WES in principle supports sending individual tasks to different TES instances depending on preferences (e.g., price vs speed) and constraints (e.g., access rights, infrastructure requirements, data privacy constraints)
   - Current TES-enabled workflow engines have not implemented distribution logic
   - Idea: point workflow engines to "proxy" TES service that implements distribution logic outside of workflow engines; proxy can also be used to decorate TES calls with authorizatino headers to harmonize authentication/authorization flow
-* WP3: [OpenID Connect](https://openid.net/connect/) authorization
+* **WP3: [OpenID Connect](https://openid.net/connect/) authorization**
   - As a proof of concept, [ELIXIR AAI](https://www.elixir-europe.org/services/compute/aai) is used as the identity provider
   - Currently, WES requests can be decorated with [JWT](https://jwt.io/)-based access tokens that are used to link workflow runs to users; tokens are passed on to protect TES endpoints
   - Current setup limits workflows to max 1h runtime
   - Idea: Implement OIDC authorization code flow (WES-ELIXIR as OIDC Relying Party) and request refresh token to obtain fresh access tokens
-* WP4: Production-grade deployment
+* **WP4: Production-grade deployment**
   - Packaging WES-ELIXIR & TESK
   - Setting up [Gunicorn](https://gunicorn.org/) & [NGINX](https://www.nginx.com/) HTTP servers
   - Write [Kubernetes](https://kubernetes.io/) deployment scripts
