@@ -15,8 +15,10 @@ We have created a [Gitter community channel](https://gitter.im/bh2018paris) with
 The twitter hashtag for the BioHackathon is #bh2018paris. Feel free to use as well the @biohackathon ‏handle.
 ### Organising committee
 We will be watching the [Gitter community channel](https://gitter.im/bh2018paris) but if you have a more private question or comment for the organising committee please send an email to bh2018paris@elixir-europe.org
+
 ### Finding people and skills
-David Salgado has kindly compile the skills of the participants and the skills required per project in a [spreadhseet](https://goo.gl/sgCrEh). This might be useful to know where to contribute or find the people with the right expertise. Please feel free to update this information at anytime.
+
+David Salgado has kindly compiled a [spreadhseet](https://goo.gl/sgCrEh) in order to match the skills of  participants with those skills required per project. This might be useful to know where to contribute or find the people with the right expertise. Please feel free to update this information at anytime.
 
 ## Programme
 ### Agenda
