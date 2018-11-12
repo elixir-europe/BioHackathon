@@ -2,7 +2,7 @@
 
 ### Representative: Alasdair Gray
 
-[Presentation](https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Bioschemas/Bioschemas%20Findability%20and%20Interoperability.pptx)
+[Presentation](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Bioschemas/Bioschemas%20Findability%20and%20Interoperability.pptx)
       
 
 ## Community
