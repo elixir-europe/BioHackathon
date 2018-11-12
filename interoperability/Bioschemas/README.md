@@ -15,7 +15,7 @@
 ## Community
 ---
 
-Bioschemas Community – ELIXIR Interoperability Platform
+[Bioschemas Community](http://bioschemas.org) – ELIXIR Interoperability Platform
 
 
 ## Background information
