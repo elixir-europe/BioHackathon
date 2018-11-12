@@ -93,7 +93,7 @@ To access the data, you can use of the following server
 
 username: practikpharma
 
-password: ask monnin@loria.fr
+password: ask pierre.monnin@loria.fr
 
 Only through Loria VPN:
 - https://pgxlod-dev.loria.fr (dev for pgxlod.loria.fr)
