@@ -91,6 +91,8 @@ Provides a comprehensive set of annotated pathways with additional annotations a
 ##### KEGG 
 Is complementary to Reactome in providing manually curated pathways and reactions. It also provides a set of disease related pathways with known drugs and protein targets.  We can retrieve data from KEGG using their REST API: https://www.kegg.jp/kegg/rest/keggapi.html
 
+##### WikiPathways
+Is complementary to the first two in providing manually curated pathways and reactions. It is a ten year old community projects lead by the Glandstone Institutes and Maastricht University. It provides a REST API, various download formats, and a monthly updated SPARQL endpoint: https://www.wikipathways.org/ Also, three participatns know it very well: Andra, Chris, and [Egon](http://github.com/egonw].
 
 
 #### Protein interactions
