@@ -13,7 +13,7 @@ Bioschemas Community – ELIXIR Interoperability Platform
 - Leyla Garcia 
 - Ricardo Arcila 
 - Alasdair Gray 
-- Justin Clark-Casey 
+- Phil Barker 
 - Michel Dumontier  
 
 ## Background information
