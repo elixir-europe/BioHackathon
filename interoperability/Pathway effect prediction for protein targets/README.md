@@ -21,15 +21,20 @@ Drug discovery pipelines are immensely expensive in time and resources, which ar
 
 Outcomes include:
 - Understanding the data involved
-- Identifying scenarios of pathways being affected by the chosen target
-- Mapping data to create a network
+- Mapping and connecting data to create a network
 - Enable exploration of network via querying/visualisation
+- Identifying scenarios of pathways being affected by the chosen target
 
 ## Expected audience
 ---
 
 Data Scientists, Bioinformaticians or programmers interested in proteins data and pathways, drug discovery scientists/ systems biologists.
 **Expected hacking days**: 4 days
+
+## Technologies and tools
+---
+
+Apache Spark, Apache Zeppelin, GraphFrame, Neo4j
 
 ## Related works and references
 ---
