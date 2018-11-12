@@ -1,6 +1,6 @@
 # Pathway effect prediction for protein targets
 
-### Representative: Rabie Saidi 
+## Representative: Rabie Saidi 
 
 ## Community
 ---
@@ -114,13 +114,42 @@ ChEMBL is slightly different from DrugBank in that it primary mission is to repo
 https://www.ebi.ac.uk/chembl/api/data/docs
 
 
+##### General links
+* [Human Phenotype Ontology HPO](https://hpo.jax.org)
+* [Open Targets](https://www.opentargets.org/)
+* [UniProt](https://www.uniprot.org/)
+* [Intact](https://www.ebi.ac.uk/intact)
+* [Reactome](https://www.reactome.org/)
+* [PathwaysCommons](http://www.pathwaycommons.org)
 
-[Human Phenotype Ontology HPO](https://hpo.jax.org)
-[Open Targets](https://www.opentargets.org/)
-[UniProt](https://www.uniprot.org/)
-[Intact](https://www.ebi.ac.uk/intact)
-[Reactome](https://www.reactome.org/)
-[PathwaysCommons](http://www.pathwaycommons.org)
+
+## Plan for 4-Day Hackathon
+---
+Don't this as literal, its just a general outline on what we planned to do over the next 5 days.
+
+#### Day 1-2:
+* Understand and investigate Data sources (UniProt etc)
+* Figure out how to link data sources
+* Preliminary design of data model for the final product (eg, graph, dataframe,..)
+* Choose appropriate technologies and data structures (eg, Spark,..)
+
+#### Day 2-3:
+* Agree and finalise design of data model for the final product
+* Implementation hack
+
+#### Day 4:
+* Continue hack
+* Start exploring the product with queries and ML models
+
+#### Day 5:
+* Tidy up.
+* Report outcomes
+
+
+
+
+
+
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
