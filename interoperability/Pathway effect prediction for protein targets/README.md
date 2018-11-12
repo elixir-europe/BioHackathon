@@ -12,6 +12,10 @@ Elixir interoperability platform
 Rabie Saidi,
 Andrew Nightingale 
 
+## Hackathon Presentation
+---
+https://tinyurl.com/yauf6cxz
+
 ## Background information
 ---
 Drug discovery pipelines are immensely expensive in time and resources, which are wasted if a drug is rejected due to toxicities discovered in late stages. Better pathway effect prediction tools would enable scientists to qualify protein targets in early stages with more confidence, resulting in higher success rates. Using UniProt, HPO, pathway, protein interaction data and more, we will explore mapping and integration approaches to build a "queryable" structure (dataset, knowledge network,..)  of these data. This will help create tools for scientists to better understand effects of drugs on potential protein targets in multiple pathways.
@@ -40,6 +44,7 @@ Apache Spark, Apache Zeppelin, GraphFrame, Neo4j
 ---
 
 ### Suggested Resources for consuming data
+---
 There are numerous data resources we could utilise in this Biohackathon. In this section we have outlined some resources that we think could be useful for achieving our goal.   As part of Day 2’s morning hack we will review and decide which resources we wish to use, any additional resources will be considered by the group. 
 
 
