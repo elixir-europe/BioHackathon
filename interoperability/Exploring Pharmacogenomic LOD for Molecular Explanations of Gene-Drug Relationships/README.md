@@ -6,7 +6,7 @@
 BioHackathon 2018 Paris/07-PharmaLOD
 
 ## Hacking task presentation
-https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Exploring%20Pharmacogenomic%20LOD%20for%20Molecular%20Explanations%20of%20Gene-Drug%20Relationships/task7_adrien_coulet.pdf
+https://goo.gl/ms6KER
 
 ## Length
 Through all Biohackathon week (12-16 Nov.)
