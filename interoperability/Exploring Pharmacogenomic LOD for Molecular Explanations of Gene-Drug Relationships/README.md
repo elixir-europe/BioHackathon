@@ -85,33 +85,34 @@ Previous work on link prediction from the LOD (Many thanks to Maulik Kamdar for 
 
 - [Repositories for the Pharmacogenomic LOD developed at LORIA (PGxLOD)](https://gitlab.inria.fr/pgxlod/)
 - [Repository of French biomedical ontologies](http://bioportal.lirmm.fr/)
-- [PGxLOD](https://pgxlod.loria.fr)
+
+To access the data, you can use of the following server
+pgxlod.loria.fr
+pgxlod-private.loria.fr (protected by username/password)
+avicenne4.loria.fr — made live for the BioHackathon 2018, copy of pgxlod-private.loria.fr (protected by username/password)
+
+username: practikpharma
+password: ask monnin@loria.fr
+
+Only through Loria VPN:
+pgxlod-dev.loria.fr (dev for pgxlod.loria.fr)
+pgxlod-private-dev.loria.fr (dev for pgxlod-private.loria.fr ; protected by username/password)
+
 
 ## Hackers
 ---
 
 Adrien Coulet
-
 Andon Tchechmedjiev
-
 Cedric Bousquet
-
 Francois-Elie Calvier
-
 William Digan
-
 Joel Legrand
-
 Clement Jonquet
-
 Pierre Monnin
-
 Malika Smail Tabbone (remote)
-
 Bastien Rance (remote)
-
 Athenais Vaginay (remote)
-
 [to complete]
 
 
