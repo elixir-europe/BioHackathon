@@ -36,10 +36,9 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 ---
 
 1. [Biotea: semantics for PubMed central](https://peerj.com/articles/4201/) 
-2. [TogoDoc server/client system: smart recommendation and efficient management of life science literature](https://www.ncbi.nlm.nih.gov/pubmed/21179453) 
+2. [Biotea model mapping to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
 3. [Bioschemas](http://bioschemas.org/) 
 4. [schema.org](https://schema.org/) 
-5. [BLAH4](http://blah4.linkedannotation.org/home)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
@@ -50,7 +49,7 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 ---
 1. Revise publication repositories currently including schema.org markup to see what elements they are marking up
 2. Find suitable types on schema.org (in addition to those already in use)
-3. [Map Biotea model to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
+3. [Biotea model mapping to schema.org/Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
 4. [Define draft profile specifications](./profiles/readme.md)
 5. Get feedback on specifications (Please use the GitHub issues with the label biotea2bioschemas)
 
@@ -65,8 +64,8 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 * Have a look to the [Biotea model and mapping to Bioschemas](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC)
 * Go to the [profiles folder](./profiles/readme.md)
 * Select the ones you want to contribute to
-* Fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
-* Upload them to or link them from the corresponding folder named as <your-name-profile>
+* download and fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
+* Upload them to the corresponding profile folder named as <your-name-profile>
 * Any comments or so you want to share, please do so via GitHub issues using the label "project: biotea2bioschemas"
 
 Thanks for your collaboration!
