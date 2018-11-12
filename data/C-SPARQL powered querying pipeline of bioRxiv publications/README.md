@@ -32,12 +32,10 @@ We try to ease this burden by providing a system to continuously analyses new ar
 
 3) An interface to allow users to perform SPARQL queries on the continuously updated publications ontology.
 
-## Expected audience
----
-
-Call for additional expertise from biohackathon attendees
+## Call for additional expertise from biohackathon attendees
 * NLP experts to extract biological information from text
 * Experience in web-technologies
+* Experience in RDF, SPARQL, ontologies
 * Biologists for domain knowledge e.g. what information to parse from the publications
 * People with curiosity :) <br>
 **Expected hacking days**: 5 days
