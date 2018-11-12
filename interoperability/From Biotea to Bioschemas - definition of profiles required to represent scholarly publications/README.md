@@ -65,7 +65,7 @@ People interested in scholarly publications, Bioschemas, structured data, natura
 * Go to the [profiles folder](./profiles/readme.md)
 * Select the ones you want to contribute to
 * download and fill the templates with your proposal for minimum, recommended and optional properties, cardinality and any controlled vocabulary
-* Upload them to the corresponding profile folder named as <your-name-profile>
+* Upload them to the corresponding profile folder named as name-lastName-profile.xlsx
 * Any comments or so you want to share, please do so via GitHub issues using the label "project: biotea2bioschemas"
 
 Thanks for your collaboration!
