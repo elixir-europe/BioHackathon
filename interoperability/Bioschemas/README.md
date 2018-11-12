@@ -7,7 +7,6 @@
 - __Alasdair Gray__
 - Leyla Garcia 
 - Ricardo Arcila 
-- Alasdair Gray 
 - Phil Barker 
 - Michel Dumontier  
 
