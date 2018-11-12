@@ -1,6 +1,6 @@
 # Application of RDF-based models and tools for enhancing interoperable use of biomedical resources
 
-### Representative: Hirokazu Chiba
+### Representative: Toshiaki Katayama
 
 ## Community
 ---

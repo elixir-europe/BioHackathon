@@ -1,20 +1,22 @@
 # Adding Bioschemas markup to data repositories and developing tools to find, consume and use it
 
-### Representative: Alasdair Gray
+[Presentation](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Bioschemas/Bioschemas%20Findability%20and%20Interoperability.pptx)
+
+### Representatives: 
+
+- __Alasdair Gray__
+- Leyla Garcia 
+- Ricardo Arcila 
+- Phil Barker 
+- Michel Dumontier  
+
+      
 
 ## Community
 ---
 
-Bioschemas Community – ELIXIR Interoperability Platform
+[Bioschemas Community](http://bioschemas.org) – ELIXIR Interoperability Platform
 
-## Leads
----
-
-- Leyla Garcia 
-- Ricardo Arcila 
-- Alasdair Gray 
-- Justin Clark-Casey 
-- Michel Dumontier  
 
 ## Background information
 ---

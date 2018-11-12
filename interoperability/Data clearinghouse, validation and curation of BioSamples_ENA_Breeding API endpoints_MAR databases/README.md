@@ -15,6 +15,9 @@ ELIXIR Data clearinghouse, ELIXIR Data Validation and Bioschemas
 - Nils Peder Willassen
 - Cyril Pommier 
 
+## Presentation
+https://docs.google.com/presentation/d/1zfH3h-c0g2t_Wna9ixm5ZqKilpJmLEQ5wSPXETJ0-eI/edit?usp=sharing
+
 ## Background information
 ---
 Regular practice in life science is to curate and publish high quality metadata describing experiments performed on biological sample(s).
@@ -61,9 +64,7 @@ Ontologists
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
-
-- [Human Cell Atlas metadata schema validation](https://github.com/HumanCellAtlas/ingest-validator)
-- [EMBL-EBI Unified submission interface](https://github.com/EMBL-EBI-SUBS/json-schema-validator)
+- [Elixir JSON schema validator](https://github.com/elixir-europe/json-schema-validator)
 - [MarRef data exchange with Bioschemas proof of concept](https://github.com/EBIBioSamples/bioschemas_marref_demo)
 - [Bioschemas specifications](https://github.com/BioSchemas/specifications)
 - [MIAPPE Specifications](https://github.com/MIAPPE/MIAPPE/tree/v1.1-rfc)
