@@ -14,6 +14,9 @@ Hacking tasks:
 - Submit markup as example to relevant directory: In the profile, click on the Links tab and then the Examples icod
   - [Dataset examples](https://github.com/BioSchemas/specifications/tree/master/Dataset/examples/)
   - [DataCatalog examples](https://github.com/BioSchemas/specifications/tree/master/DataCatalog/examples/)
+  
+Resources:
+- [Bioschemas tutorial](https://bioschemas.gitbook.io/training-portal)
 
 ### 2. Profile Creation/Refinement
 
@@ -28,7 +31,7 @@ Hacking tasks:
 - Prepare schema.org submission for new types and properties
 
 Resources:
-- Bioschemas tutorial
+- [Bioschemas tutorial](https://bioschemas.gitbook.io/training-portal)
 - [GOWeb tool](https://github.com/BioSchemas/bioschemas-goweb): converts crosswalk spreadsheet to YAML for inclusion in web page
 
 ### 3. Developing Support Tools
