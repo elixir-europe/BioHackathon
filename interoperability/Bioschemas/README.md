@@ -2,6 +2,20 @@
 
 [Presentation](https://github.com/elixir-europe/BioHackathon/raw/master/interoperability/Bioschemas/Bioschemas%20Findability%20and%20Interoperability.pptx)
 
+## Tasks
+
+### 1. Creating Markup
+
+### 2. Profile Creation/Refinement
+
+### 3. Developing Support Tools
+
+#### 3.1 GOWeb: Profile Page Generation
+
+#### 3.2 Validata: Markup Validation against Bioschema Profiles
+
+#### 3.3. Buzzbang: Enhancing Search
+
 ### Representatives: 
 
 - __Alasdair Gray__
