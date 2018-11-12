@@ -5,7 +5,15 @@
 ## Tasks
 
 ### 1. Creating Markup
-[Bioschemas Markup Generator](http://www.macs.hw.ac.uk/~ajg33/BioschemasGenerator/)
+
+Hacking tasks:
+- Generate markup for your resource: 
+  - Use the [Bioschemas Markup Generator](http://www.macs.hw.ac.uk/~ajg33/BioschemasGenerator/) to help create your initial version of [Dataset](http://bioschemas.org/specifications/Dataset) and [DataCatalog](http://bioschemas.org/specifications/DataCatalog) markup.
+  - Please provide [feedback](https://docs.google.com/forms/d/1xIbGIhQ-VaUl9V9JhpNzGXeluM31SDW2-1ggiQnITYE/edit) on the Bioschemas Generator
+- Refine markup: manually hack generated JSON-LD to your purpose
+- Submit markup as example to relevant directory: In the profile, click on the Links tab and then the Examples icod
+  - [Dataset examples](https://github.com/BioSchemas/specifications/tree/master/Dataset/examples/)
+  - [DataCatalog examples](https://github.com/BioSchemas/specifications/tree/master/DataCatalog/examples/)
 
 ### 2. Profile Creation/Refinement
 
