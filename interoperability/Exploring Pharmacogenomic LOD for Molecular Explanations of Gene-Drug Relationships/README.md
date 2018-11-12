@@ -65,3 +65,12 @@ Mining the Web of Life Sciences Linked Open Data for Mechanism-Based Pharmacovig
 ## Hackers
 ---
 
+Adrien Coulet
+Andon Tchechmedjiev
+Cedric Bousquet
+Francois-Elie Calvier
+William Digan
+Joel Legrand
+Clement Jonquet
+Pierre Monnin
+
