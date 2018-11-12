@@ -31,7 +31,7 @@ programmers, bioinformatics, pathway analysis, MongoDB/Java/AngularJS
 ## Related works and references
 ---
 
-www.omicsdi.org, reactome.org, wikipathways,
+www.omicsdi.org, reactome.org, [WikiPathways](http://www.wikipathways.org)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
