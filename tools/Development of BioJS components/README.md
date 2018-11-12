@@ -60,6 +60,11 @@ Some BioJS components
 - [Cytoscape](https://github.com/cytoscape/cytoscape.js)
 - https://github.com/galaxyproject/galaxy
 
+
+## Slides
+
+[BioJS Paris 2018 Hackathon Slides](https://docs.google.com/presentation/d/1TSDAwpzUq0ibeoia10BPR9379XikOIRK4418d-3mCDE/edit#slide=id.g46a7dd4b42_0_62)
+
 ## Hackers
 ---
 

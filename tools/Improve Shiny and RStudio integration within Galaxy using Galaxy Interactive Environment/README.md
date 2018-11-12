@@ -1,5 +1,7 @@
 # Improve Shiny and RStudio integration within Galaxy using Galaxy Interactive Environment
 
+[![Join the chat at https://gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy](https://badges.gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy.svg)](https://gitter.im/bh2018paris/20-Shiny-RStudio-Galaxy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Representative: Gildas Le Corguillé
 
 ## Community
@@ -75,3 +77,8 @@ Skills wanted (and/or):
 - Romain Dallet ([github](RomainDallet))
 - Gildas Le Corguillé ([github](lecorguille))
 - Yvan Le Bras ([github](yvanlebras))
+
+## Slides
+
+- 12/11/2018: [Presentation](https://docs.google.com/presentation/d/1iXeSg2QkgJGv_rbe_v03hzY0GIZkvMkBA2-VTO3-70k/edit?usp=sharing)
+

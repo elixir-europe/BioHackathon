@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/bh2018paris/14-Orphanet-PhenoScrapper](https://badges.gitter.im/bh2018paris/14-Orphanet-PhenoScrapper.svg)](https://gitter.im/bh2018paris/14-Orphanet-PhenoScrapper?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Improve Orphanet disease description knowledge by phenotypic automated recognition using scrapping toolkits.
 
 ### Representatives:  David Lagorce , Marc Hanauer

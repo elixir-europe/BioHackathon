@@ -12,11 +12,11 @@ ELIXIR Interoperability Platform, ELIXIR Identifiers
 - Manuel Bernal Llinares
 - Antonio Fabregat Mundo
 - Henning Hermjakob
-- Sarala Wimalaratne 
+- Sarala Wimalaratne
 
 ## Background information
 ---
-This project builds on the Elixir Identifiers implementation study and aims to boost adoption of Compact Identifiers in the publishing process through the development of lightweight tools for efficient integration into third party websites. 
+This project builds on the Elixir Identifiers implementation study and aims to boost adoption of Compact Identifiers in the publishing process through the development of lightweight tools for efficient integration into third party websites.
 
 The Identifiers.org registry contains hundreds of manually curated, high quality data collections, with each assigned a unique prefix. The Identifiers.org resolver provides a stable resolution service for these Compact Identifiers.
 
@@ -36,10 +36,10 @@ This project is expected to attract the attention of the bioinformatics communit
 ## Related works and references
 ---
 
-- [1] Sarala M. Wimalaratne et al. Uniform resolution of compact identifiers for biomedical data. Sci. Data 5:180029 doi: 10.1038/sdata.2018.29 (2018). 
+- [1] Sarala M. Wimalaratne et al. Uniform resolution of compact identifiers for biomedical data. Sci. Data 5:180029 doi: 10.1038/sdata.2018.29 (2018).
 - [2] Nature Scientific Data Editorial, https://www.nature.com/articles/sdata201895
 - [3] http://identifiers.org
-- [4] http://cloud.aws.identifiers.org
+- [4] http://cloud.identifiers.org
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
@@ -50,4 +50,3 @@ This project is expected to attract the attention of the bioinformatics communit
 
 ## Hackers
 ---
-

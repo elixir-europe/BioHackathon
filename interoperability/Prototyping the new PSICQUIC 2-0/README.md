@@ -37,13 +37,16 @@ One major advantage of hosting the information as a single distributed network i
 
 The output of the BioHackathon is expected to be in the two main components of PSICQUIC 2.0. Both components could be developed in parallel and be integrated at the end.
  
-myPSICQUIC
+### myPSICQUIC
+
 Due to the complexity of the molecular interaction data, the data must be validated before it is uploaded to a PSICQUIC server. Currently, there is an online tool that offers that validation (https://www.ebi.ac.uk/intact/validator/start.xhtml). The participants will need to work on the extension of the current validator by offering the option to upload the data at the end of the validation process (if this has been successful). Apart from the different changes at the front-end to incorporate the new functionality, the data transfer from the validator to the PSICQUIC server will need to be implemented.
  
-PSICQUIC Cluster
+### PSICQUIC Cluster
+
 Currently, the reference implementation of PSICQUIC is based in a previous version of Apache Solr (http://lucene.apache.org/solr) that gives all the capabilities of indexing and searching molecular interaction data under the hood. During the hackathon it is expected that the participants will be involved in the migration of Solr from the current standalone version to SolrCloud with the extra capabilities that it provides (https://lucene.apache.org/solr/guide/7_3/getting-started-with-solrcloud.html). This will allow the continued use of Solr at the back-end and allow updating PSICQUIC to a distributed architecture.
  
-Other possible outcomes
+### Other possible outcomes
+
 Due to the nature of the data some participants interested in network visualization could collaborate on the development of reusable web components for interaction network visualization. 
 At the same time, improving existing clients like PSICQUIC view by integrating identifiers.org (http://identifiers.org/) for referencing external data, or developing new PSICQUIC clients in other languages like R or Python could be an interesting outcomes for the participants of the hackathon.
 
@@ -54,6 +57,49 @@ At the same time, improving existing clients like PSICQUIC view by integrating i
 Programmers. Previous knowledge in Java, Spring and Solr is recommended but not mandatory.
 
 **Expected hacking days**: 4 days
+
+## Tasks
+---
+### Topic: myPSICQUIC
+
+* PSI-MI Validator extension
+   * Front-end tasks
+     * Modernize current web application to new Javascript Framework technologies (large size)
+     * Extend interface to give the option to upload the data to PSICQUIC at the end of the validation process (small size)
+   * Back-end tasks
+     * Trigger indexing process to upload the data to PSICQUIC at the end of the validation process (medium size)
+ 
+### Topic: PSICQUIC Cluster
+* Migration to SolrCloud
+    * Back-end tasks (to be developed for the reference implementation)
+       * Migration of the current schema.xml to be compatible with the latest version of Apache Solr
+       * Update/rewrite current indexing libraries to be compatible with the latest version of Apache Solr
+       * Update/rewrite calls from the PSICQUIC web service to Solr
+ 
+### Topic: PSICQUIC View
+* Front-end tasks
+    * Modernise current web application with new Javascript Framework technologies (large size)
+    * Re-style the whole project with Foundation zurb or similar following RWD (responsive web design).
+    * Add filtering and sorting to the interaction result table to take advantage in the future of the unique view from the new cloud infrastructure.
+    * Migrate the current graph view in the results page to cytoscape.js, paying special attention to the graph model that cytoscape use.
+    * Integrate identifiers.org (http://identifiers.org/) for referencing external data
+
+### Topic: PSICQUIC Clients
+* Develop/update PSICQUIC clients in other languages like R or Python
+* New PSICQUIC client that translates causal data to a ‘network’ .sif file
+
+### Topic: PSICQUIC Extension
+* Extends PSICQUIC to support miTab 2.8 (work currently in progress)
+    * Back-end tasks
+       * Extend psi-jami library to incorporate the new miTab 2.8 standard format (causalTAB)
+       * Have a working miTab 2.8 dataset solr-indexed
+       * Create a new PSICQUIC service based in miTab 2.8 in a test server and add it to the registry 
+
+### Topic: PSICQUIC Outputs
+* Back-end tasks
+    * Support miJson (molecular interaction json format)
+    * Support .sif (single interactions file)
+    * Support miXML 3.0 (molecular interactions XML file version 3.0)
 
 ## Related works and references
 ---

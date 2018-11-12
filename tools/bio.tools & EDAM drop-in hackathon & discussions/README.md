@@ -2,8 +2,6 @@
 
 ### Representative: Jon Ison
 
-*DETAILS BELOW ARE PROVISIONAL AND MAY CHANGE IN THE RUN-UP TO THE EVENT*
-
 ## Community
 
 [ELIXIR Tools Platform](https://www.elixir-europe.org/platforms/tools), [bio.tools](https://github.com/bio-tools/biotoolsregistry/), [EDAM](https://github.com/edamontology/edamontology/)
