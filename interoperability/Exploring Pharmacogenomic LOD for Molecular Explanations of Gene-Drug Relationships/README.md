@@ -87,16 +87,16 @@ Previous work on link prediction from the LOD (Many thanks to Maulik Kamdar for 
 - [Repository of French biomedical ontologies](http://bioportal.lirmm.fr/)
 
 To access the data, you can use of the following server
-pgxlod.loria.fr
-pgxlod-private.loria.fr (protected by username/password)
-avicenne4.loria.fr — made live for the BioHackathon 2018, copy of pgxlod-private.loria.fr (protected by username/password)
+- https://pgxlod.loria.fr/
+- https://pgxlod-private.loria.fr/ (protected by username/password)
+- https://avicenne4.loria.fr/ — made live for the BioHackathon 2018, copy of pgxlod-private.loria.fr (protected by username/password)
 
 username: practikpharma
 password: ask monnin@loria.fr
 
 Only through Loria VPN:
-pgxlod-dev.loria.fr (dev for pgxlod.loria.fr)
-pgxlod-private-dev.loria.fr (dev for pgxlod-private.loria.fr ; protected by username/password)
+- https://pgxlod-dev.loria.fr (dev for pgxlod.loria.fr)
+- https://pgxlod-private-dev.loria.fr (dev for pgxlod-private.loria.fr ; protected by username/password)
 
 
 ## Hackers
