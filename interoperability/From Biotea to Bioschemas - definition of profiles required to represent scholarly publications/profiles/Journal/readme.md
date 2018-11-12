@@ -8,7 +8,8 @@ is commonly used by Journals). Please bear in mind that some times you can go fr
 * Journal -> PublicationVolume -> PublicationIssue -> ScholarlyArticle
 
 Please get familiar with the [Biotea model](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC), 
-then get familiar with [schema:Dataset](https://schema.org/Dataset), and then copy and use the [template provided by Bioshemas](./template.md) 
+then get familiar with [schema:Collection](https://schema.org/Collection), and then copy and use the [template provided by Bioshemas](./Journal Mapping 0.1.xlsx) 
 in order to choose you minimum, recommended and optional properties with cardinalities and suggestions on controlled vocabularies. 
 Once you are happy with it, please upload it to the [Journal folder](../Journal/), 
 use your name as part of the file name to avoid overlapping.
+As a collection of articles, a journal could also be modelled as a Dataset of articles. If you want to go this way, please go to [schema:Dataset](https://schema.org/Dataset) and add the properties you find useful.
