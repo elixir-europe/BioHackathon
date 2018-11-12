@@ -48,6 +48,10 @@ Developers using RDF/SPARQL/JavaScript, ontologists, biomedical researchers
 - [SPANG website](http://spang.dbcls.jp/)
 - [TogoStanza website](http://togostanza.org/)
 - [PubCaseFinder](https://pubcasefinder.dbcls.jp/)
+- [TogoDB](http://togodb.org/)
+- [TogoWS](http://togows.org/)
+- [D2RQ Mapper](http://d2rq.dbcls.jp/)
+- [YummyData](https://yummydata.org/)
 - [Graph genome browser](http://demo.momig.tokyo/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
