@@ -45,13 +45,14 @@ Python programmers, RDF fans, FAIR evangelists, AI enthousiasts
 ## Related works and references
 ---
 
-Presentation of the PractiKPharma project:
-https://ercim-news.ercim.eu/en104/special/mining-electronic-health-records-to-validate-knowledge-in-pharmacogenomics
-Basic schema for our pharmacogneomics LOD:
-https://peerj.com/preprints/3140/
-Article about knowledge comparison within PGxLOD:
-https://www.biorxiv.org/content/early/2018/11/07/390971
+Presentation of the PractiKPharma project: https://ercim-news.ercim.eu/en104/special/mining-electronic-health-records-to-validate-knowledge-in-pharmacogenomics
 
+Basic schema for our pharmacogneomics LOD: https://peerj.com/preprints/3140/
+
+Article about knowledge comparison within PGxLOD: https://www.biorxiv.org/content/early/2018/11/07/390971
+
+## References
+---
 Previous work on link prediction from the LOD (Many thanks to Maulik Kamdar for these links):
 
   Dalleau et al.: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0125-1
