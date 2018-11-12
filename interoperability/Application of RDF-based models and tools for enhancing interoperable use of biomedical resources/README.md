@@ -7,7 +7,7 @@
 ## Community
 ---
 
-DBCLS
+Database Center for Life Science (DBCLS), Japan
 
 ## Leads
 ---
@@ -16,6 +16,7 @@ DBCLS
 - Tazro Ohta
 - Shuichi Kawashima
 - Atsuko Yamaguchi 
+- Toyofumi Fujiwara
 
 ## Background information
 ---
@@ -43,19 +44,31 @@ Developers using RDF/SPARQL/JavaScript, ontologists, biomedical researchers
 ---
 
 - [Med2RDF website](http://med2rdf.org/)
-- [RDF portal](https://integbio.jp/rdf/)
+- [NBDC RDF portal](https://integbio.jp/rdf/)
 - [SPANG website](http://spang.dbcls.jp/)
 - [TogoStanza website](http://togostanza.org/)
+- [PubCaseFinder](https://pubcasefinder.dbcls.jp/)
+- [Graph genome browser](http://demo.momig.tokyo/)
 
 ## GitHub or any other public repositories of your FOSS products (if any)
----
 
-- https://github.com/med2rdf
-- https://github.com/LODSurfer
-- https://github.com/dbcls/spang
-- https://github.com/dbcls/sparqlist
-- https://github.com/togostanza
+- TogoGenome https://github.com/togogenome
+- TogoStanza https://github.com/togostanza
+- d3sparql.js http://biohackathon.org/d3sparql/
+- SPARQList https://github.com/dbcls/sparqlist
+- SPARQL-proxy https://github.com/dbcls/sparql-proxy
+- Med2RDF https://github.com/med2rdf
+- LODSurfer https://github.com/LODSurfer
+- SPANG https://github.com/dbcls/spang
+- Human Chromosome Ontology https://github.com/med2rdf/hco
+- Identifiers.org Ontology https://github.com/ktym/idorg-ontology
+- RDF guideline https://github.com/dbcls/rdfizing-db-guidelines
+- MoMIG https://github.com/MoMI-G/MoMI-G/
 
 ## Hackers
 ---
+
+- Toshiyuki Yokoyama (University of Tokyo)
+- Manabu Ishii (RIKEN)
+- Ryota Yamanaka (Oracle)
 
