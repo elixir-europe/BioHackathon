@@ -48,6 +48,56 @@ Curator and data validators;
 Ontologists
 **Expected hacking days**: 4 days
 
+## Tasks
+During our hacking session we are going to focus on two different use cases:
+1. BioSamples & MarRef use case
+2. Plant phenotype usecase
+
+### BioSamples and MarRef use case
+For the BioSamples and MarRef use case we are planning the session this way:
+
+#### Day 1
+- Integration of Bioschemas into MarRef
+- Start extraction of bioschemas markup using BioSchemas crawler
+- Possibly start to work on a JSON schema version of the Sample bioschemas profile for validation purposes
+
+#### Day 2
+- Continue to work on JSON schema to validate the bioschemas exported from MarRef
+- Start to curate BioSamples creating curation objects based on MarRef exported metadata
+
+#### Day 3
+- Continue to work on the curation of BioSamples
+- Start to work on a prototype for the data clearing house
+
+#### Day 4
+- Continue as much as we can to develop the data clearing house
+
+### Plant phenotype use case
+For the plant phenotype use case, we are planning the session this way:
+
+#### Day 1
+- BrAPI v1.2 JSON-LD context 
+- BrAPI v1.2 JSON Schemas 
+- BrAPI 2 JSON-LD
+
+#### Day 2
+- Continue with unfinished tasks from day 1
+- Validate BrAPi2ISA on all uses cases
+  - Single experiment
+  - Phenotyping network
+  - Perenial plants
+
+#### Day 3
+- Continue with unfinished tasks from day 2
+- Integrate BrAPi 2 ISA as a service
+
+#### Day 4
+- Continue with unfinished tasks from day 3
+- Validate datasets 
+  - Ontologies & JSON-LD
+  - JSON-Schemas
+  - ISA framework
+
 ## Related works and references
 ---
 
