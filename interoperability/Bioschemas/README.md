@@ -17,6 +17,8 @@ Hacking tasks:
 
 ### 2. Profile Creation/Refinement
 
+![Bioschemas Profile Creation Process](https://github.com/BioSchemas/bioschemas.github.io/raw/master/images/bioschemas-process.png)
+
 Hacking tasks:
 - Develop missing profiles/type, e.g. Chemistry
   - Need to create new spreadsheet for the crosswalk
