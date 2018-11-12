@@ -5,6 +5,7 @@
 ## Tasks
 
 ### 1. Creating Markup
+[Bioschemas Markup Generator](http://www.macs.hw.ac.uk/~ajg33/BioschemasGenerator/)
 
 ### 2. Profile Creation/Refinement
 
