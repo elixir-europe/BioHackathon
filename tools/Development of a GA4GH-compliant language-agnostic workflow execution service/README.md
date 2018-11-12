@@ -20,7 +20,7 @@ What is currently missing are robust and language-agnostic implementations of th
 
 Currently, WES-ELIXIR only supports CWL workflows as [`cwl-tes`](https://github.com/common-workflow-language/cwl-tes) being used as the sole engine for interpreting worflows, resolving dependencies and staging tasks to be sent to the TES instance. Information on individual runs is stored in the database, with status updates being parsed from `cwl-tes` logs.
 
-## Expected outcomes (needs more work!)
+## Expected outcomes
 ---
 Several aspects of the service are up for improvements, according to preference/skills. They are organized into distinct work packages, each of which could be tackled by small groups of people (up to 4), depending on availability. The work packages are listed below, each with a few keywords/brief explanations:
 * **WP1: Pluggable workflow engines**
