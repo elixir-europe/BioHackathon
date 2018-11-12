@@ -17,6 +17,18 @@ Hacking tasks:
 
 ### 2. Profile Creation/Refinement
 
+Hacking tasks:
+- Develop missing profiles/type, e.g. Chemistry
+  - Need to create new spreadsheet for the crosswalk
+- Refine existing profiles and types, e.g. how to state the position of a Gene in the representation for the Gene
+  - Need to create a new version of the crosswalk spreadsheet
+- Improve Bioschemas tutorial material and documentation
+- Prepare schema.org submission for new types and properties
+
+Resources:
+- Bioschemas tutorial
+- [GOWeb tool](https://github.com/BioSchemas/bioschemas-goweb): converts crosswalk spreadsheet to YAML for inclusion in web page
+
 ### 3. Developing Support Tools
 
 #### 3.1 GOWeb: Profile Page Generation
