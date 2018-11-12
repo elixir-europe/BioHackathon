@@ -6,7 +6,7 @@ A [PublicationIssue](https://schema.org/PublicationIssue) [is part of](https://s
 * Journal -> PublicationVolume -> PublicationIssue -> ScholarlyArticle
 
 Please get familiar with [Biotea model](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC), 
-then get familiar with [schema:PublicationIssue](https://schema.org/PublicationIssue), and then copy and use the [template provided by Bioshemas](./template.md) 
+then get familiar with [schema:PublicationIssue](https://schema.org/PublicationIssue), and then copy and use the [template provided by Bioshemas](./PublicationIssue Mapping 0.1.xlsx) 
 in order to choose you minimum, recommended and optional properties with cardinalities and suggestions on controlled vocabularies. 
 Once you are happy with it, please upload it to the [PublicationIssue folder](../PublicationIssue/), 
 use your name as part of the file name to avoid overlapping.

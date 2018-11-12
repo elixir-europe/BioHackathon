@@ -6,7 +6,7 @@ A [PublicationVolume](https://schema.org/PublicationVolume) [is part](https://sc
 * Journal -> PublicationVolume -> PublicationIssue -> ScholarlyArticle
 
 Please get familiar with [Biotea model](https://drive.google.com/drive/folders/1AYKXrowHpsF9cstn0FeJhpbgfi9T_MeC), 
-then get familiar with [schema:PublicationVolume](https://schema.org/PublicationVolume), and then copy and use the [template provided by Bioshemas](./template.md) 
+then get familiar with [schema:PublicationVolume](https://schema.org/PublicationVolume), and then copy and use the [template provided by Bioshemas](./PublicationVolume Mapping 0.1.xlsx) 
 in order to choose you minimum, recommended and optional properties with cardinalities and suggestions on controlled vocabularies. 
 Once you are happy with it, please upload it to the [PublicationVolume folder](../PublicationVolume/), 
 use your name as part of the file name to avoid overlapping.
