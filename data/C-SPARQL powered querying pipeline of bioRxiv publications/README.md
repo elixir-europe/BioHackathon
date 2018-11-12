@@ -21,6 +21,8 @@ ETH-Zurich Computational Biology Group
 Keeping up with the constant flow of new articles being published in various Journals is a challenge. Recent mitigation techniques, such as twitter and email notifications, address this problem but still require complex efforts and non-trivial filtering and selection queries in order to be useful.
 We try to ease this burden by providing a system to continuously analyses new articles while leveraging smart queries using BioSchemas, CSPARQL and BioRxiv as the underlying data source.
 
+![](https://raw.githubusercontent.com/elixir-europe/BioHackathon/master/data/C-SPARQL%20powered%20querying%20pipeline%20of%20bioRxiv%20publications/system_overview.png)
+
 ## Expected outcomes
 ---
 
