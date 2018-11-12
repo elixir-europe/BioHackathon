@@ -85,21 +85,33 @@ Previous work on link prediction from the LOD (Many thanks to Maulik Kamdar for 
 
 - [Repositories for the Pharmacogenomic LOD developed at LORIA (PGxLOD)](https://gitlab.inria.fr/pgxlod/)
 - [Repository of French biomedical ontologies](http://bioportal.lirmm.fr/)
+- [PGxLOD](https://pgxlod.loria.fr)
 
 ## Hackers
 ---
 
 Adrien Coulet
+
 Andon Tchechmedjiev
+
 Cedric Bousquet
+
 Francois-Elie Calvier
+
 William Digan
+
 Joel Legrand
+
 Clement Jonquet
+
 Pierre Monnin
+
 Malika Smail Tabbone (remote)
+
 Bastien Rance (remote)
+
 Athenais Vaginay (remote)
+
 [to complete]
 
 
