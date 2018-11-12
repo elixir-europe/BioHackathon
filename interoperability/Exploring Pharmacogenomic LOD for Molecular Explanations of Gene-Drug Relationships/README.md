@@ -3,7 +3,10 @@
 ### Representative: Adrien Coulet
 
 ## Hacking task presentation
-https://drive.google.com/open?id=1ZH3WGHSZZgsasPGeShjqE-wMahwhGi-b
+https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Exploring%20Pharmacogenomic%20LOD%20for%20Molecular%20Explanations%20of%20Gene-Drug%20Relationships/task7_adrien_coulet.pdf
+
+## Length
+Through all Biohackathon week (12-16 Nov.)
 
 ## Community
 ---
