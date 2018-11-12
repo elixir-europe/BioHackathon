@@ -92,6 +92,7 @@ To access the data, you can use of the following server
 - https://avicenne4.loria.fr/ — made live for the BioHackathon 2018, copy of pgxlod-private.loria.fr (protected by username/password)
 
 username: practikpharma
+
 password: ask monnin@loria.fr
 
 Only through Loria VPN:
