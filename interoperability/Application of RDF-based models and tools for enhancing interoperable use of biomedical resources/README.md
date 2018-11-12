@@ -2,6 +2,8 @@
 
 ### Representative: Toshiaki Katayama
 
+[Presentation](https://docs.google.com/presentation/d/1t48PTxZZV4yB6NENiFEirolj19uf6zevkYuFXbUBqgk)
+
 ## Community
 ---
 
