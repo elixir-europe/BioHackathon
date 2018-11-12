@@ -10,9 +10,7 @@ Elixir interoperability platform
 ## Leads
 ---
 Rabie Saidi,
-Andrew Nightingale,
-Vladimir Volynkin,
-Leyla Garcia 
+Andrew Nightingale 
 
 ## Background information
 ---
