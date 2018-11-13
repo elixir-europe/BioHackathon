@@ -50,6 +50,13 @@ Resources:
 - Phil Barker 
 - Michel Dumontier  
 
+## Achievements
+
+### BioStudies
+- Created BioSchema for BioStudy ripository.
+- Developed application that generates Bioschema for a BioStudy.
+- 1 Example DataCatalog and 2 DataRecord examples are added to https://github.com/BioSchemas/specifications
+
       
 
 ## Community
