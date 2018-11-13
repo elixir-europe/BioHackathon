@@ -1,19 +1,30 @@
-# Usage
+# Manual
 
-## Web-Server (query interface)
+## Setup
 
-```bash
-$ FLASK_APP=web_server/run.py flask run
-```
-
-## Publication Parser (automatic ontology updates)
+### Installation
 
 ```bash
-$ python main.py
+$ pip install poetry  # if not already done
+$ poetry install
 ```
 
-## Tests
+### Tests
 
 ```bash
 $ flake8 --exclude=README.md
+```
+
+## Usage
+
+### Web-Server (query interface)
+
+```bash
+$ poetry run python web_server/run.py
+```
+
+### Publication Parser (automatic ontology updates)
+
+```bash
+$ poetry run python main.py
 ```

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "05-csparql-biorxiv"
+version = "0.0.1"
+description = "Building an ontology for biology publications in real-time using event stream processing"
+
+license = "GPL"
+
+authors = [
+    "Mustafa Anil Tuncel <mustafa.tuncel@bsse.ethz.ch>",
+    "Kim Philipp Jablonski <kim.jablonski@bsse.ethz.ch>",
+    "Ivan Topolsky <ivan.topolsky@bsse.ethz.ch>"
+]
+
+readme = "README.md"
+
+repository = "https://github.com/elixir-europe/BioHackathon/"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyyaml = "^3.13"
+flask = "^1.0"
+rdflib = "^4.2"
