@@ -23,10 +23,11 @@ def add_entity(pub: 'SemanticPublication') -> None:
     g = rdflib.Graph()
 
     # add publication
-    # TODO: make this actually work
-    g.add((n[pub.doi], RDF.type, FOAF.Publication))
-    g.add((n[pub.doi], FOAF.hasTitle, rdflib.Literal(pub.title)))
-    g.add((n[pub.doi], FOAF.hasDOI, rdflib.Literal(pub.doi)))
+    # TODO: implement actual ontology model
+    node = n[f'/{pub.doi}']
+    g.add((node, RDF.type, FOAF.Publication))
+    g.add((node, FOAF.hasTitle, rdflib.Literal(pub.title)))
+    g.add((node, FOAF.hasDOI, rdflib.Literal(pub.doi)))
 
     # add to ontology
     query = """
