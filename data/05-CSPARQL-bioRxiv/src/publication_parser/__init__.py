@@ -1,3 +1,3 @@
-from .SemanticPublication import SemanticPublication
+from .semantic_publication import SemanticPublication
 
 __all__ = ['SemanticPublication']
