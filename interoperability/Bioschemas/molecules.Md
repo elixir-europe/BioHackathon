@@ -2,8 +2,8 @@
 
 ## People who contributed
 
-- David
-- Rick
+- [David Mendez](https://github.com/nclopezo)
+- [Ricardo Arcila](https://github.com/ricardoaat)
 - Egon
 - Dominique
 
