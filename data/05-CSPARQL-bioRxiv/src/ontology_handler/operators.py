@@ -1,5 +1,3 @@
-import os
-
 from typing import TYPE_CHECKING
 
 import yaml
