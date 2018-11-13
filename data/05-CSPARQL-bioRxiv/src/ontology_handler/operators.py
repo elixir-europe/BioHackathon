@@ -42,6 +42,9 @@ def add_entity(pub: 'SemanticPublication') -> None:
     session.headers = {'Accept': 'text/html'}
 
     data = {'update': query}
-    result = session.post(
+    resp = session.post(
         CONFIG['sparql_endpoint'],
-        data=data, auth=('dba', 'dba'))
+        data=data)
+
+    if not resp.ok:
+        print('[ERROR]', resp.content)
