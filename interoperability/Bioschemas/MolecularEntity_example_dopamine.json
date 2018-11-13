@@ -1,7 +1,7 @@
 {
 	"@context": "http://schema.org",
-	"@type": "Chemical",
-	"name": "MolecularEntity",
+	"@type": "MolecularEntity",
+	"name": "Dopamine",
 	"alternateName": [
 		"3-hydroxytyramine",
 		"4-(2-aminoethyl)catechol",
