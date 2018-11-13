@@ -10,8 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', data=None)
 
-
-@app.route('/query', methods=['POST'])
+@app.route('/query', methods=['POST', 'GET'])
 def query():
     res = execute_query(request.form)
     return render_template('index.html', data=res)
