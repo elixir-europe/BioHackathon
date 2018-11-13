@@ -50,7 +50,9 @@ Resources:
 - Phil Barker 
 - Michel Dumontier  
 
-      
+## Achievements:
+### Day 1:
+- Added Bioschemas markup to SynBioHub (DataCatalog, Dataset, DataRecord)
 
 ## Community
 ---
