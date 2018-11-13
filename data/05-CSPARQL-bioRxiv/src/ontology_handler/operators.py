@@ -25,6 +25,7 @@ def add_entity(pub: 'SemanticPublication') -> None:
     g = rdflib.Graph()
 
     # add publication
+    # TODO: make this actually work
     g.add((n[pub.doi], RDF.type, FOAF.Publication))
     g.add((n[pub.doi], FOAF.hasTitle, rdflib.Literal(pub.title)))
     g.add((n[pub.doi], FOAF.hasDOI, rdflib.Literal(pub.doi)))
