@@ -9,7 +9,7 @@
 		"4-(2-aminoethyl)pyrocatechol"
 	],
 	"description": "this is the dopamine description",
-	"id": "CHEMBL59",
+	"identifier": "CHEMBL59",
 	"url": "https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL59/",
 	"image": "https://www.ebi.ac.uk/chembl/api/data/image/CHEMBL59.svg?engine=indigo",
 	"sameAs": "https://www.wikidata.org/wiki/Property:P592",
