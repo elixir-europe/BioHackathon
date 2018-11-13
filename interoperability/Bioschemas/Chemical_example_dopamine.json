@@ -1,6 +1,6 @@
 {
 	"@context": "http://schema.org",
-	"@type": "molecule",
+	"@type": "Chemical",
 	"name": "Dopamine",
 	"additionalType": false,
 	"alternateName": [
