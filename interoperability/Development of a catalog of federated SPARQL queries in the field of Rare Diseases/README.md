@@ -124,3 +124,21 @@ http://scrumblr.ca/bh2018-orphanet
 YOU !
 ---
 
+## Hack Day 1 progress
+---
+
+- Setup a wikibase which will contain sources description, "queries" in natural languages and federated queries examples
+(wikibase is an extension of mediawiki)
+```
+https://www.mediawiki.org/wiki/Wikibase/Installation#Download_from_Git
+```
+
+- Based on "natural languages queries" (a use case), start to explore Orphanet Ontology and Disgenet 
+```
+- For a given disease in Orphanet find all known related genes in Orphanet itself 
+- For a given disease in Orphanet find all known related genes in DisGeNET 
+Compare the output of the two queries. 
+```
+
+- Parallel task: play with the ORDO/HPO association model (dealing with collection)
+
