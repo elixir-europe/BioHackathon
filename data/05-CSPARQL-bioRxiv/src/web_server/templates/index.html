@@ -27,18 +27,18 @@
       <div class="container">
         {% if data is not none %}
           {% if data|length == 0 %}
-            {% for i in data %}
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">{{ i["title"] }}</h4>
-                  <p class="card-text">{{ i["abstract"] }}</p>
-                  <p>{{ i["doi"] }}</p>
-                  <a href="{{ i['url'] }}" class="btn btn-primary">Download</a>
-                </div>
-              </div>
-            {% endfor %}
-          {% else %}
             <p>No Result</p>
+          {% else %}
+            {% for i in data %}
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">{{ i["title"] }}</h4>
+                <p class="card-text">{{ i["abstract"] }}</p>
+                <p>{{ i["doi"] }}</p>
+                <a href="{{ i['url'] }}" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+            {% endfor %}
           {% endif %}
         {% endif %}
       </div>
