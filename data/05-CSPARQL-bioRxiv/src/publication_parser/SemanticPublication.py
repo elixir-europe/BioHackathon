@@ -1,3 +1,5 @@
+import random
+
 from typing import Optional
 
 
@@ -13,7 +15,7 @@ class SemanticPublication:
         # TODO: actually parse information
         tmp = cls()
 
-        tmp.doi = 123
+        tmp.doi = random.randint(0, 9999)
         tmp.title = 'My awesome publication'
 
         return tmp

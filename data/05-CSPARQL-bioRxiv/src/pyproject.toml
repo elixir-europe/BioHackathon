@@ -21,6 +21,7 @@ python = ">=3.6"
 pyyaml = "^3.13"
 flask = "^1.0"
 rdflib = "^4.2"
+requests = "^2.20"
 
 
 [tool.poetry.dev-dependencies]

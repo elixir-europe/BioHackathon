@@ -28,3 +28,9 @@ $ poetry run python web_server/run.py
 ```bash
 $ poetry run python main.py
 ```
+
+### Ontology-Server
+
+```bash
+$ virtuoso-t -f  # in folder with virtuoso.ini
+```

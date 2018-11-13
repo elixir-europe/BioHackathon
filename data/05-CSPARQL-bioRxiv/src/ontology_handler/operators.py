@@ -3,6 +3,8 @@ import os
 from typing import TYPE_CHECKING
 
 import yaml
+import requests
+
 import rdflib
 from rdflib.namespace import RDF, FOAF
 
@@ -27,8 +29,19 @@ def add_entity(pub: 'SemanticPublication') -> None:
     g.add((n[pub.doi], FOAF.hasTitle, rdflib.Literal(pub.title)))
     g.add((n[pub.doi], FOAF.hasDOI, rdflib.Literal(pub.doi)))
 
-    # save ontology
-    # TODO: don't overwrite existing ontology
-    fname = CONFIG['ontology_file']
-    os.makedirs(os.path.dirname(fname), exist_ok=True)
-    g.serialize(destination=fname, format='xml')
+    # add to ontology
+    query = """
+    INSERT IN GRAPH <http://foo.bar.baz>
+    {
+    %s
+    }
+    """ % g.serialize(format='nt').decode('utf-8')
+    # print(query)
+
+    session = requests.Session()
+    session.headers = {'Accept': 'text/html'}
+
+    data = {'update': query}
+    result = session.post(
+        CONFIG['sparql_endpoint'],
+        data=data, auth=('dba', 'dba'))

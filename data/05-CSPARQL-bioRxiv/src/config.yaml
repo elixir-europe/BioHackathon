@@ -1,1 +1,1 @@
-ontology_file: cache/ontology.xml
+sparql_endpoint: http://localhost:8890/sparql/
