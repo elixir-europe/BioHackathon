@@ -34,3 +34,5 @@ $ poetry run python main.py
 ```bash
 $ virtuoso-t -f  # in folder with virtuoso.ini
 ```
+
+Don't forget to set the correct UPDATE-permissions.
