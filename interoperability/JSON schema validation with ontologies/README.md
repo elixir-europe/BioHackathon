@@ -42,7 +42,7 @@ Developers of metadata schema standards and data resources that accept data subm
 ## Hackers
 ---
 
-- Rolando HErnadex (EMBL-EBI) remote particiapation 
+- Rolando Fernandez (EMBL-EBI) remote particiapation 
 
 ## Hack Day 1 progress
 ---
