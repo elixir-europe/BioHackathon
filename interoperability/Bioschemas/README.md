@@ -66,6 +66,14 @@ Resources:
 ### Ensembl
 - Added draft Bioschemas to Gene and Species pages on feature branch https://github.com/Ensembl/ensembl-webcode/tree/feature/bioschemas
 
+### Chemistry
+  - Discussed and created BioSchema for MoleculeEntity. See [molecules.Md](molecules.Md)
+  - Designed the implementation for the dataset type for the ChEMBL database. See [chembl-dataset-example.json](chembl-dataset-example.json)
+  - Created a draft specification in the official Bioschemas repository. See https://github.com/BioSchemas/specifications/pull/234
+  - Created an example for the MoleculeEntity implementation based on ChEMBL database. 
+
+
+
 ## Community
 ---
 
