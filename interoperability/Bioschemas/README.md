@@ -57,6 +57,7 @@ Resources:
 - Added Bioschemas markup to SynBioHub (DataCatalog, Dataset, DataRecord)
 - Added Bioschemas markup to Bgee (Dataset)
 - Added Bioschemas markup to Hamap (rules, profiles and proteomes Datasets)
+- Updated Bioschemas markup in CathDB (DataCatalog, Dataset, DataRecord)
 
 ### BioStudies
 - Created BioSchema for BioStudy repository.
