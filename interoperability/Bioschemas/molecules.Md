@@ -16,7 +16,7 @@
 ## Results
 
 - smaller proposal
-- created [draft JSON-LD example](https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Bioschemas/Molecule_example_dopamine.json)
+- created [draft JSON-LD example](https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Bioschemas/MolecularEntity_example_dopamine.json)
 
 
 ## References
