@@ -1,1 +1,1 @@
-sparql_endpoint: http://localhost:8890/sparql/
+sparql_endpoint: http://idefix.local:8890/sparql
