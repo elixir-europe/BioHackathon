@@ -52,8 +52,14 @@ Resources:
 
 ## Achievements
 
+## Achievements:
+### Day 1:
+- Added Bioschemas markup to SynBioHub (DataCatalog, Dataset, DataRecord)
+- Added Bioschemas markup to Bgee (Dataset)
+- Added Bioschemas markup to Hamap (rules, profiles and proteomes Datasets)
+
 ### BioStudies
-- Created BioSchema for BioStudy ripository.
+- Created BioSchema for BioStudy repository.
 - Developed application that generates Bioschema for a BioStudy.
 - 1 Example DataCatalog and 2 DataRecord examples are added to https://github.com/BioSchemas/specifications
 
