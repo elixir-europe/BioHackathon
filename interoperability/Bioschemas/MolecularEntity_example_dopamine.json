@@ -1,7 +1,7 @@
 {
 	"@context": "http://schema.org",
 	"@type": "Chemical",
-	"name": "Dopamine",
+	"name": "MolecularEntity",
 	"alternateName": [
 		"3-hydroxytyramine",
 		"4-(2-aminoethyl)catechol",
@@ -35,13 +35,13 @@
 	"iupacName": "4-(2-aminoethyl)benzene-1,2-diol",
 	"isSimilarTo": [
 		{
-			"@type": "Chemical",
+			"@type": "MolecularEntity",
 			"identifier": "CHEMBL31088",
 			"name": "DEOXIEPINEPHRINE",
 			"url": "https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL31088/"
 		},
 		{
-			"@type": "Chemical",
+			"@type": "MolecularEntity",
 			"identifier": "CHEMBL1950045",
 			"name": "3,4-Dihydroxyphenylethanol",
 			"url": "https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL1950045/"
