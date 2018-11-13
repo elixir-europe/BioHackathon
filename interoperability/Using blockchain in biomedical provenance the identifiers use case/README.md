@@ -37,7 +37,7 @@ Bioinformaticians, chemoinformaticians, data scientists, researchers with some p
 
 ### Tasks 
 
-#### Day 1  WE ARE IN ROOM SILVERSTONE FOR THE TUTORIAL
+#### Day 1  (SILVERSTONE)
 Blockchain technologies and Biosamples (data and workflows)
   1. Tutorial on Blockchain technologies (9-11)
   2. Tutorial on Hyperledger Composer (11-12, 13-15). 
@@ -47,15 +47,13 @@ Blockchain technologies and Biosamples (data and workflows)
   4. Understanding BioSamples: data management and workflows (15-19).
       - Skills: BioSamples. 
       - Output: Identify data structures and workflows.
-
+  5. How would BioSamples benefit from blockchain technologies: define provenance in curation. 
+ 
 #### Day 2
-Supply chain management in BioSamples
-  1. How would BioSamples benefit from blockchain technologies: How would the distributed ledger be used across industry and     academia? (9-12). 
-      - Skills: BioSamples. 
-      - Output: BioSamples workflow.
-  2. Designing and implementing a business network application (.bna) on Hyperledger Composer for the project.
-      - Define assets and participants (13-14).
-      - Define transactions and logic in JS (13-19). 
+Supply chain management in BioSamples (9-12)
+Designing and implementing a business network application (.bna) on Hyperledger Composer for the project.
+      - Define assets and participants.
+      - Define transactions and logic in JS . 
       - Skills: JS. 
       - Output: BioSamples.bna
 
