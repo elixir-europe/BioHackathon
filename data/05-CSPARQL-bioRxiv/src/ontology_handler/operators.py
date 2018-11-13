@@ -41,7 +41,7 @@ def add_entity(pub: 'SemanticPublication') -> None:
     session = requests.Session()
     session.headers = {'Accept': 'text/html'}
 
-    data = {'update': query}
+    data = {'query': query}
     resp = session.post(
         CONFIG['sparql_endpoint'],
         data=data)
