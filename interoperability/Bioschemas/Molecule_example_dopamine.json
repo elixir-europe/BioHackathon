@@ -24,11 +24,11 @@
 	"biologicalRole": ["http://purl.obolibrary.org/obo/CHEBI_35522", " http://purl.obolibrary.org/obo/CHEBI_77746"],
 	"chemicalRole": ["http://purl.obolibrary.org/obo/CHEBI_39142"],
 	"application": ["http://purl.obolibrary.org/obo/CHEBI_38147"],
-	"isRelatedTo": {
+	"isRelatedTo": [{
 		"@type": "BiochemEntity",
 		"name": "",
 		"url": ""
-	},
+	}],
 	"inChI": "",
 	"inChIKey": "",
 	"smiles": [""]
