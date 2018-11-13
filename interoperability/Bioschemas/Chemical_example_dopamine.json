@@ -19,8 +19,8 @@
 		"url": "https://bh2018paris.info/"
 	}],
 	"molecularFormnula": "C8H11NO2",
-	"molecularWeight": "153.181",
-	"monoisotopicMolecularWeight": "153.079",
+	"molecularWeight": 153.181,
+	"monoisotopicMolecularWeight": 153.079,
 	"biologicalRole": ["http://purl.obolibrary.org/obo/CHEBI_35522", " http://purl.obolibrary.org/obo/CHEBI_77746"],
 	"chemicalRole": ["http://purl.obolibrary.org/obo/CHEBI_39142"],
 	"application": ["http://purl.obolibrary.org/obo/CHEBI_38147"],
