@@ -17,7 +17,7 @@ repository = "https://github.com/elixir-europe/BioHackathon/"
 
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = ">3.6"
 pyyaml = "^3.13"
 flask = "^1.0"
 rdflib = "^4.2"
