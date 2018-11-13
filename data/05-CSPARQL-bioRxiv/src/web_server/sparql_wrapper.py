@@ -12,7 +12,7 @@ def execute_query(form_data):
     # SPARQL request
     sparql = SPARQLWrapper(CONFIG['sparql_endpoint'])
     sparql.setQuery('''
-    select * from <http://foo.bar.baz> where { ?s ?b ?o }
+    select distinct ?Concept where {[] a ?Concept} LIMIT 100
     ''')
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
