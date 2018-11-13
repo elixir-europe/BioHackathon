@@ -112,3 +112,5 @@ Anyone with ideas about how to get the most of Bioschemas, for instance:
 ## Hackers
 ---
 
+- [Egon Willighagen](http://github.com/egonw)
+
