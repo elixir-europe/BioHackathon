@@ -94,4 +94,6 @@ https://github.com/Orphanet/Orphadata.org
 
 ## Hackers
 ---
+- Toyofumi Fujiwara
+- David Salgado
 
