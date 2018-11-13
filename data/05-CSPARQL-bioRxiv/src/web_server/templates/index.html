@@ -18,7 +18,7 @@
       </div>
       <form class="form-group row" action="/query">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" name="q" placeholder="" aria-label="search field" aria-describedby="button-addon1">
+          <input type="text" class="form-control" name="q" placeholder="" aria-label="search field" aria-describedby="button-addon1" value="{{ query if query is not none }}">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
           </div>  
