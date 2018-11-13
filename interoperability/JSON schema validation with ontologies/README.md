@@ -39,12 +39,14 @@ Developers of metadata schema standards and data resources that accept data subm
 - W3C Shapes and constraint language SHACL (https://www.w3.org/TR/shacl/) 
 - Validata - RDF validator using ShEx, https://www.w3.org/2015/03/ShExValidata/
 
-
-## GitHub or any other public repositories of your FOSS products (if any)
----
-
-
-
 ## Hackers
 ---
+
+- Rolando HErnadex (EMBL-EBI) remote particiapation 
+
+## Hack Day 1 progress
+---
+
+- HCA fork of validator in https://github.com/elixir-europe/json-schema-validator has too much HCA specific logic in it. We just need a simple repo that contains the specific AJV extensions 
+- New simplified repo based on HCA that conatins minimal code needed was created here https://github.com/simonjupp/elixir-ajv-keywords. 
 
