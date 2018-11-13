@@ -1,0 +1,42 @@
+Data sources
+----
+
+UniProt
+This section needs to be filled in.
+
+DrugBANK
+
+https://www.drugbank.ca/releases/latest
+You need a user account to download.  They do have an API:
+https://docs.drugbankplus.com/v1/
+This is an XML file.
+
+But again need a token to get access and you may have to pay: 
+https://www.drugbankplus.com/api.html
+
+
+Reactome
+
+Need to make 2 separate calls to get all the information we require.  These calls are based upon the UniProt accession.
+1. This first call returns the set of pathways that a protein entry is involved in:
+https://reactome.org/ContentService/interactors/static/molecule/P21802/pathways?species=Homo%20sapiens&onlyDiagrammed=false
+2. This second and more important call defines all the interactors that a protein entry has:
+https://reactome.org/ContentService/interactors/static/molecule/P21802/details?page=-1&pageSize=-1
+
+Both return JSON
+
+
+Human Phenotype Ontology
+
+Need two files.
+1. http://compbio.charite.de/jenkins/job/hpo.annotations/lastStableBuild/artifact/misc/phenotype_annotation.tab
+Provides the set of links between OMIM and Decipher to HPO terms.
+This is a text tab delimited file.
+
+2. http://purl.obolibrary.org/obo/hp.obo
+Provides the full HPO entry
+This is a specific text file format developed for ontologies.
+
+
+
+
