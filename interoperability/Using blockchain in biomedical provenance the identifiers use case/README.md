@@ -84,5 +84,9 @@ Presentation and roadmap
 https://github.com/Blockchain4openscience/B4OS-frontend
 
 ## Hackers
+* Federico Lopez (EMBI)
+* Claus Weiland (Senckenberg)
+* Isabelle Perseil (INSERM)
+* Carlos Castro-Iragorri (Urosario)
 ---
 
