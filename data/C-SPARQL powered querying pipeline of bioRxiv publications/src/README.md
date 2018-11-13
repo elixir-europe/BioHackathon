@@ -12,7 +12,7 @@ $ poetry install
 ### Tests
 
 ```bash
-$ flake8 --exclude=README.md
+$ poetry run flake8 --exclude=README.md
 ```
 
 ## Usage
