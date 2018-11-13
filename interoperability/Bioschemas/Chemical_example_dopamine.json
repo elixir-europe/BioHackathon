@@ -12,7 +12,7 @@
 	"identifier": "CHEMBL59",
 	"url": "https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL59/",
 	"image": "https://www.ebi.ac.uk/chembl/api/data/image/CHEMBL59.svg?engine=indigo",
-	"sameAs": "https://www.wikidata.org/wiki/Property:P592",
+	"sameAs": "https://www.wikidata.org/wiki/Q170304",
 	"subjectOf": [{
 		"@type": "Event",
 		"name": "Paris Biohackathon 2018",
