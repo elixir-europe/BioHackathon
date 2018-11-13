@@ -1,0 +1,39 @@
+{
+    "@context": {
+    "schema":"http://schema.org/", 
+    "bs":"http://bioschemas.org/"
+    },
+    "@type": "schema:Dataset",
+    "@id": "https://www.ebi.ac.uk/chembl/beta/#dataset",
+    "schema:name": "ChEMBL",
+    "schema:description": "A manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.",
+    "schema:url": "https://www.ebi.ac.uk/chembl/beta/",
+    "schema:identifier": "10.1093/nar/gkw1074",
+    "schema:keywords": "database, molecule, chemical, curated, bioactivities",
+    "schema:includedInDataCatalog": "https://www.ebi.ac.uk/chembl/beta",
+    "schema:creator": {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "EMBL-EBI",
+        "url": "https://www.ebi.ac.uk/"
+    },
+    "schema:version": "chembl_24",
+    "schema:license": "Creative Commons Attribution-Share Alike 3.0 Unported License",
+    "schema:distribution": [{
+            "@context": "http://schema.org/",
+            "@type": "DataDownload",
+            "name": "chembl_24",
+            "fileFormat": "sdf",
+            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.sdf.gz",
+            "uploadDate": "2018-06-18"
+        },
+        {
+            "@context": "http://schema.org/",
+            "@type": "DataDownload",
+            "name": "chembl_24",
+            "fileFormat": "dmp",
+            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_oracle12c.tar.gzz",
+            "uploadDate": "2018-06-18"
+        }        
+    ]
+}
