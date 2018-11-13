@@ -13,8 +13,8 @@ def index():
 
 @app.route('/query', methods=['POST', 'GET'])
 def query():
-    res = execute_query(request.form)
-    return render_template('index.html', data=res, query=request.form.get('q'))
+    res = execute_query(request.args)
+    return render_template('index.html', data=res, query=request.args.get('q'))
 
 
 if __name__ == '__main__':
