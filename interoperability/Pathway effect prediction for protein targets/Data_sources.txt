@@ -16,6 +16,13 @@ https://www.drugbankplus.com/api.html
 
 ChEMBL
 
+https://www.ebi.ac.uk/chembl/api/data/molecule.json
+Returns a paginated list of all the molecules in ChEMBL, note we only want "molecule_type": "Small molecule".
+
+Using ChEMBL's own python script we create a file containing the molecules to targets.
+
+
+
 
 
 
@@ -72,6 +79,12 @@ http://ctdbase.org/reports/CTD_chemicals_diseases.csv.gz
 10074-G5,C534883,,"Carcinoma, Hepatocellular",MESH:D006528,,MYC,4.16,,12029619|15565109|29698666|9029167
 10074-G5,C534883,,"Carcinoma, Merkel Cell",MESH:D015266,,MYC,6.46,,25277525
 10074-G5,C534883,,"Carcinoma, Non-Small-Cell Lung",MESH:D002289,,MYC,4.60,,24688052
+
+
+IntAct
+
+
+
 
 
 Human Phenotype Ontology
