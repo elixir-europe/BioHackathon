@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Query Interface</a>
+      <a class="navbar-brand" href="/">Query Interface</a>
     </nav>
 
     <main class="container">
@@ -27,15 +27,15 @@
       <div class="container">
         {% if data is not none %}
           {% if data|length == 0 %}
-            <p>No Result</p>
+            <p>No papers found</p>
           {% else %}
+            <p>{{ data|length }} entries</p>
             {% for i in data %}
             <div class="card">
               <div class="card-body">
-                <h4 class="card-title">{{ i["title"] }}</h4>
-                <p class="card-text">{{ i["abstract"] }}</p>
-                <p>{{ i["doi"] }}</p>
-                <a href="{{ i['url'] }}" class="btn btn-primary">Download</a>
+                <a href="https://{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
+                <small>{{ i['author'] }} ({{ i['year'] }}), doi: {{ i['doi'] }}</small>
+                <p class="card-text">{{ i["abstract"]|truncate(100,true) }}</p>
               </div>
             </div>
             {% endfor %}
