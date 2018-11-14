@@ -37,7 +37,7 @@ Bioinformaticians, chemoinformaticians, data scientists, researchers with some p
 
 ### Tasks 
 
-#### Day 1
+#### Day 1  WE ARE IN ROOM SILVERSTONE FOR THE TUTORIAL
 Blockchain technologies and Biosamples (data and workflows)
   1. Tutorial on Blockchain technologies (9-11)
   2. Tutorial on Hyperledger Composer (11-12, 13-15). 
