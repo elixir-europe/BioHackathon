@@ -1,0 +1,395 @@
+{
+         "annotationProvider" : "NCBI",
+         "annotationDate" : {
+            "type" : "PrecisionDateTimeFixed",
+            "date" : "2016-11-24"
+         },
+         "annotationPipeline" : "NCBI Prokaryotic Genome Annotation Pipeline",
+         "annotationMethod" : {
+            "item" : [ "Best-placed reference protein set; GeneMarkS+" ]
+         },
+         "annotationSoftwareRevision" : {
+            "type" : "PrecisionDecimalStringFixed",
+            "value" : "4"
+         },
+         "featuresAnnotated" : {
+            "item" : [ "Gene", "CDS", "rRNA", "tRNA", "ncRNA", "repeat_region" ]
+         },
+         "refseqCds" : 7575,
+         "ncbiRefseqAccession" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/refseq/NC_009925.1",
+               "value" : "NC_009925.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009926.1",
+               "value" : "NC_009926.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009927.1",
+               "value" : "NC_009927.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009928.1",
+               "value" : "NC_009928.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009929.1",
+               "value" : "NC_009929.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009930.1",
+               "value" : "NC_009930.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009931.1",
+               "value" : "NC_009931.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009932.1",
+               "value" : "NC_009932.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009933.1",
+               "value" : "NC_009933.1"
+            }, {
+               "url" : "http://identifiers.org/refseq/NC_009934.1",
+               "value" : "NC_009934.1"
+            } ]
+         },
+         "genes" : 7652,
+         "cds" : 7575,
+         "pseudoGenes" : 347,
+         "rrnasMissing" : {
+            "reason" : "missing"
+         },
+         "completeRrnasMissing" : {
+            "reason" : "missing"
+         },
+         "partialRrnas" : {
+            "rrna5S" : 0,
+            "rrna16S" : 0,
+            "rrna23S" : 0
+         },
+         "trnas" : 67,
+         "ncrna" : 4,
+         "frameshiftedGenes" : 95,
+         "sequencingCenters" : "Washington University Genome Sequencing Center",
+         "seqMeth" : {
+            "item" : [ "454 GS 20", "AB 3730xL Genetic Analyzer" ]
+         },
+         "sequencingDepthMissing" : {
+            "reason" : "missing"
+         },
+         "assemblyAccession" : {
+            "url" : "http://identifiers.org/insdc.gca/GCA_000018105.1",
+            "value" : "GCA_000018105.1"
+         },
+         "assembly" : {
+            "item" : [ "Arachne" ]
+         },
+         "assemblyVersionMissing" : {
+            "reason" : "missing"
+         },
+         "gcContent" : "47",
+         "contigsMissing" : {
+            "reason" : "missing"
+         },
+         "numReplicons" : 1,
+         "genomeLength" : 8361599,
+         "plasmids" : 9,
+         "binningMissing" : {
+            "reason" : "missing"
+         },
+         "binningVersionMissing" : {
+            "reason" : "missing"
+         },
+         "estimatedCompletenessMissing" : {
+            "reason" : "missing"
+         },
+         "estimatedContaminationMissing" : {
+            "reason" : "missing"
+         },
+         "mappingMissing" : {
+            "reason" : "missing"
+         },
+         "mappingVersionMissing" : {
+            "reason" : "missing"
+         },
+         "qualityAssessmentMissing" : {
+            "reason" : "missing"
+         },
+         "qualityAssessmentVersionMissing" : {
+            "reason" : "missing"
+         },
+         "hostCommonName" : "Algae",
+         "hostScientificNameMissing" : {
+            "reason" : "missing"
+         },
+         "hostSexMissing" : {
+            "reason" : "missing"
+         },
+         "hostHealthStageMissing" : {
+            "reason" : "missing"
+         },
+         "hostAgeMissing" : {
+            "reason" : "missing"
+         },
+         "pathogenicityMissing" : {
+            "reason" : "missing"
+         },
+         "diseaseMissing" : {
+            "reason" : "missing"
+         },
+         "bodySampleSiteMissing" : {
+            "reason" : "missing"
+         },
+         "bodySampleSubSiteMissing" : {
+            "reason" : "missing"
+         },
+         "otherClinicalMissing" : {
+            "reason" : "missing"
+         },
+         "investigationType" : "Bacteria_Archaea",
+         "sampleType" : "Cell culture",
+         "isolationSource" : "Sea water from the coast of the Palau Islands",
+         "collectionDateMissing" : {
+            "reason" : "missing"
+         },
+         "altElevMissing" : {
+            "reason" : "missing"
+         },
+         "depthMissing" : {
+            "reason" : "missing"
+         },
+         "envSalinityMissing" : {
+            "reason" : "missing"
+         },
+         "envTempMissing" : {
+            "reason" : "missing"
+         },
+         "geoLocName" : {
+            "item" : [ "Palau Islands" ]
+         },
+         "latLonMissing" : {
+            "reason" : "missing"
+         },
+         "isolationCountry" : "Japan",
+         "envBiome" : {
+            "url" : "http://identifiers.org/envo/ENVO:01000046",
+            "value" : "Marginal sea biome (ENVO:01000046)"
+         },
+         "envFeature" : {
+            "url" : "http://identifiers.org/envo/ENVO:00000303",
+            "value" : "Sea coast (ENVO:00000303)"
+         },
+         "envMaterial" : {
+            "url" : "http://identifiers.org/envo/ENVO:00002149",
+            "value" : "Sea water (ENVO:00002149)"
+         },
+         "envPackage" : "Water",
+         "isolGrowthCondt" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/pubmed/18252824",
+               "value" : "18252824"
+            } ]
+         },
+         "refBiomaterial" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/pubmed/18252824",
+               "value" : "18252824"
+            } ]
+         },
+         "cultureCollection" : {
+            "item" : [ "MBIC 11017", "NBRC 103354" ]
+         },
+         "collectedByMissing" : {
+            "reason" : "missing"
+         },
+         "biosampleAccession" : {
+            "url" : "http://identifiers.org/biosample/SAMN02604308",
+            "value" : "SAMN02604308"
+         },
+         "isolationComments" : "Isolated from algae from the coast of the Palau Islands in the western Pacific",
+         "projectNameMissing" : {
+            "reason" : "missing"
+         },
+         "geoLocNameGaz" : "Palau",
+         "geoLocNameGazEnvo" : {
+            "url" : "https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00006905",
+            "value" : "GAZ:00006905"
+         },
+         "analysisProjectType" : "Whole genome sequencing (WGS)",
+         "fullScientificName" : "Acaryochloris marina MBIC11017",
+         "organism" : "Acaryochloris marina",
+         "taxonLineageNames" : {
+            "item" : [ "Cellular organisms", "Bacteria", "Terrabacteria group", "Cyanobacteria", "Oscillatoriophycideae", "Chroococcales", "Acaryochloris", "Acaryochloris marina", "Acaryochloris marina MBIC11017" ]
+         },
+         "taxonLineageIds" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/taxonomy/131567",
+               "value" : "131567"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/2",
+               "value" : "2"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/1783272",
+               "value" : "1783272"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/1117",
+               "value" : "1117"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/1301283",
+               "value" : "1301283"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/1118",
+               "value" : "1118"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/155977",
+               "value" : "155977"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/155978",
+               "value" : "155978"
+            }, {
+               "url" : "http://identifiers.org/taxonomy/329726",
+               "value" : "329726"
+            } ]
+         },
+         "ncbiTaxonIdentifier" : {
+            "url" : "http://identifiers.org/taxonomy/329726",
+            "value" : "329726"
+         },
+         "strain" : {
+            "item" : [ "MBIC 11017", "NBRC 103354" ]
+         },
+         "kingdom" : "Bacteria",
+         "phylum" : "Cyanobacteria",
+         "class" : "Unclassified",
+         "order" : "Synechococcales",
+         "family" : "Acaryochloridaceae",
+         "genus" : "Acaryochloris",
+         "species" : "Acaryochloris marina",
+         "gramStainMissing" : {
+            "reason" : "missing"
+         },
+         "cellShape" : "Cocci (Spherical)",
+         "motilityMissing" : {
+            "reason" : "missing"
+         },
+         "sporulationMissing" : {
+            "reason" : "missing"
+         },
+         "temperatureRange" : "Mesophilic",
+         "optimalTemperatureMissing" : {
+            "reason" : "missing"
+         },
+         "halotoleranceMissing" : {
+            "reason" : "missing"
+         },
+         "oxygenRequirement" : "Aerobic",
+         "biovarMissing" : {
+            "reason" : "missing"
+         },
+         "serovarMissing" : {
+            "reason" : "missing"
+         },
+         "pathovarMissing" : {
+            "reason" : "missing"
+         },
+         "otherTypingMissing" : {
+            "reason" : "missing"
+         },
+         "typeStrainMissing" : {
+            "reason" : "missing"
+         },
+         "antismashTypes" : "Bacteriocin cluster (3), Putative fatty acid cluster (2), Putative cluster (30), Putative saccharide cluster (14), Cyanobactin cluster (1), Ladderane cluster (1), Lasso peptide cluster-Putative saccharide cluster (1), Resorcinol cluster (1), Type I PKS cluster-Putative fatty acid cluster (1), Terpene cluster (2), Terpene cluster-Putative saccharide cluster (1)",
+         "antismashClusters" : "O-antigen (14%), A40926 (3%), TP-1161 (12%), Quartromicin (5%), Nostopeptolide (50%)",
+         "chebiIdMissing" : {
+            "reason" : "missing"
+         },
+         "chebiNameMissing" : {
+            "reason" : "missing"
+         },
+         "chemblIdMissing" : {
+            "reason" : "missing"
+         },
+         "compoundNameMissing" : {
+            "reason" : "missing"
+         },
+         "uniprotIdMissing" : {
+            "reason" : "missing"
+         },
+         "uniprotDescriptionMissing" : {
+            "reason" : "missing"
+         },
+         "mmpID" : {
+            "url" : "https://mmp.sfb.uit.no/databases/marref/#/records/MMP02604308",
+            "value" : "MMP02604308"
+         },
+         "bacdiveIdMissing" : {
+            "reason" : "missing"
+         },
+         "curationDate" : "2016-05-20",
+         "updatedDateMissing" : {
+            "reason" : "missing"
+         },
+         "implementationDate" : "2016-11-22",
+         "microbePackageMissing" : {
+            "reason" : "missing"
+         },
+         "bioprojectAccession" : {
+            "url" : "http://identifiers.org/bioproject/PRJNA12997",
+            "value" : "PRJNA12997"
+         },
+         "genbankAccession" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/insdc/CP000828",
+               "value" : "CP000828"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000838",
+               "value" : "CP000838"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000839",
+               "value" : "CP000839"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000840",
+               "value" : "CP000840"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000841",
+               "value" : "CP000841"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000842",
+               "value" : "CP000842"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000843",
+               "value" : "CP000843"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000844",
+               "value" : "CP000844"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000845",
+               "value" : "CP000845"
+            }, {
+               "url" : "http://identifiers.org/insdc/CP000846",
+               "value" : "CP000846"
+            } ]
+         },
+         "silvaAccessionSSU" : {
+            "url" : "https://www.arb-silva.de/search/show/ssu/insdc/12997",
+            "value" : "12997"
+         },
+         "silvaAccessionLSU" : {
+            "url" : "https://www.arb-silva.de/search/show/lsu/insdc/12997",
+            "value" : "12997"
+         },
+         "uniprotAccession" : {
+            "accession" : [ {
+               "url" : "http://www.uniprot.org/proteomes/UP000000268",
+               "value" : "UP000000268"
+            } ]
+         },
+         "publicationPmid" : {
+            "accession" : [ {
+               "url" : "http://identifiers.org/pubmed/18252824",
+               "value" : "18252824"
+            } ]
+         },
+         "comments" : "Acaryochloris marina MBIC11017. Acaryochloris marina MBIC11017 was isolated from algae from the coast of the Palau Islands in the western Pacific. This organism will be used for comparative analysis with other photosynthetic microorganisms.",
+         "baseID" : {
+            "value" : "254"
+         },
+         "genomeStatus" : "Finished",
+         "mmpBiome" : "Marine"
+      }

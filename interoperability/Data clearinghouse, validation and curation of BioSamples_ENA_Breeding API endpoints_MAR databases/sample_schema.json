@@ -1,0 +1,183 @@
+{
+    "id": "",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "title": "Bioschemas Sample",
+    "description": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.",
+    "type": "object",
+    "definitions": {
+        "PropertyValue":{
+            "title": "Bioschemas ProperyValue",
+          "type": "object",
+          "properties": {
+            "@context": {
+              "description": "The JSON-LD context",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "array"
+                }
+              ]
+            },
+            "@id": {
+              "description": "The JSON-LD identifier",
+              "type": "string",
+              "format": "uri"
+            },
+            "@type": {
+              "description": "The JSON-LD type",
+              "type": "string",
+              "enum": [
+                "PropertyValue"
+              ]
+            },
+            "name": {
+              "description": "The name of the additional property. Otherwise known as a key or attribute. ",
+              "type": "string"
+            },
+            "value": {
+              "description": "The name of the additional property. Otherwise known as a key or attribute.",
+              "type": [
+                "string",
+                "boolean",
+                "number"
+              ]
+            },
+            "valueReference": {
+              "description": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "@type": {
+                  "description": "The JSON-LD type",
+                  "type": "string",
+                  "enum": [
+                    "CategoryCode"
+                  ]
+                },
+                "properties": {
+                  "object": {
+                    "description": "The object of the relationship, i.e. the representation or identifier of the related enttity",
+                    "anyOf": [
+                      {
+                        "type": "object"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "name": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "codeValue": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "name": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "value"
+          ]
+        }
+    },
+    "properties": {
+        "@context": {
+            "description": "The JSON-LD context",
+            "anyOf": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "object"
+                },
+                {
+                    "type": "array"
+                }
+            ]
+        },
+        "@id": {
+            "description": "The JSON-LD identifier",
+            "type": "string",
+            "format": "uri"
+        },
+        "@type": {
+            "description": "The JSON-LD type",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["Sample"]
+            }
+        },
+        "identifier": {
+            "description": "The identifier of the study.",
+            "type": "array",
+            "items:": {
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    {
+                        "$ref":"#/definitions/PropertyValue"
+                    }
+                ]
+            }
+        },
+        "rdf:type": {
+            "description": "This is used by validation tools to indentify the profile used. You must use the value specified in the Controlled Vocabulary column.",
+            "type": "string",
+            "format":"url"
+        },
+        "url":  {
+            "description": "URL of the item.",
+            "type": "string",
+            "format": "url"
+        },
+        "description": {
+            "description": "A description of the sample in free text. This should not contain information that could be better expressed as key/value pairs. These should be expressed using additionalProperty.",
+            "type": "string"
+        },
+        "name": {
+            "description": "A human readable name for the sample. This should not be an additional identifier. Additional identifiers should be added to the identifier field.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }        
+        },
+        "additionalProperty": {
+            "description": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org. Note: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, …) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/PropertyValue"
+            }
+        }
+    },       
+    "additionalProperties": false,
+    "required": [
+        "name"
+    ]
+}
