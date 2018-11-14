@@ -6,7 +6,7 @@ import requests
 from lxml import html
 
 from ontology_handler.operators import CONFIG
-from . import BaseExtractor
+from . import MetaExtractor
 
 
 class HighWireHTMLParser:
@@ -164,7 +164,7 @@ def get_text_from_all_nodes(nodes):
     return text.strip()
 
 
-class BiorxivBasicExtractor(BaseExtractor):
+class BiorxivBasicExtractor(MetaExtractor):
 
     def __init__(self) -> None:
         self.base_url = CONFIG['biorxiv']['base_url']

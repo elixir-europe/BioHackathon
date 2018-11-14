@@ -6,6 +6,10 @@ from typing import Optional, Dict
 
 
 class BaseExtractor(ABC):
+    pass
+
+
+class MetaExtractor(BaseExtractor):
     @abstractmethod
     def parse(self, filename: str) -> Optional[Dict[str, str]]:
         """Extract semantic information from a given publication.
@@ -15,13 +19,7 @@ class BaseExtractor(ABC):
         """
 
 
-class DummyExtractor(BaseExtractor):
-    def parse(self, filename: str) -> Optional[Dict[str, str]]:
-        return {
-            'title': os.path.basename(filename),
-            'doi': random.randint(0, 9999),
-            'author': 'Mr. Cool',
-            'year': random.randint(1600, 2019),
-            'abstract': 'blabla',
-            'url': 'example.org'
-        }
+class SemanticExtractor(BaseExtractor):
+    @abstractmethod
+    def parse(self, meta_info: Dict[str, str]) -> Optional[Dict[str, str]]:
+        """Similar to `MetaExtractor`."""
