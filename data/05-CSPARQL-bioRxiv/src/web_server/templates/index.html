@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSPARQL-bioRxiv</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
@@ -35,8 +35,8 @@
             <div class="card">
               <div class="card-body">
                 <a href="https://{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
-                <small>{{ i['author'] }} ({{ i['year'] }}), doi: {{ i['doi'] }}</small>
-                <p class="card-text">{{ i["abstract"]|truncate(100,true) }}</p>
+                <small>{{ i['author'] }} {{ "("+i['year']+")" if i['year'] }}  doi: {{ i['doi'] }}</small>
+                <p class="card-text">{{ i["abstract"]|truncate(280,true) }}</p>
               </div>
             </div>
             {% endfor %}
