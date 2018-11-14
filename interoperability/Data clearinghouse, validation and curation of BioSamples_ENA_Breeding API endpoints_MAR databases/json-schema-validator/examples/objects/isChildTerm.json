@@ -1,0 +1,17 @@
+{
+  "attributes": {
+    "age": [{
+      "value": "3",
+      "units": "days",
+      "terms":[
+        {"url":"http://purl.obolibrary.org/obo/UO_0000033"}
+      ]
+    }],
+    "sex": [{
+      "value": "female",
+      "terms":[
+        {"url":"http://purl.obolibrary.org/obo/PATO_0000383"}
+      ]
+    }]
+  }
+}

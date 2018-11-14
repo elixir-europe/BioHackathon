@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://schema.humancellatlas.org/type/biomaterial/8.1.0/donor_organism",
+  "description": "Information about the organism from which a specimen was collected.",
+  "$async": true,
+  "additionalProperties": false,
+  "required": [
+    "describedBy",
+    "schema_type",
+    "biomaterial_core",
+    "is_living",
+    "biological_sex"
+  ],
+  "title": "donor_organism",
+  "type": "object",
+  "properties": {
+    "describedBy": {
+      "description": "The URL reference to the schema.",
+      "type": "string",
+      "pattern": "^(http|https)://schema.(.*?)humancellatlas.org/type/biomaterial/(([0-9]{1,}.[0-9]{1,}.[0-9]{1,})|([a-zA-Z]*?))/donor_organism"
+    },
+    "schema_version": {
+      "description": "The version number of the schema in major.minor.patch format.",
+      "type": "string",
+      "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
+      "example": "4.6.1"
+    },
+    "schema_type": {
+      "description": "The type of the metadata schema entity.",
+      "type": "string",
+      "enum": [
+        "biomaterial"
+      ]
+    },
+    "biomaterial_core": {
+      "description": "Core biomaterial-level information.",
+      "type": "object",
+      "$ref": "https://schema.humancellatlas.org/core/biomaterial/7.0.0/biomaterial_core"
+    },
+    "genus_species": {
+      "description": "The scientific binomial name for the species of the biomaterial.",
+      "type": "object",
+      "example": "Homo sapiens",
+      "$ref": "https://schema.humancellatlas.org/module/ontology/5.3.0/species_ontology",
+      "user_friendly": "Genus species"
+    },
+    "is_living": {
+      "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "user_friendly": "Is living?"
+    },
+    "biological_sex": {
+      "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
+      "type": "string",
+      "enum": [
+        "female",
+        "male",
+        "mixed",
+        "unknown"
+      ],
+      "user_friendly": "Biological sex"
+    },
+    "normothermic_regional_perfusion": {
+      "description": "Yes if donor's body (but not limbs) was perfused with warm oxygenated blood from the donor. No otherwise.",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "user_friendly": "Normothermic regional perfusion"
+    },
+    "human_specific": {
+      "description": "Fields specific to human (homo sapiens) organisms.",
+      "type": "object",
+      "$ref": "https://schema.humancellatlas.org/module/biomaterial/1.0.0/human_specific"
+    }
+  }
+}

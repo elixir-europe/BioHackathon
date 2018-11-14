@@ -1,0 +1,69 @@
+{
+  "$id": "http://subs/hca-ref-schema-graph.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Information about the organism from which a specimen was collected.",
+  "$async": true,
+  "additionalProperties": false,
+  "required": [
+    "is_living",
+    "biological_sex"
+  ],
+  "title": "donor_organism",
+  "type": "object",
+  "properties": {
+    "biomaterial_id":{
+      "description": "A unique ID for this biomaterial.",
+      "type": "string",
+      "user_friendly": "Biomaterial ID"
+    },
+    "biomaterial_name": {
+      "description": "A short, descriptive name for the biomaterial that need not be unique.",
+      "type": "string",
+      "user_friendly": "Biomaterial name"
+    },
+    "biomaterial_description": {
+      "description": "A general description of the biomaterial.",
+      "type": "string",
+      "user_friendly": "Biomaterial description"
+    },
+    "ncbi_taxon_id" : {
+      "description": "A taxonomy ID (taxonID) from NCBI. Multiple IDs can be provided for multi-species samples.",
+      "type" : "integer",
+      "user_friendly": "NCBI taxon ID"
+    },
+    "genus_species": {
+      "description": "The scientific binomial name for the species of the biomaterial.",
+      "type" : "object",
+      "example": "Homo sapiens",
+      "$ref": "hca-species-schema.json",
+      "user_friendly": "Genus species"
+    },
+    "disease": {
+      "description": "Short description of disease status of the organism.",
+      "type": "object",
+      "$ref": "graphRestriction-ref-schema.json",
+      "user_friendly": "Disease"
+    },
+    "is_living": {
+      "description": "Yes if organism is alive at time of biomaterial collection. No if dead. Unknown if not known.",
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ],
+      "user_friendly": "Is living?"
+    },
+    "biological_sex": {
+      "description": "The biological sex of the organism. Should be one of male, female, mixed, or unknown.",
+      "type": "string",
+      "enum": [
+        "female",
+        "male",
+        "mixed",
+        "unknown"
+      ],
+      "user_friendly": "Biological sex"
+    }
+  }
+}

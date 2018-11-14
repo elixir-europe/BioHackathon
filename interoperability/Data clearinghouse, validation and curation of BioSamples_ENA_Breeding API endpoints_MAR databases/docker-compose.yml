@@ -1,0 +1,25 @@
+version: '3'
+services:
+
+  marref:
+    build:
+      context: .
+      dockerfile: marref_api/Dockerfile
+    image: marref_api:latest
+    command:
+    - java
+    - -jar
+    - marref-0.0.1-SNAPSHOT.jar
+    ports:
+    - 8080:8080
+
+  json-schema-validator:
+    build:
+      context: ./json-schema-validator
+    image: json-schema-validator:latest
+    links:
+    - marref
+    ports:
+    - 8085:3020
+
+

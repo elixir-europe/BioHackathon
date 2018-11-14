@@ -1,0 +1,47 @@
+{
+  "accession": "SAMEA3540916",
+  "alias": "pig_PAM",
+  "description": "pig macrophage macrophage (alveolar); immortalized with SV40 large T antigen transformed with pSV3-neo",
+  "updateDate": "2017-05-24",
+  "releaseDate": "2017-05-24",
+  "taxon": "Sus scrofa",
+  "taxonId": 9823,
+  
+  "attributes": {
+    "project": [{
+      "value": "FAANG"
+    }],
+    "material": [{
+      "value": "cell line",
+      "terms": [{"url": "http://purl.obolibrary.org/obo/CLO_0000031"}, {"url": "http://www.ebi.ac.uk/efo/EFO_0000322"}]
+    }],
+    "biomaterialProvider": [{
+      "value": "ATCC"
+    }],
+    "sex": [{
+      "value": "female genotypic sex",
+      "terms": [{"url": "http://purl.obolibrary.org/obo/PATO_0020002"}]
+    }],
+    "cellLine": [{
+      "value": "3D4/2"
+    }],
+    "cellType": [{
+      "value": "alveolar macrophage",
+      "terms": [{"url": "http://purl.obolibrary.org/obo/CL_0000235"}, {"url": "http://purl.obolibrary.org/obo/CL_0000583"}]
+    }],
+    "publication": [{
+      "value": "doi://10.1016/S0166-0934(02)00085-X"
+    }],
+    "catalogueNumber": [{
+      "value": "CRL-2845"
+    }],
+    "breed": [{
+      "value": "Landrace",
+      "terms": [{"url": "http://purl.obolibrary.org/obo/LBO_0000692"}]
+    }],
+    "dateEstablished": [{
+      "value": "2013-08",
+      "units": "YYYY-MM"
+    }]
+  }
+}
