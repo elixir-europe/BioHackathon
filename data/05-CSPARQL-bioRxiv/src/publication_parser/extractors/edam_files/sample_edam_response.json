@@ -1,0 +1,469 @@
+{
+  "success" : true,
+  "version" : "1",
+  "type" : "core",
+  "api" : "https://biit.cs.ut.ee:443/edammap/api",
+  "txt" : null,
+  "html" : null,
+  "json" : "https://biit.cs.ut.ee:443/edammap/0.2-SNAPSHOT/2018-11/6c82a1b6-1519-4852-ae45-0cc2f16c599c-json/results.json",
+  "generator" : {
+    "name" : "EDAMmap-Server",
+    "url" : "https://github.com/edamontology/edammap/tree/master/server",
+    "version" : "0.2-SNAPSHOT"
+  },
+  "time" : {
+    "start" : 1542202744300,
+    "startHuman" : "2018-11-14T13:39:04.300Z",
+    "stop" : 1542202758496,
+    "stopHuman" : "2018-11-14T13:39:18.496Z",
+    "duration" : 14.196
+  },
+  "mapping" : {
+    "query" : {
+      "id" : "0.2-SNAPSHOT/2018-11/6c82a1b6-1519-4852-ae45-0cc2f16c599c-json",
+      "name" : "g:Profiler",
+      "keywords" : null,
+      "description" : null,
+      "webpageUrls" : [ "https://biit.cs.ut.ee/gprofiler/" ],
+      "docUrls" : [ "https://biit.cs.ut.ee/gprofiler/help.cgi" ],
+      "publicationIds" : [ {
+        "pmid" : "",
+        "pmcid" : "",
+        "doi" : "10.1093/NAR/GKW199"
+      } ],
+      "annotations" : [ "http://edamontology.org/topic_1775", "http://edamontology.org/operation_2436", "http://edamontology.org/data_3021", "http://edamontology.org/format_1964" ]
+    },
+    "results" : {
+      "topic" : [ {
+        "edamUri" : "http://edamontology.org/topic_0749",
+        "label" : "Transcription factors and regulatory sites",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_fulltext",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "narrow_synonym",
+          "value" : "TFBS"
+        },
+        "score" : {
+          "class" : "good",
+          "bestOneScore" : 0.6382559249701211,
+          "withoutPathScore" : 0.0025782626651266113,
+          "score" : 0.0023091405151796597
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/topic_0780",
+        "label" : "Plant biology",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_mesh",
+          "url" : "https://doi.org/10.1093/NAR/GKW199",
+          "value" : "Plants"
+        },
+        "bestOneConcept" : {
+          "type" : "exact_synonym",
+          "value" : "Plants"
+        },
+        "score" : {
+          "class" : "good",
+          "bestOneScore" : 0.6432480657686035,
+          "withoutPathScore" : 0.003623408809088478,
+          "score" : 0.0021824249446261235
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/topic_0602",
+        "label" : "Molecular interactions, pathways and networks",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_abstract",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "narrow_synonym",
+          "value" : "Pathways"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.6152196150475694,
+          "withoutPathScore" : 0.0030835068124197246,
+          "score" : 0.0018338333834561173
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/topic_1775",
+        "label" : "Function analysis",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_abstract",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "narrow_synonym",
+          "value" : "Protein function prediction"
+        },
+        "score" : {
+          "class" : "bad",
+          "bestOneScore" : 0.5103083476028539,
+          "withoutPathScore" : 4.879099067063224E-4,
+          "score" : 3.070116742129397E-4
+        },
+        "test" : "fn"
+      } ],
+      "operation" : [ {
+        "edamUri" : "http://edamontology.org/operation_3501",
+        "label" : "Enrichment analysis",
+        "obsolete" : false,
+        "parentOfExcludedAnnotation" : [ {
+          "edamUri" : "http://edamontology.org/operation_2436",
+          "label" : "Gene-set enrichment analysis"
+        } ],
+        "bestOneQuery" : {
+          "type" : "publication_fulltext",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "exact_synonym",
+          "value" : "Enrichment"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.6283333719810676,
+          "withoutPathScore" : 0.003931441531944561,
+          "score" : 0.0023601316259990596
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/operation_2422",
+        "label" : "Data retrieval",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "exact_synonym",
+          "value" : "Retrieval"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5792135525104024,
+          "withoutPathScore" : 0.001233172044923695,
+          "score" : 9.674768999961387E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/operation_0445",
+        "label" : "Transcription factor binding site prediction",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_abstract",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "Transcription factor binding site prediction"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5740522073064267,
+          "withoutPathScore" : 0.0012018203345050412,
+          "score" : 9.316808900825823E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/operation_2436",
+        "label" : "Gene-set enrichment analysis",
+        "obsolete" : false,
+        "childOf" : [ {
+          "edamUri" : "http://edamontology.org/operation_3501",
+          "label" : "Enrichment analysis"
+        } ],
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "Gene-set enrichment analysis"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.6077005143304378,
+          "withoutPathScore" : 0.0017173698143604578,
+          "score" : 0.0019556278728344112
+        },
+        "test" : "fn"
+      } ],
+      "data" : [ {
+        "edamUri" : "http://edamontology.org/data_3754",
+        "label" : "GO-term enrichment data",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_fulltext",
+          "url" : "https://doi.org/10.1093/NAR/GKW199"
+        },
+        "bestOneConcept" : {
+          "type" : "exact_synonym",
+          "value" : "Gene ontology term enrichment report"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5828820367926946,
+          "withoutPathScore" : 0.0020786931546546896,
+          "score" : 0.0014694197270734022
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/data_1669",
+        "label" : "P-value",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "P-value"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5826594160178457,
+          "withoutPathScore" : 9.751769640616095E-4,
+          "score" : 6.443943837088074E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/data_1180",
+        "label" : "Plant Ontology concept ID",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "publication_mesh",
+          "url" : "https://doi.org/10.1093/NAR/GKW199",
+          "value" : "Plants"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "Plant Ontology concept ID"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5716220317019733,
+          "withoutPathScore" : 7.154357979804166E-4,
+          "score" : 5.819770501156276E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/data_3021",
+        "label" : "UniProt accession",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "exact_synonym",
+          "value" : "UniProt entry accession"
+        },
+        "score" : {
+          "class" : "bad",
+          "bestOneScore" : 0.486763715236151,
+          "withoutPathScore" : 1.5282175558520007E-4,
+          "score" : 2.5102761341255894E-4
+        },
+        "test" : "fn"
+      } ],
+      "format" : [ {
+        "edamUri" : "http://edamontology.org/format_1639",
+        "label" : "affymetrix",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "affymetrix"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5967522182371787,
+          "withoutPathScore" : 6.658692818173852E-4,
+          "score" : 7.189316991943379E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/format_3468",
+        "label" : "xls",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "webpage",
+          "url" : "https://biit.cs.ut.ee/gprofiler/"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "xls"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.5864161606302232,
+          "withoutPathScore" : 0.0010174706116004497,
+          "score" : 6.380099023092717E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/format_3620",
+        "label" : "xlsx",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "webpage",
+          "url" : "https://biit.cs.ut.ee/gprofiler/"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "xlsx"
+        },
+        "score" : {
+          "class" : "medium",
+          "bestOneScore" : 0.598504949403636,
+          "withoutPathScore" : 6.688476468243256E-4,
+          "score" : 4.3293757008802225E-4
+        },
+        "test" : "fp"
+      }, {
+        "edamUri" : "http://edamontology.org/format_1964",
+        "label" : "plain text format (unformatted)",
+        "obsolete" : false,
+        "bestOneQuery" : {
+          "type" : "doc",
+          "url" : "https://biit.cs.ut.ee/gprofiler/help.cgi"
+        },
+        "bestOneConcept" : {
+          "type" : "label",
+          "value" : "plain text format (unformatted)"
+        },
+        "score" : {
+          "class" : "bad",
+          "bestOneScore" : 0.4488563936144718,
+          "withoutPathScore" : 6.560171415296015E-5,
+          "score" : 3.658331299799702E-4
+        },
+        "test" : "fn"
+      } ]
+    }
+  },
+  "args" : {
+    "mainArgs" : {
+      "edam" : "EDAM_1.21.owl",
+      "txt" : false,
+      "html" : false,
+      "json" : true
+    },
+    "processorArgs" : {
+      "fetching" : true,
+      "db" : "biotools.db",
+      "idf" : "biotools.idf",
+      "idfStemmed" : "biotools.stemmed.idf"
+    },
+    "preProcessorArgs" : {
+      "numbers" : true,
+      "stopwords" : "lucene",
+      "stemming" : true,
+      "minLength" : 1
+    },
+    "fetcherArgs" : {
+      "emptyCooldown" : 720,
+      "nonFinalCooldown" : 10080,
+      "fetchExceptionCooldown" : 1440,
+      "retryLimit" : 3,
+      "titleMinLength" : 4,
+      "keywordsMinSize" : 2,
+      "minedTermsMinSize" : 1,
+      "abstractMinLength" : 200,
+      "fulltextMinLength" : 2000,
+      "webpageMinLength" : 50,
+      "webpageMinLengthJavascript" : 200,
+      "timeout" : 15000
+    },
+    "mapperArgs" : {
+      "branches" : [ "topic", "operation", "data", "format" ],
+      "matches" : 3,
+      "obsolete" : false,
+      "doneAnnotations" : true,
+      "inferiorParentsChildren" : false,
+      "algorithmArgs" : {
+        "compoundWords" : 0,
+        "mismatchMultiplier" : 2.0,
+        "matchMinimum" : 1.0,
+        "positionOffBy1" : 0.35,
+        "positionOffBy2" : 0.05,
+        "positionMatchScaling" : 0.5,
+        "positionLoss" : 0.4,
+        "scoreScaling" : 0.2,
+        "conceptWeight" : 1.0,
+        "queryWeight" : 1.0,
+        "mappingStrategy" : "average",
+        "parentWeight" : 0.5,
+        "pathWeight" : 0.7
+      },
+      "idfArgs" : {
+        "conceptIdfScaling" : 0.5,
+        "queryIdfScaling" : 0.5,
+        "labelSynonymsIdf" : false,
+        "nameKeywordsIdf" : true,
+        "descriptionIdf" : true,
+        "titleKeywordsIdf" : true,
+        "abstractIdf" : true
+      },
+      "multiplierArgs" : {
+        "labelMultiplier" : 1.0,
+        "exactSynonymMultiplier" : 1.0,
+        "narrowBroadSynonymMultiplier" : 1.0,
+        "definitionMultiplier" : 1.0,
+        "commentMultiplier" : 1.0
+      },
+      "normaliserArgs" : {
+        "nameNormaliser" : 0.81,
+        "keywordNormaliser" : 0.77,
+        "descriptionNormaliser" : 0.92,
+        "publicationTitleNormaliser" : 0.91,
+        "publicationKeywordNormaliser" : 0.77,
+        "publicationMeshNormaliser" : 0.75,
+        "publicationMinedTermNormaliser" : 1.0,
+        "publicationAbstractNormaliser" : 0.985,
+        "publicationFulltextNormaliser" : 1.0,
+        "docNormaliser" : 1.0,
+        "webpageNormaliser" : 1.0
+      },
+      "weightArgs" : {
+        "averageScaling" : 10.0,
+        "nameWeight" : 1.0,
+        "keywordWeight" : 1.0,
+        "descriptionWeight" : 1.0,
+        "publicationTitleWeight" : 0.25,
+        "publicationKeywordWeight" : 0.75,
+        "publicationMeshWeight" : 0.25,
+        "publicationMinedTermWeight" : 0.25,
+        "publicationAbstractWeight" : 0.75,
+        "publicationFulltextWeight" : 0.5,
+        "docWeight" : 0.5,
+        "webpageWeight" : 0.5
+      },
+      "scoreArgs" : {
+        "goodScoreTopic" : 0.63,
+        "goodScoreOperation" : 0.63,
+        "goodScoreData" : 0.63,
+        "goodScoreFormat" : 0.63,
+        "badScoreTopic" : 0.57,
+        "badScoreOperation" : 0.57,
+        "badScoreData" : 0.57,
+        "badScoreFormat" : 0.57,
+        "outputGoodScores" : true,
+        "outputMediumScores" : true,
+        "outputBadScores" : false
+      }
+    }
+  }
+}
