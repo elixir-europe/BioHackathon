@@ -26,7 +26,12 @@ SPARQLWrapper = "^1.8"
 flask-paginate = "^0.5.1"
 lxml = "^4.2.5"
 tweepy= ">=3.6.0"
+uwsgi = {version = "^2.0",optional = true,extras = ["uwsgi"]}
 
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.6"
+
+
+[tool.poetry.extras]
+uwsgi = ["uwsgi"]
