@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSPARQL-bioRxiv</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
@@ -35,7 +35,7 @@
             <div class="card">
               <div class="card-body">
                 <a href="https://{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
-                <small>{{ i['author'] }} {{ "("+i['year']+")" if i['year'] }}  doi: {{ i['doi'] }}</small>
+                <small>{{ i['author'] }} {{ "("+i['year']+")" if i['year'] }}  D: {{ i['doi'] }}</small>
                 <p class="card-text">{{ i["abstract"]|truncate(280,true) }}</p>
               </div>
             </div>
