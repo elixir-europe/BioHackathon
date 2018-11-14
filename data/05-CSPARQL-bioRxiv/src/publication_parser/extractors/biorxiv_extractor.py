@@ -98,6 +98,8 @@ class HighWireHTMLParser:
         affiliations = []
         authors = []
         affiliation_label = None
+        orcid = None
+        email = None
         for child in head_root.xpath(self.author_xpath):
             if child.get('name') == self.author_meta_name:
                 if author is not None:
