@@ -13,6 +13,8 @@ from tweepy.streaming import StreamListener
 from ontology_handler import add_entity
 from publication_parser import SemanticPublication
 
+keys = json.loads(open('./twitter_credentials.json').read())
+
 
 class Listener(StreamListener):
     """
@@ -40,8 +42,6 @@ class Listener(StreamListener):
 
     def on_error(self, status):
         print(status)
-
-keys = json.loads(open('./twitter_credentials.json').read())
 
 
 def find_url(string):
