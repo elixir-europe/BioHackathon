@@ -34,7 +34,8 @@ Dana has prepared several social activities you are welcome to join. They are al
 ### Reporting
 We are expecting a stand-up report of 60 seconds for each project *after* lunchtime for the last 3 days of the BioHackathon. Ideally, the report should be included in the project folder. This will help people to know the status of the projects and join the projects.
 
-* Slides for the Wednesday PM reporting session: <http://goo.gl/R6oYbb>
+#### Slides for the reporting session:
+ * Day 3 – November 14 ([Google drive](http://goo.gl/R6oYbb) | [PPT](https://github.com/elixir-europe/BioHackathon/blob/master/bh2018paris-report-day3-nov14.pptx))
 
 ### Writeathon
 We all aim to meet at the end of the BioHackathon for a 90 minutes sprint to write a publication.
