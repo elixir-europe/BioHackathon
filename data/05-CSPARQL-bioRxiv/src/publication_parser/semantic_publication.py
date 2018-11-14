@@ -46,8 +46,17 @@ class SemanticPublication:
 
         # TODO: handle key intersection
         data = {**meta_data, **semantic_data}
+        pub = cls(data)
 
-        return cls(data)
+        if not pub.is_valid:
+            raise RuntimeError('Invalid publication (has no DOI)')
+
+        return pub
+
+    @property
+    def is_valid(self) -> bool:
+        """A publication must have a DOI."""
+        return 'doi' in self.attributes
 
     def __getattr__(self, name: str) -> str:
         return self.attributes[name]
