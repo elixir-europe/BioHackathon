@@ -43,7 +43,7 @@ We all aim to meet at the end of the BioHackathon for a 90 minutes sprint to wri
 * If you keep the reports informative and tidy later it will be easier to reuse them to write the publication.
 * Themes leads will help to find the links among projects and help to shape the final text for the theme they represent. We have theme leads for Data (Marc Hanauer), Tools (Jen Harrow), Interoperability (Sira Sarntivijai) and Training (Mateusz Kuzak).
 
-* Draft (**please use Suggestion lmode**): <http://tinyurl.com/bh2018write>
+* Draft (**please use Suggest mode**): <http://tinyurl.com/bh2018write>
 
 ## Projects
 ### Project content, plans and materials
