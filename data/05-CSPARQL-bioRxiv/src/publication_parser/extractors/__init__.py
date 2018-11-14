@@ -1,11 +1,18 @@
 from typing import Iterator, Type
 
-from .base_extractor import BaseExtractor
+from .base_extractor import BaseExtractor, MetaExtractor, SemanticExtractor
 from .biorxiv_extractor import BiorxivBasicExtractor
+from .dummy_extractor import DummyExtractor
 
-__all__ = [BiorxivBasicExtractor]
+__all__ = [BiorxivBasicExtractor, DummyExtractor]
 
 
-def get_extractors() -> Iterator[Type[BaseExtractor]]:
-    for cls in BaseExtractor.__subclasses__():
-        yield cls
+def get_extractors(type_: str) -> Iterator[Type[BaseExtractor]]:
+    if type_ == 'meta':
+        for cls in MetaExtractor.__subclasses__():
+            yield cls
+    elif type_ == 'semantic':
+        for cls in SemanticExtractor.__subclasses__():
+            yield cls
+    else:
+        raise RuntimeError(f'Invalid extractor type: "{type_}"')

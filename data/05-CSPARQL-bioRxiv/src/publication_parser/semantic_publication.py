@@ -1,6 +1,35 @@
-from typing import Dict
+from typing import Dict, Any
 
 from .extractors import get_extractors
+
+
+def do_extraction(type_: str, func_input: Any) -> Dict[str, str]:
+    data: Dict[str, str] = {}
+    for ExtrClass in get_extractors(type_=type_):
+        print(
+            f'[{ExtrClass.__name__}] Extracting {type_}-information...',
+            end=' ', flush=True)
+
+        # extract information
+        extr = ExtrClass()
+        res = extr.parse(func_input)
+
+        # check success
+        if res is None:
+            print('No information extracted!')
+            continue
+        print('Success!')
+
+        # check for key overlaps
+        key_overlap = set(res.keys()) & set(data.keys())
+        if len(key_overlap) > 0:
+            print('[Warning] The following keys will be overridden:')
+            for k in key_overlap:
+                print(f' > {k}')
+
+        # update data
+        data.update(res)
+    return data
 
 
 class SemanticPublication:
@@ -12,31 +41,11 @@ class SemanticPublication:
     @classmethod
     def from_url(cls, url: str) -> 'SemanticPublication':
         """Factory method."""
-        data = {}
-        for ExtrClass in get_extractors():
-            print(
-                f'[{ExtrClass.__name__}] Extracting information...',
-                end=' ', flush=True)
+        meta_data = do_extraction('meta', url)
+        semantic_data = do_extraction('semantic', meta_data)
 
-            # extract information
-            extr = ExtrClass()
-            res = extr.parse(url)
-
-            # check success
-            if res is None:
-                print('No information extracted!')
-                continue
-            print('Success!')
-
-            # check for key overlaps
-            key_overlap = set(res.keys()) & set(data.keys())
-            if len(key_overlap) > 0:
-                print('[Warning] The following keys will be overridden:')
-                for k in key_overlap:
-                    print(f' > {k}')
-
-            # update data
-            data.update(res)
+        # TODO: handle key intersection
+        data = {**meta_data, **semantic_data}
 
         return cls(data)
 

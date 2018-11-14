@@ -3,6 +3,8 @@ import collections
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+from typing import ValuesView, Dict, Optional
+
 
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
@@ -13,18 +15,42 @@ def get_total_papers():
     return 100000
 
 
-def execute_query(form_data):
+def form_to_sparql(form_data: str) -> Optional[str]:
+    msg = form_data['q']
+
+    stmts = []
+    for i, entry in enumerate(msg.split()):
+        try:
+            key, val = entry.split(':')
+        except ValueError:
+            return None
+
+        varname = 'o' * (i+1)  # need different variable per filter
+
+        tmp = f'?foo <http://fubar.org/properties/{key}> ?{varname} . '
+        tmp += f'FILTER contains(lcase(str(?{varname})), "{val}") .'
+        stmts.append(tmp)
+
+    statements = '\n'.join(stmts)
     query = f'''
-    SELECT ?s ?pp ?oo
+    SELECT ?foo ?bar ?baz
     FROM <http://foo.bar.baz>
     WHERE
     {{
-        ?s ?p ?o .
-        FILTER contains(lcase(str(?o)), "{form_data["q"]}") .
-        ?s ?pp ?oo
+        {statements}
+        ?foo ?bar ?baz
     }}
     '''
+
     # print(query)
+    return query
+
+
+def execute_query(form_data: str) -> ValuesView[Dict[str, str]]:
+    # assemble query
+    query = form_to_sparql(form_data)
+    if query is None:
+        return []
 
     # SPARQL request
     sparql = SPARQLWrapper(CONFIG['sparql_endpoint'])
@@ -33,14 +59,11 @@ def execute_query(form_data):
     results = sparql.query().convert()
 
     # parse result
-    output = collections.defaultdict(dict)
+    output: Dict[str, Dict[str, str]] = collections.defaultdict(dict)
     for entry in results['results']['bindings']:
-        idx = entry['s']['value']
-        key = entry['pp']['value'].split('/')[-1][3:].lower()
-        val = entry['oo']['value']
-
-        # print(entry)
-        # print(idx, key, val)
+        idx = entry['foo']['value']
+        key = entry['bar']['value'].split('/')[-1][3:].lower()
+        val = entry['baz']['value']
 
         output[idx][key] = val
 
