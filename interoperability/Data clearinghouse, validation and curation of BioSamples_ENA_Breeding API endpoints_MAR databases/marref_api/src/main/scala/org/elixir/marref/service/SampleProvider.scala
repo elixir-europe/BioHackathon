@@ -22,14 +22,18 @@ class SampleProvider() extends SampleProviderTrait {
 
   override def getAllSamples(): String = dbString
 
-  override def getSample(id: String): ResponseEntity[Any] = {
+  private def getSampleObj(id:String): Option[SampleModel] = {
     def getId(sm: SampleModel): Option[String] = if(id.startsWith("MMP"))
       sm.mmpID map {_.value}
     else
       sm.biosampleAccession map {_.value}
 
-    marrefModel.records.record find {r => getId(r).getOrElse("notFound") == id} match {
-      case Some(sm) => ResponseEntity.ok(Json.serialize(sm))
+    marrefModel.records.record find {r => getId(r).getOrElse("notFound") == id}
+  }
+
+  override def getSample(id: String, stringify: SampleModel => String): ResponseEntity[Any] = {
+    getSampleObj(id) match {
+      case Some(sm) => ResponseEntity.ok(stringify(sm))
       case None => ResponseEntity.notFound().build()
     }
   }

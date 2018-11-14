@@ -1,11 +1,11 @@
 package org.elixir.marref.model.bioschema
 
-case class ValueReference(`@type`: String,
+case class ValueReference(`@type`: String = "CategoryCode",
                           name: Option[String] = None,
                           codeValue: String,
                           url: String)
 
-case class Property(`type`: String,
+case class Property(`@type`: String = "PropertyValue",
                     name: String,
                     value: String,
                     valueReference: Option[ValueReference] = None
