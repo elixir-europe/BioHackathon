@@ -10,8 +10,12 @@ with open('config.yaml') as fd:
 
 def execute_query(form_data):
     query = f'''
-    select ?s ?pp ?oo where {{
-        ?s ?p "{form_data["q"]}" .
+    SELECT ?s ?pp ?oo
+    FROM <http://foo.bar.baz>
+    WHERE
+    {{
+        ?s ?p ?o .
+        FILTER contains(lcase(str(?o)), "{form_data["q"]}") .
         ?s ?pp ?oo
     }}
     '''
