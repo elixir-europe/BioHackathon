@@ -129,7 +129,7 @@
                 "enum": ["Sample"]
             }
         },
-        "identifiers": {
+        "identifier": {
             "description": "The identifier of the study.",
             "type": "array",
             "items:": {
