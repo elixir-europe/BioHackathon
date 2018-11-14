@@ -13,7 +13,8 @@
 		"@type": "BioChemEntity",
 		"identifier": "CHEBI:30563",
 		"name": "silicon dioxide",
-		"url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30563"
+		"url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30563",
+		"chemicalRole": "http://purl.bioontology.org/ontology/npo#NPO_1617"
 	}],
 	"potentialUse": ["http://purl.obolibrary.org/obo/CHEBI_23888","http://purl.enanomapper.org/onto/ENM_8000194"],
 	"chemicalRole": ["http://purl.bioontology.org/ontology/npo#NPO_1909"]
