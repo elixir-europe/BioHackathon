@@ -2,11 +2,14 @@ package org.elixir.marref.model
 
 case class UrlModel(url: String, value: String)
 case class DateModel(`type`: String, date: String)
+case class YearModel(`type`: String, year: String)
+case class TypeValueModel(`type`: String, year: String)
 case class ItemListModel(item: Seq[String])
 case class AnnotationSoftwareRevisionModel(`type`: String, value: String)
 case class AccessionModel(accession: Seq[UrlModel])
-case class ReasonModel(reason: String)
 case class ValueModel(value: String)
+case class LatLongModel(latitude: Double,
+                        longitude: Double)
 
 case class SampleModel(annotationProvider: Option[String] = None,
                        annotationDate: Option[DateModel],
@@ -19,41 +22,22 @@ case class SampleModel(annotationProvider: Option[String] = None,
                        genes: Option[Int],
                        cds: Option[Int],
                        pseudoGenes: Option[Int],
-                       rrnasMissing: Option[ReasonModel],
-                       completeRrnasMissing: Option[ReasonModel],
                        partialRrnas: Option[Map[String, Int]],
                        trnas: Option[Int],
                        ncrna: Option[Int],
                        frameshiftedGenes: Option[Int],
                        sequencingCenters: Option[String],
                        seqMeth: Option[ItemListModel],
-                       sequencingDepthMissing: Option[ReasonModel],
                        assemblyAccession: Option[UrlModel],
                        assembly: Option[ItemListModel],
-                       assemblyVersionMissing: Option[ReasonModel],
                        gcContent: Option[Int],
-                       contigsMissing: Option[ReasonModel],
                        numReplicons: Option[Int],
                        genomeLength: Option[Int],
                        plasmids: Option[Int],
-                       binningMissing: Option[ReasonModel],
-                       binningVersionMissing: Option[ReasonModel],
-                       estimatedCompletenessMissing: Option[ReasonModel],
-                       estimatedContaminationMissing: Option[ReasonModel],
-                       mappingMissing: Option[ReasonModel],
-                       mappingVersionMissing: Option[ReasonModel],
-                       qualityAssessmentMissing: Option[ReasonModel],
-                       qualityAssessmentVersionMissing: Option[ReasonModel],
                        hostCommonName: Option[String],
-                       hostScientificNameMissing: Option[ReasonModel],
-                       hostSexMissing: Option[ReasonModel],
-                       hostHealthStageMissing: Option[ReasonModel],
-                       hostAgeMissing: Option[ReasonModel],
-                      //
                        investigationType: Option[String],
                        sampleType: Option[String],
                        isolationSource: Option[String],
-                      //
                        isolationCountry: Option[String],
                        envBiome: Option[UrlModel],
                        envFeature: Option[UrlModel],
@@ -62,10 +46,8 @@ case class SampleModel(annotationProvider: Option[String] = None,
                        isolGrowthCondt: Option[AccessionModel],
                        refBiomaterial: Option[AccessionModel],
                        cultureCollection: Option[ItemListModel],
-                       collectedByMissing: Option[ReasonModel],
                        biosampleAccession: Option[UrlModel],
                        isolationComments: Option[String],
-                       projectNameMissing: Option[ReasonModel],
                        geoLocNameGaz: Option[String],
                        geoLocNameGazEnvo: Option[UrlModel],
                        analysisProjectType: Option[String],
@@ -100,7 +82,11 @@ case class SampleModel(annotationProvider: Option[String] = None,
                        baseID: Option[ValueModel],
                        genomeStatus: Option[String],
                        mmpBiome: Option[String],
-
+                       sequencingDepth: Option[ItemListModel],
+                       collectionDate: Option[YearModel],
+                       depth: Option[TypeValueModel],
+                       latLon: Option[LatLongModel],
+                       projectName: Option[String]
 )
 
 case class RecordsModel(databaseType: String,
