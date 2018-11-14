@@ -25,6 +25,7 @@ requests = "^2.20"
 SPARQLWrapper = "^1.8"
 flask-paginate = "^0.5.1"
 lxml = "^4.2.5"
+tweepy= ">=3.6.0"
 
 
 [tool.poetry.dev-dependencies]
