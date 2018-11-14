@@ -19,15 +19,17 @@ def add_entity(pub: 'SemanticPublication') -> None:
     print('Adding...\n', pub)
 
     # setup ontology
-    n = rdflib.Namespace('http://fubar.org/entities')
+    n = rdflib.Namespace('http://fubar.org/entities/')
+    np = rdflib.Namespace('http://fubar.org/properties/')
     g = rdflib.Graph()
 
     # add publication
-    # TODO: implement actual ontology model
-    node = n[f'/{pub.doi}']
-    g.add((node, RDF.type, FOAF.Publication))
-    g.add((node, FOAF.hasTitle, rdflib.Literal(pub.title)))
-    g.add((node, FOAF.hasDOI, rdflib.Literal(pub.doi)))
+    subject = n[str(pub.doi)]
+    g.add((subject, RDF.type, FOAF.Publication))
+
+    for key, val in pub.attributes.items():
+        predicate = np[f'has{key.capitalize()}']
+        g.add((subject, predicate, rdflib.Literal(val)))
 
     # add to ontology
     query = """
