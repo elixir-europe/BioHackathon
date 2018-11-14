@@ -11,7 +11,7 @@ services:
     - -jar
     - marref-0.0.1-SNAPSHOT.jar
     ports:
-    - 8080:8080
+    - 7777:8080
 
   json-schema-validator:
     build:
