@@ -9,7 +9,7 @@
 	"url": "https://data.enanomapper.net/substance/NWKI-e624f68e-2e00-30e4-b4bb-9e34383580cb/study",
 	"molecularFormula": "SiO2",
 	"hasBioChemEntityPart": [{
-		"@type": "BiochemEntity",
+		"@type": "BioChemEntity",
 		"identifier": "CHEBI:30563",
 		"name": "silicon dioxide",
 		"url": "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30563"
