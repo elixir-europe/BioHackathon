@@ -1,14 +1,12 @@
 from typing import TYPE_CHECKING
 
-import yaml
-import requests
-
 import rdflib
+import requests
+import yaml
 from rdflib.namespace import RDF, FOAF
 
 if TYPE_CHECKING:
     from publication_parser import SemanticPublication
-
 
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)

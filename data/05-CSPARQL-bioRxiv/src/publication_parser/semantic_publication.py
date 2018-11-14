@@ -5,6 +5,7 @@ from .extractors import get_extractors
 
 class SemanticPublication:
     """Store semantic information of publication."""
+
     def __init__(self, attributes: Dict[str, str]) -> None:
         self.attributes = attributes
 
@@ -23,7 +24,7 @@ class SemanticPublication:
 
             # check success
             if res is None:
-                print('Failure!')
+                print('No information extracted!')
                 continue
             print('Success!')
 

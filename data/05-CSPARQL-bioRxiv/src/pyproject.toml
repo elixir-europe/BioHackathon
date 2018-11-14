@@ -24,6 +24,7 @@ rdflib = "^4.2"
 requests = "^2.20"
 SPARQLWrapper = "^1.8"
 flask-paginate = "^0.5.1"
+lxml = "^4.2.5"
 
 
 [tool.poetry.dev-dependencies]

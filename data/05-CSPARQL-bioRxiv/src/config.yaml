@@ -1,1 +1,4 @@
 sparql_endpoint: http://idefix.local:8890/sparql
+biorxiv:
+  base_url: https://www.biorxiv.org/content/
+  user_agent: research project - contact valentin.groues@uni.lu
