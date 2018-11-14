@@ -1,22 +1,24 @@
 package org.elixir.marref.service
 
+import java.io.InputStream
+
 import org.elixir.marref.model.{MarrefModel, SampleModel}
 import org.elixir.marref.utils.json.Json
-import org.springframework.core.io.ClassPathResource
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 
-import scala.io.Source
+import scala.io.{BufferedSource, Source}
 
 @Service
 class SampleProvider() extends SampleProviderTrait {
 
-  val resource = new ClassPathResource("marrefdb.json")
-  val bufferedSource = Source.fromFile(resource.getFile)
-  val dbString = bufferedSource.mkString
+  val classloader: ClassLoader = Thread.currentThread().getContextClassLoader
+  val is: InputStream = classloader.getResourceAsStream("marrefdb.json")
+  val bufferedSource: BufferedSource = Source.fromInputStream(is)
+  val dbString: String = bufferedSource.mkString
   bufferedSource.close
 
-  val marrefModel = Json.parse[MarrefModel](dbString)
+  val marrefModel: MarrefModel = Json.parse[MarrefModel](dbString)
 
   override def getAllSamples(): String = dbString
 
