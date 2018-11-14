@@ -34,7 +34,7 @@ Dana has prepared several social activities you are welcome to join. They are al
 ### Reporting
 We are expecting a stand-up report of 60 seconds for each project *after* lunchtime for the last 3 days of the BioHackathon. Ideally, the report should be included in the project folder. This will help people to know the status of the projects and join the projects.
 
-- Slides for the Wednesday PM reporting session: <https://goo.gl/F6L2Ew>
+* Slides for the Wednesday PM reporting session: <http://goo.gl/R6oYbb>
 
 ### Writeathon
 We all aim to meet at the end of the BioHackathon for a 90 minutes sprint to write a publication.
@@ -42,6 +42,8 @@ We all aim to meet at the end of the BioHackathon for a 90 minutes sprint to wri
 * We plan to organise the publication in 4 themes and 11 topics relying on the outcomes of the projects
 * If you keep the reports informative and tidy later it will be easier to reuse them to write the publication.
 * Themes leads will help to find the links among projects and help to shape the final text for the theme they represent. We have theme leads for Data (Marc Hanauer), Tools (Jen Harrow), Interoperability (Sira Sarntivijai) and Training (Mateusz Kuzak).
+
+* Draft (**please use Suggestion lmode**): <http://tinyurl.com/bh2018write>
 
 ## Projects
 ### Project content, plans and materials
