@@ -233,7 +233,7 @@ class BiorxivBasicExtractor(MetaExtractor):
         headers = {'User-Agent': self.user_agent,
                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                    'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate'}
-        r = requests.get(url, stream=True, verify=False, headers=headers)
+        r = requests.get(url, stream=True, headers=headers)
         if not r.ok:
             print(f"request to biorxiv failed with status {r.status_code}")
             print(r.reason)
