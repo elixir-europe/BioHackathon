@@ -17,8 +17,13 @@ def index():
 def query():
     res = execute_query(request.args)
     page = request.args.get(get_page_parameter(), type=int, default=1)
-    pagination = Pagination(page=page, found=len(res), total=get_total_papers(), record_name='papers', format_total=True, format_number=True, search=True, bs_version=4)
-    return render_template('index.html', data=res, query=request.args.get('q'), pagination=pagination)
+    pagination = Pagination(
+        page=page, found=len(res), total=get_total_papers(),
+        record_name='papers', format_total=True, format_number=True,
+        search=True, bs_version=4)
+    return render_template(
+        'index.html', data=res,
+        query=request.args.get('q'), pagination=pagination)
 
 
 if __name__ == '__main__':
