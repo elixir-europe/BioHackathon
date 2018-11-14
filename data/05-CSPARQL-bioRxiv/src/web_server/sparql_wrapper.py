@@ -5,6 +5,9 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
 
+def get_total_papers():
+    """Total number of papers stored into virtuoso"""
+    return 100000
 
 def execute_query(form_data):
     print(form_data)
