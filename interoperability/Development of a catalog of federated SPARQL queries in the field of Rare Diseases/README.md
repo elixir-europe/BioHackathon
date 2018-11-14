@@ -133,6 +133,10 @@ YOU !
 https://www.mediawiki.org/wiki/Wikibase/Installation#Download_from_Git
 ```
 
+
+http://185.54.113.31:8181/wiki/Main_Page
+
+
 - Based on "natural languages queries" (a use case), start to explore Orphanet Ontology and Disgenet 
 ```
 - For a given disease in Orphanet find all known related genes in Orphanet itself 
