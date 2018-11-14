@@ -35,7 +35,7 @@
             <div class="card">
               <div class="card-body">
                 <a href="https://{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
-                <small>{{ i['author'] }} {{ "("+i['year']+")" if i['year'] }}  D: {{ i['doi'] }}</small>
+                <small>{{ i['author'] }} {{ "("+i['year']+")" if i['year'] }}  D: <a href="https://doi.org/{{ i['doi'] }}">{{ i['doi'] }}</a></small>
                 <p class="card-text">{{ i["abstract"]|truncate(280,true) }}</p>
               </div>
             </div>
