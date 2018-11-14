@@ -29,7 +29,7 @@ def add_entity(pub: 'SemanticPublication') -> None:
 
     for key, val in pub.attributes.items():
         predicate = np[f'has{key.capitalize()}']
-        g.add((subject, predicate, rdflib.Literal(val)))
+        g.add((subject, predicate, rdflib.Literal(str(val))))
 
     # add to ontology
     query = """

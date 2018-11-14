@@ -1,3 +1,5 @@
+import collections
+
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
 
@@ -7,29 +9,30 @@ with open('config.yaml') as fd:
 
 
 def execute_query(form_data):
-    print(form_data)
+    query = f'''
+    select ?s ?pp ?oo where {{
+        ?s ?p "{form_data["q"]}" .
+        ?s ?pp ?oo
+    }}
+    '''
+    # print(query)
 
     # SPARQL request
     sparql = SPARQLWrapper(CONFIG['sparql_endpoint'])
-    sparql.setQuery('''
-    select distinct ?Concept where {[] a ?Concept} LIMIT 100
-    ''')
+    sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
 
     # parse result
-    output = []
+    output = collections.defaultdict(dict)
     for entry in results['results']['bindings']:
-        # TODO: actually extract data
-        print(entry)
+        idx = entry['s']['value']
+        key = entry['pp']['value'].split('/')[-1][3:].lower()
+        val = entry['oo']['value']
 
-        output.append({
-            'title': 'VeryImportant',
-            'doi': '42',
-            'author': 'Mr. Egg',
-            'year': '1337',
-            'abstract': 'blabla',
-            'url': 'example.org'
-        })
+        # print(entry)
+        # print(idx, key, val)
 
-    return output
+        output[idx][key] = val
+
+    return output.values()

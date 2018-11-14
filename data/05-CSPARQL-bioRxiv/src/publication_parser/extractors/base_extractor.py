@@ -19,5 +19,9 @@ class DummyExtractor(BaseExtractor):
     def parse(self, filename: str) -> Optional[Dict[str, str]]:
         return {
             'title': os.path.basename(filename),
-            'doi': random.randint(0, 9999)
+            'doi': random.randint(0, 9999),
+            'author': 'Mr. Cool',
+            'year': random.randint(1600, 2019),
+            'abstract': 'blabla',
+            'url': 'example.org'
         }
