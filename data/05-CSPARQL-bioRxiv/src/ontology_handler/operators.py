@@ -25,9 +25,17 @@ def add_entity(pub: 'SemanticPublication') -> None:
     subject = n[str(pub.doi)]
     g.add((subject, RDF.type, FOAF.Publication))
 
-    for key, val in pub.attributes.items():
+    for key, cur in pub.attributes.items():
+        tmp = []
+        if isinstance(cur, list):
+            for val_dict in cur:
+                tmp.append(val_dict['value'])
+        else:
+            tmp = [cur]
+
         predicate = np[f'has{key.capitalize()}']
-        g.add((subject, predicate, rdflib.Literal(str(val))))
+        for t in tmp:
+            g.add((subject, predicate, rdflib.Literal(str(t))))
 
     # add to ontology
     query = """
