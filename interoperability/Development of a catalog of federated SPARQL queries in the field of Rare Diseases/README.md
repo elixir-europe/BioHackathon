@@ -146,3 +146,17 @@ Compare the output of the two queries.
 
 - Parallel task: play with the ORDO/HPO association model (dealing with collection)
 
+## Hack Day 2 progress
+---
+Enrich the wikibase with sparql queries
+- For each gene of a given rare disease (i.e. ORDO) find all known drugs to target that gene in ChEMBL. 
+- Gene disease association from manually curated sources (in disgenet)
+- List Genes and related diseases in Orphanet (obtain Gene name, Symbol, Orphanet ID, HGNC xref, Disease name and Orphanumber )
+etc.
+
+ISSUE: even with good known model (disgenet) and proper request, at data level some errors occurs (concept mapping issues)
+=> add in wikibase an issue report (or linked to proper issue tracker for the source if exists)
+
+Start to write Shape Expression (SHex) for Orphanet (Ordo) model
+
+
