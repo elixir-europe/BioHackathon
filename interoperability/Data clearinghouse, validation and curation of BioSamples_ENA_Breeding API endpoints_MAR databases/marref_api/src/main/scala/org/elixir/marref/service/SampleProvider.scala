@@ -1,15 +1,10 @@
 package org.elixir.marref.service
 
-import java.nio.file.{Path, Paths}
-
 import org.elixir.marref.model.{MarrefModel, SampleModel}
 import org.elixir.marref.utils.json.Json
-import org.json4s.JsonAST.{JArray, JObject, JValue}
-import org.springframework.beans.factory.annotation.{Autowired, Value}
-import org.springframework.http.{HttpEntity, ResponseEntity}
-import org.springframework.stereotype.Service
 import org.springframework.core.io.ClassPathResource
-import org.springframework.core.io.Resource
+import org.springframework.http.ResponseEntity
+import org.springframework.stereotype.Service
 
 import scala.io.Source
 
@@ -26,23 +21,14 @@ class SampleProvider() extends SampleProviderTrait {
   override def getAllSamples(): String = dbString
 
   override def getSample(id: String): ResponseEntity[Any] = {
-    def getId(sm: SampleModel): String = if(id.startsWith("MMP"))
-      sm.mmpID.value
+    def getId(sm: SampleModel): Option[String] = if(id.startsWith("MMP"))
+      sm.mmpID map {_.value}
     else
-      sm.biosampleAccession.value
-    marrefModel.records.record find {r => getId(r) == id} match {
+      sm.biosampleAccession map {_.value}
+
+    marrefModel.records.record find {r => getId(r).getOrElse("notFound") == id} match {
       case Some(sm) => ResponseEntity.ok(Json.serialize(sm))
       case None => ResponseEntity.notFound().build()
-//      case None => s"'$id' not found in database"
     }
-
-//    def getId(sm: JObject): String = if(id.startsWith("MMP"))
-//      marrefRecords.find( r => r.asInstanceOf[JObject].values("mmpID") == id)
-//    else
-//      marrefRecords.find( r => r.asInstanceOf[JObject].values("mmpID") == id) match {
-//      case Some(jValue) => jValue.toString
-//      case None => s"'$id' not found in database"
-//    }
   }
-
 }
