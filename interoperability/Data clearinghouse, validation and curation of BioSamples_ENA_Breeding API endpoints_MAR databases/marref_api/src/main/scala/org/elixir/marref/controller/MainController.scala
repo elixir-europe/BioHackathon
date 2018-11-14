@@ -1,6 +1,5 @@
 package org.elixir.marref.controller
 
-import org.elixir.marref.model.SampleModel
 import org.elixir.marref.service.SampleProviderTrait
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.{GetMapping, PathVariable, RequestMapping, RestController}

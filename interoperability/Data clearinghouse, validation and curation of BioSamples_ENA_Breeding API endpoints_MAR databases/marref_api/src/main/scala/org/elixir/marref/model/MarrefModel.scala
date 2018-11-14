@@ -1,5 +1,8 @@
 package org.elixir.marref.model
 
+import org.elixir.marref.model.bioschema.TopLevel
+import org.elixir.marref.utils.json.Json
+
 case class UrlModel(url: String, value: String)
 case class DateModel(`type`: String, date: String)
 case class YearModel(`type`: String, year: String)
@@ -87,7 +90,11 @@ case class SampleModel(annotationProvider: Option[String] = None,
                        depth: Option[TypeValueModel],
                        latLon: Option[LatLongModel],
                        projectName: Option[String]
-)
+) {
+  def toJson(): String = Json.serialize(this)
+  def toBioschema(): TopLevel = ???
+  def toJsonld(): String = Json.serialize(toBioschema())
+}
 
 case class RecordsModel(databaseType: String,
                         record: Seq[SampleModel])
