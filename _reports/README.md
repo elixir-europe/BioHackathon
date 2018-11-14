@@ -2,7 +2,7 @@
 ## Dayly reports
 We have three reports scheduled at 14:00. One each day after the first hacking day. We are expecting each project representative to fill in one slide and not spend more than one minute per project during the report. 
 
-* BH Day 3 – November 14 (1st report): [Google drive](http://goo.gl/R6oYbb) | [PPT](https://github.com/elixir-europe/BioHackathon/blob/master/bh2018paris-report-day3-nov14.pptx)
+* BH Day 3 – November 14 (1st report): [Google drive](http://goo.gl/R6oYbb) | [PPT](bh2018paris-report-day3-nov14.pptx)
 * BH Day 4 – November 15 (2nd report): *pending*
 * BH Day 5 – November 16 (3rd report): *pending*
 
