@@ -4,7 +4,7 @@ import org.elixir.marref.service.SampleProviderTrait
 import org.springframework.web.bind.annotation.{GetMapping, PathVariable, RequestMapping, RestController}
 
 @RestController
-@RequestMapping(path = Array("/api"))
+@RequestMapping(path = Array("/api/marref"))
 class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples"))
@@ -17,4 +17,8 @@ class MainController(val sampleProvider: SampleProviderTrait) {
     sampleProvider.getSample(id)
   }
 
+  @GetMapping(path = Array("/count"))
+  def count : String = {
+    sampleProvider.count()
+  }
 }
