@@ -28,7 +28,7 @@ def form_to_sparql(form_data: str) -> Optional[str]:
         varname = 'o' * (i+1)  # need different variable per filter
 
         tmp = f'?foo <http://fubar.org/properties/{key}> ?{varname} . '
-        tmp += f'FILTER contains(lcase(str(?{varname})), "{val}") .'
+        tmp += f'FILTER contains(lcase(str(?{varname})), "{val.lower()}") .'
         stmts.append(tmp)
 
     statements = '\n'.join(stmts)
