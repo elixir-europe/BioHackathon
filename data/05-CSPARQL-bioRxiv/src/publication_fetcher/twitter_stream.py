@@ -1,8 +1,8 @@
 # coding: utf-8
 
-'''
+"""
 Listens to the twitter data stream
-'''
+"""
 
 import json
 import re
@@ -15,14 +15,12 @@ from publication_parser import SemanticPublication
 
 
 class Listener(StreamListener):
-    '''
-        Listener class for the twitter stream
-    '''
+    """
+    Listener class for the twitter stream
+    """
 
     def on_data(self, data):
-
         try:
-
             json_data = json.loads(data)
             tweet_txt = json_data["text"]
             url = find_url(tweet_txt)
@@ -43,23 +41,22 @@ class Listener(StreamListener):
     def on_error(self, status):
         print(status)
 
-
 keys = json.loads(open('./twitter_credentials.json').read())
 
 
 def find_url(string):
-    '''
+    """
     Finds and returns the first url contained
-    '''
+    """
     url = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', string)
     return url
 
 
 def is_valid_url(url):
-    '''
+    """
     Returns the redirected url if the url is valid
     Returns false otherwise.
-    '''
+    """
     try:
         request = requests.head(url, allow_redirects=True)
         if request.status_code == 200:
