@@ -134,7 +134,10 @@ class HighWireHTMLParser:
                 author['email'] = email
             author['affiliations'] = affiliations
             authors.append(author)
-        self.extracted_dict['authors'] = authors
+
+        # TODO: keep all information
+        authors_str = ', '.join([a['given_names']+' '+a['surname'] for a in authors])
+        self.extracted_dict['authors'] = authors_str
 
     def build_keywords(self):
         pass
