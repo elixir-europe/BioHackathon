@@ -62,4 +62,4 @@ class SemanticPublication:
         return self.attributes[name]
 
     def __str__(self) -> str:
-        return f'"{self.title}" ({self.doi})'
+        return f'<{self.doi}>'
