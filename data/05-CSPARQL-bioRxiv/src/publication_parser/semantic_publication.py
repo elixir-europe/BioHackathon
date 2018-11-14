@@ -17,14 +17,24 @@ class SemanticPublication:
                 f'[{ExtrClass.__name__}] Extracting information...',
                 end=' ', flush=True)
 
+            # extract information
             extr = ExtrClass()
             res = extr.parse(url)
 
+            # check success
             if res is None:
                 print('Failure!')
                 continue
             print('Success!')
 
+            # check for key overlaps
+            key_overlap = set(res.keys()) & set(data.keys())
+            if len(key_overlap) > 0:
+                print('[Warning] The following keys will be overridden:')
+                for k in key_overlap:
+                    print(f' > {k}')
+
+            # update data
             data.update(res)
 
         return cls(data)
