@@ -1,24 +1,36 @@
-import random
+from typing import Dict
 
-from typing import Optional
+from .extractors import get_extractors
 
 
 class SemanticPublication:
     """Store semantic information of publication."""
-    def __init__(self) -> None:
-        self.doi: Optional[int] = None
-        self.title: Optional[str] = None
+    def __init__(self, attributes: Dict[str, str]) -> None:
+        self.attributes = attributes
 
     @classmethod
     def from_url(cls, url: str) -> 'SemanticPublication':
         """Factory method."""
-        # TODO: actually parse information
-        tmp = cls()
+        data = {}
+        for ExtrClass in get_extractors():
+            print(
+                f'[{ExtrClass.__name__}] Extracting information...',
+                end=' ', flush=True)
 
-        tmp.doi = random.randint(0, 9999)
-        tmp.title = 'My awesome publication'
+            extr = ExtrClass()
+            res = extr.parse(url)
 
-        return tmp
+            if res is None:
+                print('Failure!')
+                continue
+            print('Success!')
+
+            data.update(res)
+
+        return cls(data)
+
+    def __getattr__(self, name: str) -> str:
+        return self.attributes[name]
 
     def __str__(self) -> str:
         return f'"{self.title}" ({self.doi})'
