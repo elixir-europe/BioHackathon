@@ -28,3 +28,15 @@ $ poetry run python web_server/run.py
 ```bash
 $ poetry run python main.py
 ```
+
+### Ontology-Server
+
+```bash
+$ virtuoso-t -f  # in folder with virtuoso.ini
+```
+Don't forget to set the correct UPDATE-permissions.
+
+Empty graph:
+```bash
+isql> sparql clear graph <graph_name>;
+```

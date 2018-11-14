@@ -1,0 +1,23 @@
+.data {
+    color: red;
+}
+
+body {
+    padding-top: 3rem;
+}
+.container {
+    padding: 1.5rem 1.5rem;
+}
+
+small {
+    color: #006621;
+}
+
+.pagination-page-info {
+    padding: .6em;
+    padding-left: 0;
+    width: 40em;
+    margin: .5em;
+    margin-left: 0;
+    font-size: 12px;
+}

@@ -21,6 +21,10 @@ python = ">=3.6"
 pyyaml = "^3.13"
 flask = "^1.0"
 rdflib = "^4.2"
+requests = "^2.20"
+SPARQLWrapper = "^1.8"
+flask-paginate = "^0.5.1"
+lxml = "^4.2.5"
 
 
 [tool.poetry.dev-dependencies]
