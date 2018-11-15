@@ -23,10 +23,10 @@ Blockchain is a collection of technologies (cryptographic security, decentraliza
 
 - Identify the added value of Blockchain technologies on BioSamples and similar sample management tools. 
 - Create a prototype on Hyperledger Composer of a Business Network (BNA) that includes the data standards and current functionalities (workflows) of BioSamples.
-- High-level design of the (Fabric) network that will support the BNA.
-- Extend BioSamples to include other complementary digital assets: protocols, laboratory notebooks (if time permits).
+- Smart contract to track provenance in the curation process.
+- Suggest possible extension in order to implement different layers of curation and generate different states of the samples.
 
-Our code will also contribute to the https://github.com/Blockchain4openscience/sample-networks project. We also expect to start the discussion about using blockchain technology for keeping the trail of evidence in the annotation process.  
+Our code will also contribute to the https://github.com/Blockchain4openscience project. We also expect to start the discussion about using blockchain technology for keeping the trail of evidence in the annotation process.  
 
 ## Expected audience
 ---
