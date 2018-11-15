@@ -119,7 +119,14 @@ case class SampleModel(annotationProvider: Option[String] = None,
       name = fullScientificName.getOrElse("NotDefined"),
       description = comments.getOrElse("NotDefined"),
       url = mmpID.map{_.url}.getOrElse("NotDefined"),
-      dataset = Seq(), //Todo
+      dataset = Seq(assemblyAccession.toSeq.map{_.url},
+        bioprojectAccession.toSeq.map{_.url},
+        silvaAccessionSSU.toSeq.map{_.url},
+        silvaAccessionLSU.toSeq.map{_.url},
+        genbankAccession.toSeq.flatMap{t => t.accession}.map{_.url},
+        ncbiRefseqAccession.toSeq.flatMap{t => t.accession}.map{_.url},
+        uniprotAccession.toSeq.flatMap{t => t.accession}.map{_.url}
+      ).flatten,
       additionalProperty = Seq(
         Seq(Property(name = "Sequencing Depth",
           value = sequencingDepth.map{_.item.mkString(", ")}.getOrElse("NotDefined")
