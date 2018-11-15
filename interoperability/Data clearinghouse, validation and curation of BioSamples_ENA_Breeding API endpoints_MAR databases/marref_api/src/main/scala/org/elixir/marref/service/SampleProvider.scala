@@ -25,12 +25,14 @@ class SampleProvider() extends SampleProviderTrait {
     val fistIndex: Int = page * size
     val lastIndex: Int = (page+1) * size
     ResponseEntity.ok(
-      s""""pageMeta": {
+      s"""{
+         |"pageMeta": {
          |"pageSize": $size,
          |"pageNumber": $page,
          |"totalSamples": $count
          |},
-         |"content": [${marrefModel.records.record.slice(fistIndex, lastIndex).map{sm => stringify(sm)}.mkString(",")}]""".stripMargin)
+         |"content": [${marrefModel.records.record.slice(fistIndex, lastIndex).map{sm => stringify(sm)}.mkString(",")}]
+         |}""".stripMargin)
   }
 
   private def getSampleObj(id:String): Option[SampleModel] = {

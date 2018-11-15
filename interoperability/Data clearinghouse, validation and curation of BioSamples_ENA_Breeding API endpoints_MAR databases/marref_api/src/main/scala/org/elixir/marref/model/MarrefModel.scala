@@ -160,17 +160,17 @@ case class SampleModel(annotationProvider: Option[String] = None,
       `@type` = Seq("BioChemEntity","Sample"),
       `@id` = mmpID.map{_.url}.getOrElse("NotDefined"),
       identifier = Seq(s"mmp:${mmpID.map{_.value}.getOrElse{"NotDefined"}}", s"biosample:${biosampleAccession.map{_.value}.getOrElse("NotDefined")}"),
-      name = fullScientificName.getOrElse("NotDefined"),
+      name = Seq(fullScientificName.getOrElse("NotDefined")),
       description = comments.getOrElse("NotDefined"),
       url = mmpID.map{_.url}.getOrElse("NotDefined"),
-      dataset = Seq(assemblyAccession.toSeq.map{_.url},
+      /*dataset = Seq(assemblyAccession.toSeq.map{_.url},
         bioprojectAccession.toSeq.map{_.url},
         silvaAccessionSSU.toSeq.map{_.url},
         silvaAccessionLSU.toSeq.map{_.url},
         genbankAccession.toSeq.flatMap{t => t.accession}.map{_.url},
         ncbiRefseqAccession.toSeq.flatMap{t => t.accession}.map{_.url},
         uniprotAccession.toSeq.flatMap{t => t.accession}.map{_.url}
-      ).flatten,
+      ).flatten,*/
       additionalProperty = Seq(
         Seq(Property(name = "Sequencing Depth",
           value = sequencingDepth.map{_.item.mkString(", ")}.getOrElse("NotDefined")
@@ -254,46 +254,46 @@ case class SampleModel(annotationProvider: Option[String] = None,
         },
         Seq(Property(name = "Geographic Location (GAZ)",
           value = geoLocNameGaz.getOrElse("NotDefined"),
-          valueReference = Some(ValueReference(
+          valueReference = Some(Seq(ValueReference(
             codeValue = geoLocNameGazEnvo.map{_.value}.getOrElse("NotDefined"),
             url = geoLocNameGazEnvo.map{_.url}.getOrElse("NotDefined")
-          )))
+          ))))
         ),
         Seq({
           val ov = envFeature.map{_.value.split('(').head.stripLineEnd}
           Property(name = "Environment Feature",
           value = ov.getOrElse("NotDefined"),
-          valueReference = Some(ValueReference(
+          valueReference = Some(Seq(ValueReference(
             name = ov,
             codeValue = envFeature.flatMap{_.value.split('(').tail.headOption}.flatMap{_.split(')').headOption}.getOrElse("NotDefined"),
             url = envFeature.map{_.url}.getOrElse("NotDefined")
-          ))
+          )))
         )}),
         Seq({
           val ov = envMaterial.map{_.value.split('(').head.stripLineEnd}
           Property(name = "Environment Material",
           value = ov.getOrElse("NotDefined"),
-          valueReference = Some(ValueReference(
+          valueReference = Some(Seq(ValueReference(
             name = ov,
             codeValue = envMaterial.flatMap{_.value.split('(').tail.headOption}.flatMap{_.split(')').headOption}.getOrElse("NotDefined"),
             url = envFeature.map{_.url}.getOrElse("NotDefined")
-          ))
+          )))
         )}),
         Seq(Property(name = "Organism",
           value = organism.getOrElse("NotDefined"),
-          valueReference = Some(ValueReference(
+          valueReference = Some(Seq(ValueReference(
             name = Some("NCBI Taxon Identifier"),
             codeValue = ncbiTaxonIdentifier.map{i => s"NCBITaxon:$i"}.getOrElse("NotDefined"),
             url = ncbiTaxonIdentifier.map{_.url}.getOrElse("NotDefined")
-          ))
+          )))
         )),
         Seq(Property(name = "Full Scientific Name",
           value = fullScientificName.getOrElse("NotDefined"),
-          valueReference = Some(ValueReference(
+          valueReference = Some(Seq(ValueReference(
             name = fullScientificName,
             codeValue = ncbiTaxonIdentifier.map{i => s"NCBITaxon:$i"}.getOrElse("NotDefined"),
             url = ncbiTaxonIdentifier.map{_.url}.getOrElse("NotDefined")
-          ))
+          )))
         ))
       ).flatten
     )
