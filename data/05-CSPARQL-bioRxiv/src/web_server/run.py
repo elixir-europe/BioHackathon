@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_paginate import Pagination, get_page_parameter
 
 
-from web_server.sparql_wrapper import execute_query, get_total_papers
+from sparql_wrapper import execute_query, get_total_papers
 
 
 app = Flask(__name__)
