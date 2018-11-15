@@ -28,7 +28,16 @@ def get_properties():
 
 def get_total_papers():
     """Total number of papers stored into virtuoso."""
-    return 100000
+    query = """
+    select count(distinct ?s) as ?count where {
+        ?s a <http://purl.org/ontology/bibo/AcademicArticle>
+    }
+    """
+    sparql = SPARQLWrapper(CONFIG['sparql_endpoint'])
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    return int(results["results"]["bindings"][0]['count']['value'])
 
 
 def get_pattern_for(key: str, value: str, index: int) -> str:
@@ -69,6 +78,7 @@ def form_to_sparql(form_data: str) -> Optional[str]:
     WHERE
     {{
         {statements}
+        ?publication a <http://purl.org/ontology/bibo/AcademicArticle> .
         ?publication ?p ?o
     }}
     '''
