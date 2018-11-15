@@ -28,7 +28,8 @@ def form_to_sparql(form_data: str) -> Optional[str]:
     stmts = []
     for i, entry in enumerate(msg.split()):
         try:
-            key, val = entry.split(':')
+            key, *vals = entry.split(':')
+            val = ':'.join(vals)
         except ValueError:
             return None
 
