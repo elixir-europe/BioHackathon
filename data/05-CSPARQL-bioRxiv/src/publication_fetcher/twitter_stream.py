@@ -24,7 +24,17 @@ class Listener(StreamListener):
     def on_data(self, data):
         try:
             json_data = json.loads(data)
-            tweet_txt = json_data["text"]
+            tweet_txt = ''
+
+            try:
+                if json_data["retweeted_status"]:
+                    return True
+            except KeyError:
+                try:
+                    tweet_txt = json_data["extended_tweet"]["full_text"]
+                except KeyError:
+                    tweet_txt = json_data["text"]
+
             url = find_url(tweet_txt)
             if url:
                 # print(url)
