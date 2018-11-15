@@ -50,3 +50,4 @@ Software developers with either Python or Frontend development skills (especiall
 ## Hackers
 ---
 
+- [Nicola Soranzo](https://github.com/nsoranzo)

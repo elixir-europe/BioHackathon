@@ -1,0 +1,23 @@
+version: '3'
+services:
+
+  marref:
+    build:
+      context: .
+      dockerfile: marref_api/Dockerfile
+    image: marref_api:latest
+    command:
+    - java
+    - -jar
+    - marref-0.0.1-SNAPSHOT.jar
+    ports:
+    - 7777:8080
+
+  json-schema-validator:
+    image: ebispot/elixir-jsonschema-validator:1.0.0
+    links:
+    - marref
+    ports:
+    - 7788:3020
+
+

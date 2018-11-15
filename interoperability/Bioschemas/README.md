@@ -50,7 +50,30 @@ Resources:
 - Phil Barker 
 - Michel Dumontier  
 
-      
+## Achievements
+
+## Achievements:
+### Day 1:
+- Added Bioschemas markup to SynBioHub (DataCatalog, Dataset, DataRecord)
+- Added Bioschemas markup to Bgee (Dataset)
+- Added Bioschemas markup to Hamap (rules, profiles and proteomes Datasets)
+- Updated Bioschemas markup in CathDB (DataCatalog, Dataset, DataRecord)
+
+### BioStudies
+- Created BioSchema for BioStudy repository.
+- Developed application that generates Bioschema for a BioStudy.
+- 1 Example DataCatalog and 2 DataRecord examples are added to https://github.com/BioSchemas/specifications
+
+### Ensembl
+- Added draft Bioschemas to Gene and Species pages on feature branch https://github.com/Ensembl/ensembl-webcode/tree/feature/bioschemas
+
+### Chemistry
+  - Discussed and created BioSchema for MoleculeEntity. See [molecules.Md](molecules.Md)
+  - Designed the implementation for the dataset type for the ChEMBL database. See [chembl-dataset-example.json](chembl-dataset-example.json)
+  - Created a draft specification in the official Bioschemas repository. See https://github.com/BioSchemas/specifications/pull/234
+  - Created an example for the MoleculeEntity implementation based on ChEMBL database. 
+
+
 
 ## Community
 ---
@@ -111,4 +134,6 @@ Anyone with ideas about how to get the most of Bioschemas, for instance:
 
 ## Hackers
 ---
+
+- [Egon Willighagen](http://github.com/egonw)
 

@@ -1,0 +1,22 @@
+Linking keys:
+
+UniProt Accession, Reactome_id, standard_inchi_key, HPO_id
+
+
+Basic data model
+
+
+Protein
+UniProt Accession, Gene Name, HGNC, DrugBank_id [collection], Reactome_id [collection], OMIM_id [collection], CTD_id [collection]
+
+Pathway
+Pathway_id, Pathway_name, pathway_proteins[collection of UniProt accessions], isDisease_pathway, source_db
+
+Drug
+id, name, source_db, Clinical_trial_level [0-4], target_gene, target_protein, known_pathway, known_side_effect, known_disease_id, standard_inchi_key
+
+Phenotype
+id, name,  type [phenotype/disease], source_db, source_dbid, synonym [collection], xref [collection], is_a [collection], gene_symbol, gene_name
+
+Interaction
+Uniprot accession, interacting_with, interaction type, confidence_score

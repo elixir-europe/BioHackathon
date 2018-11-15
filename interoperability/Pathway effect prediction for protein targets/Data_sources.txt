@@ -1,0 +1,104 @@
+Data sources
+----
+
+UniProt
+This section needs to be filled in.
+
+DrugBANK
+
+https://www.drugbank.ca/releases/latest
+You need a user account to download.  They do have an API:
+https://docs.drugbankplus.com/v1/
+This is an XML file.
+
+But again need a token to get access and you may have to pay: 
+https://www.drugbankplus.com/api.html
+
+ChEMBL
+
+https://www.ebi.ac.uk/chembl/api/data/molecule.json
+Returns a paginated list of all the molecules in ChEMBL, note we only want "molecule_type": "Small molecule".
+
+Using ChEMBL's own python script we create a file containing the molecules to targets.
+
+
+
+
+
+
+
+Reactome
+
+Need to make 2 separate calls to get all the information we require.  These calls are based upon the UniProt accession.
+1. This first call returns the set of pathways that a protein entry is involved in:
+https://reactome.org/ContentService/interactors/static/molecule/P21802/pathways?species=Homo%20sapiens&onlyDiagrammed=false
+2. This second and more important call defines all the interactors that a protein entry has:
+https://reactome.org/ContentService/interactors/static/molecule/P21802/details?page=-1&pageSize=-1
+
+Both return JSON
+
+
+
+
+
+CTD
+1.
+http://ctdbase.org/reports/CTD_pheno_term_ixns.csv.gz
+File contains the following data:
+Fields:
+# chemicalname,chemicalid,casrn,phenotypename,phenotypeid,comentionedterms,organism,organismid,interaction,interactionactions,anatomyterms,inferencegenesymbols,pubmedids,
+#
+10074-G5,C534883,,ATP biosynthetic process,GO:0006754,,Homo sapiens,9606,10074-G5 analog results in decreased ATP biosynthetic process,decreases^phenotype,1^HL-60 Cells^D018922,,260
+36281,
+10074-G5,C534883,,ATP biosynthetic process,GO:0006754,,Homo sapiens,9606,10074-G5 analog results in decreased ATP biosynthetic process,decreases^phenotype,"1^Lung^D008168|2^Cell Line, Tumor^D045744",,26036281,
+
+2.
+http://ctdbase.org/reports/CTD_diseases_pathways.csv.gz
+Another useful data set providing disease association to a pathway with inferred gene target.
+File contains the following data:
+# Fields:
+# DiseaseName,DiseaseID,PathwayName,PathwayID,InferenceGeneSymbol
+#
+17-Hydroxysteroid Dehydrogenase Deficiency,MESH:C537805,Androgen biosynthesis,REACT:R-HSA-193048,HSD17B3
+17-Hydroxysteroid Dehydrogenase Deficiency,MESH:C537805,"Fatty acid, triacylglycerol, and ketone body metabolism",REACT:R-HSA-535734,HSD17B3
+17-Hydroxysteroid Dehydrogenase Deficiency,MESH:C537805,Fatty Acyl-CoA Biosynthesis,REACT:R-HSA-75105,HSD17B3
+17-Hydroxysteroid Dehydrogenase Deficiency,MESH:C537805,Metabolic pathways,KEGG:hsa01100,HSD17B3
+17-Hydroxysteroid Dehydrogenase Deficiency,MESH:C537805,Metabolism,REACT:R-HSA-1430728,HSD17B3
+
+
+3.
+http://ctdbase.org/reports/CTD_chemicals_diseases.csv.gz
+# Fields:
+# ChemicalName,ChemicalID,CasRN,DiseaseName,DiseaseID,DirectEvidence,InferenceGeneSymbol,InferenceScore,OmimIDs,PubMedIDs
+#
+06-Paris-LA-66 protocol,C046983,,Precursor Cell Lymphoblastic Leukemia-Lymphoma,MESH:D054198,therapeutic,,,,4519131
+10074-G5,C534883,,Adenocarcinoma,MESH:D000230,,MYC,4.40,,26432044
+10074-G5,C534883,,Adenocarcinoma of Lung,MESH:D000077192,,MYC,4.65,,26656844|27602772
+10074-G5,C534883,,Burkitt Lymphoma,MESH:D002051,,MYC,5.44,113970,
+10074-G5,C534883,,Carcinoma,MESH:D002277,,MYC,4.41,,2228319
+10074-G5,C534883,,"Carcinoma, Hepatocellular",MESH:D006528,,MYC,4.16,,12029619|15565109|29698666|9029167
+10074-G5,C534883,,"Carcinoma, Merkel Cell",MESH:D015266,,MYC,6.46,,25277525
+10074-G5,C534883,,"Carcinoma, Non-Small-Cell Lung",MESH:D002289,,MYC,4.60,,24688052
+
+
+IntAct
+Download: ftp://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+Tab separated file. We only need a few of the fields: 1, 2, 10, 11, 12 and 15
+eg:
+#ID(s) interactor A     ID(s) interactor B    Taxid interactor A      Taxid interactor B      Interaction type(s)    Confidence score
+example data, but not all data presented in an individual field.
+uniprotkb:P49418        uniprotkb:O43426      taxid:9606(human)      taxid:9606(human)      psi-mi:"MI:0407"(direct interaction)    intact-miscore:0.56
+
+
+
+
+Human Phenotype Ontology
+
+Need two files.
+1. http://compbio.charite.de/jenkins/job/hpo.annotations/lastStableBuild/artifact/misc/phenotype_annotation.tab
+Provides the set of links between OMIM and Decipher to HPO terms.
+This is a text tab delimited file.
+
+2. http://purl.obolibrary.org/obo/hp.obo
+Provides the full HPO entry
+This is a specific text file format developed for ontologies.
