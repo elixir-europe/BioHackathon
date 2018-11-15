@@ -37,7 +37,7 @@ Bioinformaticians, chemoinformaticians, data scientists, researchers with some p
 
 ### Tasks 
 
-#### Day 1  (SILVERSTONE)
+#### Day 1  (Silverstone room)
 Blockchain technologies and Biosamples (data and workflows)
   1. Tutorial on Blockchain technologies (9-11)
   2. Tutorial on Hyperledger Composer (11-12, 13-15). 
@@ -49,29 +49,26 @@ Blockchain technologies and Biosamples (data and workflows)
       - Output: Identify data structures and workflows.
   5. How would BioSamples benefit from blockchain technologies: define provenance in curation. 
  
-#### Day 2
+#### Day 2 (Main room)
 Supply chain management in BioSamples (9-12)
-Designing and implementing a business network application (.bna) on Hyperledger Composer for the project.
-      - Define assets and participants.
-      - Define transactions and logic in JS . 
+  1. Designing and implementing a business network application (biosamples.bna) on Hyperledger Composer for the project:
+      - Define assets, participants, transactions and events in model file (biosamples.cto).
+      - Output: BioSamples.bna
+      - Example for sample submission (create asset)
+  2. Report.
+  
+#### Day 3 (Main room)
+Supply chain management in BioSamples
+  1. Code transactions logic in JS for curation. Update and document bna with new curation functions. 
       - Skills: JS. 
       - Output: BioSamples.bna
-
-#### Day 3
-Supply chain management in BioSamples
-  1. Write-up first report and document (.bna) for PoC on Composer-Playground (9-11:30). 
-  2. Report (11:30-12).
-  3. High-level introduction to Hyperledger Fabric. (13-15).
-  4. Designing a distributed ledger for BioSamples and similar sample management tools for deployment in Hyperledger Fabric   (15-19). 
-      - Output: Value chain in Biosamples (organization, channels..)
-  4. Designing front-ends (15-19). 
-      - Skills: AngularJS. 
+  2. Designing front-ends  
       - Output: Mock-ups.
 
-#### Day 4
+#### Day 4 (Main room)
 Presentation and roadmap
-  1. Writing-up a presentation for the project (9-11:30).
-  2. Report (11:30-12).
+  1. Writing-up a presentation for the project.
+  2. Report.
   3. Documenting (GitHub repo) and roadmap.
 
 ## Related works and references
