@@ -1,0 +1,70 @@
+prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/CHEBI_35522>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
+  schema:name "β-adrenergic agonist"^^xsd:string ;
+  schema:termCode "CHEBI:35522"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35522> .
+
+<ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl>
+  a schema:DefinedTermSet ;
+  schema:name "CHEBI"^^xsd:string .
+
+<http://purl.obolibrary.org/obo/CHEBI_77746>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
+  schema:name "human metabolite"^^xsd:string ;
+  schema:termCode "CHEBI:77746"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:77746> .
+
+<http://purl.obolibrary.org/obo/CHEBI_39142>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
+  schema:name "Brønsted base"^^xsd:string ;
+  schema:termCode "CHEBI:39142"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39142> .
+
+<http://purl.obolibrary.org/obo/CHEBI_38147>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
+  schema:name "cardiotonic drug"^^xsd:string ;
+  schema:termCode "CHEBI:38147"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:38147> .
+
+[]
+  a schema:MolecularEntity ;
+  schema:alternateName "3-hydroxytyramine"^^xsd:string, "4-(2-aminoethyl)catechol"^^xsd:string, "4-(2-aminoethyl)pyrocatechol"^^xsd:string ;
+  schema:biochemicalInteraction [
+    a schema:BioChemEntity ;
+    schema:identifier <http://njh.me/CHEMBL3510> ;
+    schema:name "Carbonic anhydrase XIV"^^xsd:string ;
+    schema:url <https://www.ebi.ac.uk/chembl/beta/target_report_card/CHEMBL3510/>
+  ] ;
+  schema:biochemicalSimilarity [
+    a schema:MolecularEntity ;
+    schema:identifier <http://njh.me/CHEMBL31088> ;
+    schema:name "DEOXIEPINEPHRINE"^^xsd:string ;
+    schema:url <https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL31088/>
+  ], [
+    a schema:MolecularEntity ;
+    schema:identifier <http://njh.me/CHEMBL1950045> ;
+    schema:name "3,4-Dihydroxyphenylethanol"^^xsd:string ;
+    schema:url <https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL1950045/>
+  ] ;
+  schema:biologicalRole <http://purl.obolibrary.org/obo/CHEBI_35522>, <http://purl.obolibrary.org/obo/CHEBI_77746> ;
+  schema:chemicalRole <http://purl.obolibrary.org/obo/CHEBI_39142> ;
+  schema:identifier <http://njh.me/CHEMBL59> ;
+  schema:image <https://www.ebi.ac.uk/chembl/api/data/image/CHEMBL59.svg?engine=indigo> ;
+  schema:inChI "InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2"^^xsd:string ;
+  schema:inChIKey "VYFYYTLLBUKUHU-UHFFFAOYSA-N"^^xsd:string ;
+  schema:iupacName "4-(2-aminoethyl)benzene-1,2-diol"^^xsd:string ;
+  schema:molecularFormula "C8H11NO2"^^xsd:string ;
+  schema:molecularWeight 1.531810e+2 ;
+  schema:monoisotopicMolecularWeight 1.530790e+2 ;
+  schema:name "Dopamine"^^xsd:string ;
+  schema:potentialUse <http://purl.obolibrary.org/obo/CHEBI_38147> ;
+  schema:sameAs <https://www.wikidata.org/wiki/Q170304> ;
+  schema:smiles "NCCc1ccc(O)c(O)c1"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chembl/beta/compound_report_card/CHEMBL59/> .
