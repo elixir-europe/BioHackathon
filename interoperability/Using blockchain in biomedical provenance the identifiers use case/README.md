@@ -61,10 +61,9 @@ Supply chain management in BioSamples (9-12)
 Supply chain management in BioSamples
   1. Code transactions logic in JS for curation. Update and document bna with new curation functions. 
       - Skills: JS. 
-      - Output: BioSamples.bna
-  2. Designing front-ends  
-      - Output: Mock-ups.
-
+      - Output: [BioSamples.bna](https://github.com/elixir-europe/BioHackathon/blob/master/interoperability/Using%20blockchain%20in%20biomedical%20provenance%20the%20identifiers%20use%20case/biosamples/biosamples.bna)
+  2. Extensions.  
+      
 #### Day 4 (Main room)
 Presentation and roadmap
   1. Writing-up a presentation for the project.
