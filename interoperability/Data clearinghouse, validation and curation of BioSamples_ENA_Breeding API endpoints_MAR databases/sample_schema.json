@@ -126,7 +126,7 @@
             "type": "array",
             "items": {
                 "type": "string",
-                "enum": ["Sample"]
+                "enum": ["Sample", "BioChemEntity"]
             }
         },
         "identifier": {
@@ -175,7 +175,7 @@
                 "$ref": "#/definitions/PropertyValue"
             }
         }
-    },       
+    },
     "additionalProperties": false,
     "required": [
         "name"
