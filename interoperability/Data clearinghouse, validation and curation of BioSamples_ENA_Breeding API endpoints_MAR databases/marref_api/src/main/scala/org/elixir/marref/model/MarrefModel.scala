@@ -98,6 +98,7 @@ case class SampleModel(annotationProvider: Option[String] = None,
     TopLevel(
       `@context` = "http://schema.org",
       `@type` = Seq("BioChemEntity","Sample"),
+      `@id` = mmpID.map{_.url}.getOrElse("NotDefined"),
       identifier = Seq(s"mmp:${mmpID.map{_.value}.getOrElse{"NotDefined"}}", s"biosample:${biosampleAccession.map{_.value}.getOrElse("NotDefined")}"),
       name = fullScientificName.getOrElse("NotDefinded"),
       description = comments.getOrElse("NotDefined"),
