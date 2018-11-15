@@ -12,7 +12,7 @@ with open('config.yaml') as fd:
 
 def get_properties():
     """All candidates of properties for advanced search."""
-    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"]
+    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDoi", "hasAbstract"]
 
 
 def get_total_papers():
