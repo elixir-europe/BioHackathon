@@ -1,6 +1,6 @@
 # Using blockchain in biomedical provenance: Tracking BioSamples.
 
-### Representative: Richard Shute
+## Representative: Richard Shute
 
 ## Community
 ---
