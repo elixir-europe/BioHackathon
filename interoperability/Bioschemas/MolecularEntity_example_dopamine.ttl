@@ -1,4 +1,4 @@
-prefix schema: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.obolibrary.org/obo/CHEBI_35522>
