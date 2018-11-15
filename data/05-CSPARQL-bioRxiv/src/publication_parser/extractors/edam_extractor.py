@@ -26,7 +26,7 @@ class EdamExtractor(SemanticExtractor):
             path = "./publication_parser/extractors/edam_files/"
             with open(path + 'sample_input.json') as f:
                 edam_inp = json.load(f)
-        except:
+        except IOError:
             print("could not read the sample_input.json file")
             return None
 

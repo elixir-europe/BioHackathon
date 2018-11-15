@@ -10,7 +10,6 @@ from . import MetaExtractor
 
 
 class HighWireHTMLParser:
-
     def __init__(self) -> None:
         self.acknowledgement_xpath = '//div[contains(@class, "ack")]/p'
         self.abstract_xpath = '//div[@id="abstract-1"]'
@@ -40,10 +39,12 @@ class HighWireHTMLParser:
         self.section_xpath = './div[contains(@class, "section")]'
         self.title_xpath = 'head/title'
         self.volume_xpath = 'head/meta[@name="citation_volume"]/@content'
-        self.xpath_sections_to_ignore = ['div[@class="contributors"]', 'div[@class="section abstract"]',
-                                         'div[@class="section ack"]',
-                                         'div[@class="section fn-group"]', 'div[@class="section ref-list"]',
-                                         'div[@class="section acknowledgement"]']
+        self.xpath_sections_to_ignore = [
+            'div[@class="contributors"]', 'div[@class="section abstract"]',
+            'div[@class="section ack"]', 'div[@class="section fn-group"]',
+            'div[@class="section ref-list"]',
+            'div[@class="section acknowledgement"]'
+        ]
 
         self.extracted_dict = {}
 
@@ -75,15 +76,21 @@ class HighWireHTMLParser:
         return get_text_from_all_nodes(nodes)
 
     def build_paper_metadata(self):
-        self.extracted_dict['title'] = self.text_from_xpath(self.title_xpath) or None
-        self.extracted_dict['pdf_url'] = self.text_from_xpath(self.pdf_url_xpath) or None
-        self.extracted_dict['doi'] = self.text_from_xpath(self.doi_xpath) or None
-        self.extracted_dict['abstract'] = self.text_from_xpath(self.abstract_xpath) or None
+        self.extracted_dict['title'] = self.text_from_xpath(
+            self.title_xpath) or None
+        self.extracted_dict['pdf_url'] = self.text_from_xpath(
+            self.pdf_url_xpath) or None
+        self.extracted_dict['doi'] = self.text_from_xpath(
+            self.doi_xpath) or None
+        self.extracted_dict['abstract'] = self.text_from_xpath(
+            self.abstract_xpath) or None
         # self.extracted_dict['first_page'] = self.text_from_xpath(self.first_page_xpath) or None
         # self.extracted_dict['last_page'] = self.text_from_xpath(self.last_page_xpath) or None
-        publication_date_string = self.text_from_xpath(self.publication_date_xpath) or None
+        publication_date_string = self.text_from_xpath(
+            self.publication_date_xpath) or None
         try:
-            publication_date = datetime.strptime(publication_date_string, self.dateformat)
+            publication_date = datetime.strptime(publication_date_string,
+                                                 self.dateformat)
         except (ValueError, TypeError):
             publication_date = None
         if publication_date is not None:
@@ -113,7 +120,8 @@ class HighWireHTMLParser:
                     authors.append(author)
                 author = {}
                 author_complete_names = child.get('content')
-                author['given_names'], author['surname'] = self.get_names(author_complete_names)
+                author['given_names'], author['surname'] = self.get_names(
+                    author_complete_names)
                 if not author['surname'] and not author['given_names']:
                     author['surname'] = author_complete_names
                 affiliations = []
@@ -145,8 +153,10 @@ class HighWireHTMLParser:
         #     self.extracted_dict['keywords'].append(keyword)
 
     def build_journal_metadata(self):
-        self.extracted_dict['journal_title'] = self.text_from_xpath(self.journal_title_xpath) or None
-        self.extracted_dict['publisher'] = self.text_from_xpath(self.publisher_xpath) or None
+        self.extracted_dict['journal_title'] = self.text_from_xpath(
+            self.journal_title_xpath) or None
+        self.extracted_dict['publisher'] = self.text_from_xpath(
+            self.publisher_xpath) or None
 
     def build_body(self):
         body_roots = self.parsed_html.xpath(self.body_root_xpath)
@@ -183,7 +193,8 @@ class HighWireHTMLParser:
                 title = titles[0]
                 section['title'] = title.text
             for paragraph_node in section_node.xpath(self.paragraphs_xpath):
-                section['paragraphs'].append(get_text_from_element(paragraph_node))
+                section['paragraphs'].append(
+                    get_text_from_element(paragraph_node))
             section["subsections"] = self.build_sections(section_node)
             sections.append(section)
         return sections
@@ -222,7 +233,6 @@ def get_text_from_all_nodes(nodes):
 
 
 class BiorxivBasicExtractor(MetaExtractor):
-
     def __init__(self) -> None:
         self.base_url = CONFIG['biorxiv']['base_url']
         self.user_agent = CONFIG['biorxiv']['user_agent']
@@ -231,9 +241,16 @@ class BiorxivBasicExtractor(MetaExtractor):
     def parse(self, url: str) -> Optional[Dict[str, str]]:
         if not url.startswith(self.base_url):
             return None
-        headers = {'User-Agent': self.user_agent,
-                   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                   'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate'}
+        headers = {
+            'User-Agent':
+            self.user_agent,
+            'Accept':
+            'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language':
+            'en-US,en;q=0.5',
+            'Accept-Encoding':
+            'gzip, deflate'
+        }
         r = requests.get(url, stream=True, headers=headers)
         requests
         if not r.ok:

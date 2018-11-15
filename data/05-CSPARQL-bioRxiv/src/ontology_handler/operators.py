@@ -29,11 +29,15 @@ def add_entity(pub: 'SemanticPublication') -> None:
     g.add((subject, BIBO.doi, rdflib.Literal(pub.doi, datatype=XSD.string)))
     g.add((subject, RDFS.seeAlso, rdflib.URIRef(pub.pdf_url)))
     if pub.publication_date:
-        g.add((subject, DCTERMS.created, rdflib.Literal(pub.publication_date.utcnow(), datatype=XSD.datetime)))
+        g.add((subject, DCTERMS.created,
+               rdflib.Literal(
+                   pub.publication_date.utcnow(), datatype=XSD.datetime)))
     if pub.title:
-        g.add((subject, DCTERMS.title, rdflib.Literal(pub.title, datatype=XSD.string)))
+        g.add((subject, DCTERMS.title,
+               rdflib.Literal(pub.title, datatype=XSD.string)))
     if pub.abstract:
-        g.add((subject, BIBO.abstract, rdflib.Literal(pub.abstract, datatype=XSD.string)))
+        g.add((subject, BIBO.abstract,
+               rdflib.Literal(pub.abstract, datatype=XSD.string)))
     if pub.authors:
         list_authors = rdflib.BNode()
         g.add((subject, BIBO.authorList, list_authors))
@@ -43,15 +47,19 @@ def add_entity(pub: 'SemanticPublication') -> None:
             g.add((author_node, RDF.type, FOAF.person))
             surname = author.get('surname')
             if surname:
-                g.add((author_node, FOAF.familyName, rdflib.Literal(surname, datatype=XSD.string)))
+                g.add((author_node, FOAF.familyName,
+                       rdflib.Literal(surname, datatype=XSD.string)))
             given_names = author.get('given_names')
             if given_names:
-                g.add((author_node, FOAF.givenName, rdflib.Literal(given_names, datatype=XSD.string)))
+                g.add((author_node, FOAF.givenName,
+                       rdflib.Literal(given_names, datatype=XSD.string)))
             email = author.get('email')
             if email:
-                g.add((author_node, FOAF.mbox, rdflib.Literal(email, datatype=XSD.string)))
+                g.add((author_node, FOAF.mbox,
+                       rdflib.Literal(email, datatype=XSD.string)))
             full_name = f'{given_names} {surname}'
-            g.add((author_node, FOAF.name, rdflib.Literal(full_name, datatype=XSD.string)))
+            g.add((author_node, FOAF.name,
+                   rdflib.Literal(full_name, datatype=XSD.string)))
             seq_authors.append(author_node)
         Collection(g, list_authors, seq=seq_authors)
     # add to ontology
@@ -67,9 +75,7 @@ def add_entity(pub: 'SemanticPublication') -> None:
     session.headers = {'Accept': 'text/html'}
 
     data = {'query': query}
-    resp = session.post(
-        CONFIG['sparql_endpoint'],
-        data=data)
+    resp = session.post(CONFIG['sparql_endpoint'], data=data)
 
     if not resp.ok:
         print('[ERROR]', resp.content)

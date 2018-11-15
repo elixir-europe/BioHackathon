@@ -4,6 +4,7 @@ from typing import ValuesView, Dict, Optional
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
 
+
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
 
