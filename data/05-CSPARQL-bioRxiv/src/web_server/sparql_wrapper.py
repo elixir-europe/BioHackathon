@@ -9,6 +9,9 @@ from typing import ValuesView, Dict, Optional
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
 
+def get_properties():
+    """All candidates of properties for advanced search."""
+    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"]
 
 def get_total_papers():
     """Total number of papers stored into virtuoso."""
