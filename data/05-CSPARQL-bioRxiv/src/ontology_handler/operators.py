@@ -14,6 +14,8 @@ with open('config.yaml') as fd:
 
 BIBO = rdflib.Namespace('http://purl.org/ontology/bibo/')
 IDENTIFIERS = rdflib.Namespace('http://identifiers.org/')
+CUSTOM = rdflib.Namespace('http://foo.bar.baz/')
+EDAM = rdflib.Namespace('http://edamontology.org/')
 
 
 def add_entity(pub: 'SemanticPublication') -> None:
@@ -28,6 +30,27 @@ def add_entity(pub: 'SemanticPublication') -> None:
     g.add((subject, RDF.type, BIBO.AcademicArticle))
     g.add((subject, BIBO.doi, rdflib.Literal(pub.doi, datatype=XSD.string)))
     g.add((subject, RDFS.seeAlso, rdflib.URIRef(pub.pdf_url)))
+
+    if pub.data:
+        for dd in pub.data:
+            g.add((subject, CUSTOM.containsData, rdflib.URIRef(dd['uri'])))
+            g.add((subject, RDFS.label, rdflib.Literal(dd['value'], datatype=XSD.string)))
+
+    if pub.format:
+        for dd in pub.format:
+            g.add((subject, CUSTOM.containsDataFormat, rdflib.URIRef(dd['uri'])))
+            g.add((subject, RDFS.label, rdflib.Literal(dd['value'], datatype=XSD.string)))
+
+    if pub.operation:
+        for dd in pub.operation:
+            g.add((subject, CUSTOM.containsOperation, rdflib.URIRef(dd['uri'])))
+            g.add((subject, RDFS.label, rdflib.Literal(dd['value'], datatype=XSD.string)))
+
+    if pub.topic:
+        for dd in pub.topic:
+            g.add((subject, EDAM.has_topic, rdflib.URIRef(dd['uri'])))
+            g.add((subject, RDFS.label, rdflib.Literal(dd['value'], datatype=XSD.string)))
+
     if pub.publication_date:
         g.add((subject, DCTERMS.created, rdflib.Literal(pub.publication_date.utcnow(), datatype=XSD.datetime)))
     if pub.title:
