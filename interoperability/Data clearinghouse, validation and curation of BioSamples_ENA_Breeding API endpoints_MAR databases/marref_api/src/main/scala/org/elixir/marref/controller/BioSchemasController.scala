@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.{GetMapping, PathVariable, Reques
 class BioSchemasController(val sampleProvider: SampleProviderTrait) {
   @GetMapping(path = Array("/samples"))
   def getAllSamples: String = {
-//    sampleProvider.getAllSamples()
-    "Not implemented"
+    sampleProvider.getAllSamples((sm: SampleModel) => sm.toJsonld())
   }
 
   @GetMapping(path = Array("/samples/{id}"))

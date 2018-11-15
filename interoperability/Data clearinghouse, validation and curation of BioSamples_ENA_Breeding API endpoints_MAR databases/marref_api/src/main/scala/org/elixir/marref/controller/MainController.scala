@@ -11,7 +11,7 @@ class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples"))
   def getAllSamples: String = {
-    sampleProvider.getAllSamples()
+    sampleProvider.getAllSamples((sm: SampleModel) => sm.toJson())
   }
 
   @GetMapping(path = Array("/ids")) //ex: /ids?name=MMP

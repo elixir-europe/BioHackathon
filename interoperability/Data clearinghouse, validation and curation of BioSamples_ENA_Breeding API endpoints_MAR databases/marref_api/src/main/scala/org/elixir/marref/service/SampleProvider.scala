@@ -20,7 +20,9 @@ class SampleProvider() extends SampleProviderTrait {
 
   val marrefModel: MarrefModel = Json.parse[MarrefModel](dbString)
 
-  override def getAllSamples(): String = dbString
+  override def getAllSamples(stringify: SampleModel => String): String = {
+    s"[${marrefModel.records.record.map{sm => stringify(sm)}.mkString(",")}]"
+  }
 
   private def getSampleObj(id:String): Option[SampleModel] = {
     def getId(sm: SampleModel): Option[String] = if(id.startsWith("MMP"))
