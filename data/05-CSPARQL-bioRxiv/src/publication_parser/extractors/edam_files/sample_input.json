@@ -13,6 +13,6 @@
     "data_3021",
     "http://edamontology.org/format_1964"
   ],
-  "branches": [ "topic", "operation", "data"],
+  "branches": [ "topic", "operation", "data", "format"],
   "matches": 3
 }
