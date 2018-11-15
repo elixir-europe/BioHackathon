@@ -29,3 +29,11 @@ small {
 .search-query {
     width: 400px;
 }
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-style: italic;
+}

@@ -1,5 +1,3 @@
-import random
-
 from typing import Optional, Dict
 
 from .base_extractor import SemanticExtractor

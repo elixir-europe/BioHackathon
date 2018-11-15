@@ -9,9 +9,11 @@ from typing import ValuesView, Dict, Optional
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
 
+
 def get_properties():
     """All candidates of properties for advanced search."""
-    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"]
+    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDoi", "hasAbstract"]
+
 
 def get_total_papers():
     """Total number of papers stored into virtuoso."""
@@ -19,12 +21,15 @@ def get_total_papers():
 
 
 def form_to_sparql(form_data: str) -> Optional[str]:
+    if 'q' not in form_data:
+        return None
     msg = form_data['q']
 
     stmts = []
     for i, entry in enumerate(msg.split()):
         try:
-            key, val = entry.split(':')
+            key, *vals = entry.split(':')
+            val = ':'.join(vals)
         except ValueError:
             return None
 

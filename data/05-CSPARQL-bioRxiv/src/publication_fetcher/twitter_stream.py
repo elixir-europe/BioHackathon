@@ -4,8 +4,9 @@
 Listens to the twitter data stream
 """
 
-import json
 import re
+import json
+import traceback
 
 import requests
 from tweepy import Stream, OAuthHandler
@@ -46,8 +47,8 @@ class Listener(StreamListener):
                     pub = SemanticPublication.from_url(valid_url)
                     add_entity(pub)
             return True
-        except Exception as exp:
-            print(type(exp))
+        except Exception as err:
+            traceback.print_tb(err.__traceback__)
             return True
 
     def on_error(self, status):
@@ -58,7 +59,7 @@ def find_url(string):
     """
     Finds and returns the first url contained
     """
-    url = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', string)
+    url = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', string)
     return url
 
 
