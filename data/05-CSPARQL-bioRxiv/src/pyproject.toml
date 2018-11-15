@@ -27,7 +27,6 @@ flask-paginate = "^0.5.1"
 lxml = "^4.2.5"
 tweepy= ">=3.6.0"
 uwsgi = {version = "^2.0",optional = true,extras = ["uwsgi"]}
-Flask-Webpack-Fork = "^0.1.1"
 
 
 [tool.poetry.dev-dependencies]
