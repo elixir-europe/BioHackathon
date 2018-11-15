@@ -2,29 +2,32 @@ import React, { Component } from 'react';
 import Builder from './Builder';
 import * as QueryString from 'query-string';
 
-const search_items = ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"];
+//const searchItems = ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"];
 class App extends Component {
-  constructor() {
+  constructor(props) {
     super();
+    let searchItems = props.searchItems
+
     const parsed = QueryString.parse(location.search);
     let query = parsed["q"] !== undefined ? parsed["q"] : "";
     let queryList = query.split(" ").map(item => {
     let items = item.split(":");
-    if (search_items.indexOf(items[0]) < 0) {
-        items[0] = search_items[0];
-    }
-    if (items[1] === undefined) {
-        items[1] = "";
-    }
-    return items;
+        if (searchItems.indexOf(items[0]) < 0) {
+            items[0] = searchItems[0];
+        }
+        if (items[1] === undefined) {
+            items[1] = "";
+        }
+        return items;
     });
     if (queryList.length === 0) {
-      queryList = [[search_items[0], ""]]
+      queryList = [[searchItems[0], ""]]
     }
     this.state = {
         query,
         advance: true,
-        queryList
+        queryList,
+        searchItems
     };
     this.addQueryList = this.addQueryList.bind(this);
     this.updateValue = this.updateValue.bind(this);
@@ -51,7 +54,7 @@ class App extends Component {
   }
 
   addQueryList() {
-    let queryList = this.state.queryList.concat([[search_items[0], ""]]);
+    let queryList = this.state.queryList.concat([[this.props.searchItems[0], ""]]);
     this.setState({queryList });
     this.updateAdvancedQuery(queryList);
   }
@@ -75,7 +78,7 @@ class App extends Component {
               <button className="btn btn-outline-secondary" type="submit" id="button-addon1"><i className="fa fa-search"></i></button>
             </div>
           </div>
-          { this.state.advance && <Builder queryList={this.state.queryList} addQueryList={this.addQueryList} removeQueryList={this.removeQueryList} updateQueryList={this.updateQueryList} search_items={search_items} /> }
+          { this.state.advance && <Builder queryList={this.state.queryList} addQueryList={this.addQueryList} removeQueryList={this.removeQueryList} updateQueryList={this.updateQueryList} searchItems={this.props.searchItems} /> }
         </form>
       </div>
     );

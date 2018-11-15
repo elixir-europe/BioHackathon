@@ -10,7 +10,7 @@ class Builder extends Component {
                 return (
                     <div className="d-flex" key={index}>
                         <select className="custom-select form-control" id="inputGroupSelect01" value={query[0]} onChange={event => this.props.updateQueryList(index, "type", event.target.value)}>
-                            {this.props.search_items.map((search_item, search_item_index) => 
+                            {this.props.searchItems.map((search_item, search_item_index) =>
                                 <option key={search_item_index} value={search_item}>{search_item}</option>
                             )}
                         </select>
