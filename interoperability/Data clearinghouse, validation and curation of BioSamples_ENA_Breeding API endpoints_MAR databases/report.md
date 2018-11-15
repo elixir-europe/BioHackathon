@@ -15,3 +15,12 @@
 
 ## Wednesday 14 November 2018
 
+- Built a proof of concept for a MarRef API able to expose both JSON and JSON-LD (Bioschemas) 
+
+- Initialized a docker environment to facilitate the integration of the MarRef API with the JSON schema validator and the client to curate BioSamples
+
+- Uploaded a biosamples-v4 python client to Pypi to be easily accessible from one of our scripts
+
+
+## Thursday 15 November 2018
+
