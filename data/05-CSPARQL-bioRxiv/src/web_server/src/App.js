@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Builder from './Builder';
 import * as QueryString from 'query-string';
 
-//const searchItems = ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"];
 class App extends Component {
   constructor(props) {
     super();
@@ -73,7 +72,7 @@ class App extends Component {
       <div className="App">
         <form className="form-group row" action="/query">
           <div className="input-group mb-3">
-            <input type="text" className="form-control" name="q" placeholder="use keywords such as: hasDoi:10.1000/182" aria-label="search field"  aria-describedby="button-addon1" value={this.state.query} onChange={event => this.updateValue(event.target.value)} />
+            <input type="text" className="form-control" name="q" placeholder="use keywords such as: doi:10.1000/182" aria-label="search field"  aria-describedby="button-addon1" value={this.state.query} onChange={event => this.updateValue(event.target.value)} />
             <div className="input-group-append">
               <button className="btn btn-outline-secondary" type="submit" id="button-addon1"><i className="fa fa-search"></i></button>
             </div>

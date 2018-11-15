@@ -9,18 +9,28 @@ from web_server.sparql_wrapper import (
     get_properties)
 
 
-app = Flask(__name__)
+class ScriptNameStripper(Flask):
+    def __call__(self, environ, start_response):
+        environ['SCRIPT_NAME'] = ''
+        return (super(ScriptNameStripper, self)
+                .__call__(environ, start_response))
+
+
+app = ScriptNameStripper(__name__)
 
 
 @app.route('/')
 def index():
+    properties = get_properties()
     return render_template(
-        'index.html', properties=get_properties(),
+        'index.html', properties=properties,
         data=None, query=None)
+
 
 @app.route('/api/v1/property')
 def get_property():
     return jsonify(get_properties())
+
 
 @app.route('/query', methods=['POST', 'GET'])
 def query():
@@ -30,7 +40,7 @@ def query():
         page=page, found=len(res), total=get_total_papers(),
         record_name='papers', format_total=True, format_number=True,
         search=True, bs_version=4)
-    res = list(res)[(int(page)*10-10):(int(page)*10)]
+    res = list(res)[(int(page) * 10 - 10):(int(page) * 10)]
     return render_template(
         'index.html', data=res, properties=get_properties(),
         query=request.args.get('q'), pagination=pagination)

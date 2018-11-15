@@ -1,0 +1,34 @@
+var.asterixdir = "${PWD}/"
+
+### For uWSGI
+server.modules += ( "mod_scgi" )
+scgi.protocol = "uwsgi"
+scgi.server = (
+  "/asterix.scgi" => ((
+#    "bin-path" => var.asterixdir + "asterix.scgi",
+#    "host" => "127.0.0.1", "port" => 4000, 
+    "socket" => "/tmp/asterix.sock", 
+    "check-local" => "disable" 
+  )),
+)
+
+server.modules += ( "mod_rewrite" )
+url.rewrite-once = (
+    "^(/favicon.ico|/robots.txt)$" => "/static/$1",
+    "^(/static($|/.*))$" => "$1",
+    "^(/asterix.scgi(/static($|/.*)))$" => "$2",
+    "^(/asterix.scgi($|/.*)?)$" => "$1",
+    "^(/.*)$" => "/asterix.scgi$1"
+)
+
+server.modules   += ( "mod_alias" )
+alias.url = (
+    "/static/" => var.asterixdir + "web_server/static/"
+)
+
+### For Flask test server
+#server.modules += ( "mod_proxy" )
+#proxy.server = (
+#  "/" => (( "host" => "127.0.0.1", "port" => 5000 )),
+#)
+

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,37 +8,41 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="/">CSPARQL-bioRxiv</a>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top px-5">
+        <a class="navbar-brand" href="/">CSPARQL-bioRxiv</a>
+        <ul class="navbar-nav ml-auto">
+            <a class="btn btn-success d-none d-lg-inline-block" href="https://github.com/elixir-europe/BioHackathon">Github</a>
+        </ul>
     </nav>
+</header>
 
-    <main class="container">
-      <div class="header">
-      </div>
-      <div id="search-bar"></div>
-      <div class="container">
+<main role="main" class="container">
+    <div id="search-bar" class="jumbotron pt-2 pb-0"></div>
+    <div class="container">
         {% if data is not none %}
-          {% if data|length == 0 %}
-            <p>No papers found</p>
-          {% else %}
-            {{ pagination.info }}
-            {% for i in data %}
-            <div class="card">
-              <div class="card-body">
-                <a href="https://{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
-                <small>{{ i['authors'] }} {{ "("+i['year']+")" if i['year'] }}  D: <a href="https://doi.org/{{ i['doi'] }}">{{ i['doi'] }}</a></small>
-                <p class="card-text">{{ i["abstract"]|truncate(280,true) }}</p>
-              </div>
-            </div>
-            {% endfor %}
-            <br />
-            {{ pagination.links }}
-          {% endif %}
+            {% if data|length == 0 %}
+                <p>No papers found</p>
+            {% else %}
+                {{ pagination.info }}
+                {% for i in data %}
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="{{ i['url'] }}"><h4 class="card-title">{{ i['title'] }}</h4></a>
+                            <small>{{ i['authors'] }} {{ "("+i['year']+")" if i['year'] }} {{"D:" if i['doi']}} <a
+                                    href="https://doi.org/{{ i['doi'] }}">{{ i['doi'] }}</a></small>
+                            <p class="card-text">{{ i["abstract"]|truncate(280,true) }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <br/>
+                {{ pagination.links }}
+            {% endif %}
         {% endif %}
-      </div>
-   </main>
-   <script src="{{ url_for('static', filename='js/entry.js') }}"></script>
-  </body>
+    </div>
+</main>
+<script src="{{ url_for('static', filename='js/entry.js') }}"></script>
+</body>
 </html>

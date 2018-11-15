@@ -1,6 +1,7 @@
 # custom excludes
 cache
 twitter_credentials.json
+asterix.lighttpd.conf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
