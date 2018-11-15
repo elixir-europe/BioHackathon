@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_paginate import Pagination, get_page_parameter
 
 from web_server.sparql_wrapper import (
@@ -18,6 +18,9 @@ def index():
         'index.html', properties=get_properties(),
         data=None, query=None)
 
+@app.route('/api/v1/property')
+def get_property():
+    return jsonify(get_properties())
 
 @app.route('/query', methods=['POST', 'GET'])
 def query():
