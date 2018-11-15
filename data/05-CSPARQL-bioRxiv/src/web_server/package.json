@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "yarn run build",
+    "start": "npm run-script build",
     "build": "parcel build src/entry.js -d static/js",
     "watch": "parcel watch src/entry.js -d static/js"
   },
