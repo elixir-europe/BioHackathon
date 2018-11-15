@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.{GetMapping, PathVariable, RequestMapping, RestController}
 
 @RestController
-@RequestMapping(path = Array("/api/marref"), produces = Array("application/ld+json"))
+@RequestMapping(path = Array("/marref/api"), produces = Array("application/ld+json"))
 class BioSchemasController(val sampleProvider: SampleProviderTrait) {
   @GetMapping(path = Array("/samples"))
   def getAllSamples: String = {

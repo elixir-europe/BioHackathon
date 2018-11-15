@@ -13,6 +13,7 @@ case class Property(`@type`: String = "PropertyValue",
 
 case class TopLevel(`@context`: String,
                    `@type`: Seq[String],
+                   `@id`: String,
                    identifier: Seq[String],
                    name: String,
                    description: String,

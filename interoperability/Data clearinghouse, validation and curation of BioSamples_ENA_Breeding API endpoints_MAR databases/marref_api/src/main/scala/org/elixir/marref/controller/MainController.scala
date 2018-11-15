@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation._
 
 @RestController
-@RequestMapping(path = Array("/api/marref"))
+@RequestMapping(path = Array("/marref/api"))
 class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples"))
@@ -15,10 +15,10 @@ class MainController(val sampleProvider: SampleProviderTrait) {
   }
 
   @GetMapping(path = Array("/ids")) //ex: /ids?name=MMP
-  def getAllIds(@RequestParam(name="accession", defaultValue="MMP", required=false) name: String): ResponseEntity[Any] = {
+  def getAllIds(@RequestParam(name="accession", defaultValue="mmp", required=false) name: String): ResponseEntity[Any] = {
     name match {
-      case "MMP" => ResponseEntity.ok(sampleProvider.getAllMmpIds())
-      case "BS" => ResponseEntity.ok(sampleProvider.getAllBsIds())
+      case "mmp" => ResponseEntity.ok(sampleProvider.getAllMmpIds())
+      case "bs" => ResponseEntity.ok(sampleProvider.getAllBsIds())
       case _ => ResponseEntity.status(501).build()
     }
   }
