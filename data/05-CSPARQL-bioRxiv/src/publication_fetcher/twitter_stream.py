@@ -38,7 +38,7 @@ class Listener(StreamListener):
             return True
         except Exception as exp:
             print(type(exp))
-            return False
+            return True
 
     def on_error(self, status):
         print(status)
