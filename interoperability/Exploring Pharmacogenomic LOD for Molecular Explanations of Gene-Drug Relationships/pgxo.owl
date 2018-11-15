@@ -160,9 +160,9 @@
     
 
 
-    <!-- http://pgxo.loria.fr/increasesChangeOf -->
+    <!-- http://pgxo.loria.fr/increasesChanceOf -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/increasesChangeOf">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/increasesChanceOf">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/influences"/>
     </owl:ObjectProperty>
     

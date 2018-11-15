@@ -14,12 +14,10 @@ services:
     - 7777:8080
 
   json-schema-validator:
-    build:
-      dockerfile: 
-    image: json-scema-validator:latest
+    image: ebispot/elixir-jsonschema-validator:1.0.0
     links:
     - marref
     ports:
-    - 8085:3020
+    - 7788:3020
 
 

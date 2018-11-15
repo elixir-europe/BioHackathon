@@ -82,7 +82,12 @@ http://ctdbase.org/reports/CTD_chemicals_diseases.csv.gz
 
 
 IntAct
-
+Download: ftp://ftp.ebi.ac.uk/pub/databases/intact/current/psimitab/intact.zip
+Tab separated file. We only need a few of the fields: 1, 2, 10, 11, 12 and 15
+eg:
+#ID(s) interactor A     ID(s) interactor B    Taxid interactor A      Taxid interactor B      Interaction type(s)    Confidence score
+example data, but not all data presented in an individual field.
+uniprotkb:P49418        uniprotkb:O43426      taxid:9606(human)      taxid:9606(human)      psi-mi:"MI:0407"(direct interaction)    intact-miscore:0.56
 
 
 

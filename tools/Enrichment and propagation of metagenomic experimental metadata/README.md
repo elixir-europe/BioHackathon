@@ -42,3 +42,8 @@ https://github.com/EBI-Metagenomics/emgapi
 ## Hackers
 ---
 
+## Achivements
+---
+
+Script infering variable regions from MGnify analysis results is avaialble on https://github.com/EBI-Metagenomics/elixir-biohackathon
+MGnify API changes are avaible in https://github.com/EBI-Metagenomics/emgapi/tree/biohackathon
