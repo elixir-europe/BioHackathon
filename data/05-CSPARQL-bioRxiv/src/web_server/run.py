@@ -10,9 +10,11 @@ from web_server.sparql_wrapper import (
 
 
 class ScriptNameStripper(Flask):
-   def __call__(self, environ, start_response):
-       environ['SCRIPT_NAME'] = ''
-       return super(ScriptNameStripper, self).__call__(environ, start_response)
+    def __call__(self, environ, start_response):
+        environ['SCRIPT_NAME'] = ''
+        return (super(ScriptNameStripper, self)
+                .__call__(environ, start_response))
+
 
 app = ScriptNameStripper(__name__)
 
@@ -23,9 +25,11 @@ def index():
         'index.html', properties=get_properties(),
         data=None, query=None)
 
+
 @app.route('/api/v1/property')
 def get_property():
     return jsonify(get_properties())
+
 
 @app.route('/query', methods=['POST', 'GET'])
 def query():
