@@ -1,10 +1,8 @@
 import collections
+from typing import ValuesView, Dict, Optional
 
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
-
-from typing import ValuesView, Dict, Optional
-
 
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
@@ -12,7 +10,7 @@ with open('config.yaml') as fd:
 
 def get_properties():
     """All candidates of properties for advanced search."""
-    return ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDoi", "hasAbstract"]
+    return ["title", "authors", "year", "doi", "abstract"]
 
 
 def get_total_papers():
@@ -33,7 +31,7 @@ def form_to_sparql(form_data: str) -> Optional[str]:
         except ValueError:
             return None
 
-        varname = 'o' * (i+1)  # need different variable per filter
+        varname = 'o' * (i + 1)  # need different variable per filter
 
         tmp = f'?foo <http://fubar.org/properties/{key}> ?{varname} . '
         tmp += f'FILTER contains(lcase(str(?{varname})), "{val.lower()}") .'
