@@ -1,23 +1,39 @@
 package org.elixir.marref.model
 
-import org.elixir.marref.model.bioschema.{Property, TopLevel, ValueReference}
+import org.elixir.marref.model.bioschema._
 import org.elixir.marref.utils.json.Json
 
 case class UrlModel(url: String, value: String)
-/*case class DateModel(`type`: String, date: Option[String], yearMonth: Option[String], year: Option[String]) {
-  lazy val value =
-}*/
+case class InnerDateModel(date: Option[String],
+                          yearMonth: Option[String],
+                          year: Option[String]) {
+  lazy val value = date
+    .orElse(yearMonth)
+    .orElse(year)
+}
+case class DateModel(`type`: String,
+                     date: Option[String],
+                     yearMonth: Option[String],
+                     year: Option[String],
+                     to: Option[InnerDateModel],
+                     from: Option[InnerDateModel]
+                    ) {
+  lazy val value = date
+      .orElse(yearMonth)
+      .orElse(year)
+      .orElse(to.flatMap{t => from.map{f => s"${f.value.getOrElse("NotDefined")}/${t.value.getOrElse("NotDefined")}"}})
+}
 case class ValueModel(`type`: Option[String] = None, value: String)
 case class ItemListModel(item: Seq[String])
 case class AnnotationSoftwareRevisionModel(`type`: String, value: String)
 case class AccessionModel(accession: Seq[UrlModel])
 case class LatLongModel(latitude: Float,
                         longitude: Float) {
-  lazy val str: String = s"lat:$latitude lon:$longitude"
+  lazy val value: String = s"${f"$latitude%1.4f"} N ${f"$longitude%1.4f"} W"
 }
 
 case class SampleModel(annotationProvider: Option[String] = None,
-                       //annotationDate: Option[DateModel],
+                       annotationDate: Option[DateModel],
                        annotationPipeline: Option[String],
                        annotationMethod: Option[ItemListModel],
                        annotationSoftwareRevision: Option[AnnotationSoftwareRevisionModel],
@@ -88,7 +104,7 @@ case class SampleModel(annotationProvider: Option[String] = None,
                        genomeStatus: Option[String],
                        mmpBiome: Option[String],
                        sequencingDepth: Option[ItemListModel],
-                       //collectionDate: Option[YearModel],
+                       collectionDate: Option[DateModel],
                        depth: Option[ValueModel],
                        latLon: Option[LatLongModel],
                        projectName: Option[String]
@@ -125,14 +141,14 @@ case class SampleModel(annotationProvider: Option[String] = None,
             value = a.value
           )
         },
-        /*Property(name = "Collection Date",
-          value = collectionDate.map{_.year}.getOrElse("NotDefined")
-        ),*/
+        Seq(Property(name = "Collection Date",
+          value = collectionDate.flatMap{_.value}.getOrElse("NotDefined")
+        )),
         Seq(Property(name = "Depth",
           value = depth.map{_.value}.getOrElse("NotDefined")
         )),
         Seq(Property(name = "Latitude and Longitude",
-          value = latLon.map{_.str}.getOrElse("NotDefined")
+          value = latLon.map{_.value}.getOrElse("NotDefined")
         )),
         Seq(Property(name = "Project Name",
           value = projectName.getOrElse("NotDefined")
