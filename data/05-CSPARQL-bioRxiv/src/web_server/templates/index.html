@@ -40,10 +40,8 @@
       </div>
    </main>
 
-   <script src="{{ url_for('static', filename='js/react.min.js') }}"></script>
-   <script src="{{ url_for('static', filename='js/react-dom.min.js') }}"></script>
-   <script src="{{ url_for('static', filename='js/JSXTransformer.js') }}"></script>
-   <script type="text/jsx">
+   <script src="{{ url_for('static', filename='js/entry.js') }}"></script>
+   <script type="comment">
 
      /*** @jsx React.DOM */
      const search_items = {{ properties|tojson }};

@@ -131,3 +131,6 @@ dmypy.json
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+
+# Javascript
+node_modules
