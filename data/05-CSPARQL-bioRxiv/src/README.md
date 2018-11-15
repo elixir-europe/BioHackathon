@@ -34,6 +34,8 @@ $ poetry run python publication_fetcher/twitter_stream.py
 ### Web-Server (query interface)
 
 ```bash
+$ npm install
+$ npm run-script build
 $ poetry run python web_server/run.py
 ```
 
