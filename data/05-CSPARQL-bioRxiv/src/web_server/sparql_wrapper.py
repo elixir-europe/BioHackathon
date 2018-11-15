@@ -19,6 +19,8 @@ def get_total_papers():
 
 
 def form_to_sparql(form_data: str) -> Optional[str]:
+    if 'q' not in form_data:
+        return None
     msg = form_data['q']
 
     stmts = []
