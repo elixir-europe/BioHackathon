@@ -135,9 +135,7 @@ class HighWireHTMLParser:
             author['affiliations'] = affiliations
             authors.append(author)
 
-        # TODO: keep all information
-        authors_str = ', '.join([a['given_names']+' '+a['surname'] for a in authors])
-        self.extracted_dict['authors'] = authors_str
+        self.extracted_dict['authors'] = authors
 
     def build_keywords(self):
         pass
@@ -237,6 +235,7 @@ class BiorxivBasicExtractor(MetaExtractor):
                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                    'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate'}
         r = requests.get(url, stream=True, headers=headers)
+        requests
         if not r.ok:
             print(f"request to biorxiv failed with status {r.status_code}")
             print(r.reason)
