@@ -60,35 +60,15 @@
                   ]
                 },
                 "properties": {
-                  "object": {
-                    "description": "The object of the relationship, i.e. the representation or identifier of the related enttity",
-                    "anyOf": [
-                      {
-                        "type": "object"
-                      },
-                      {
-                        "type": "string"
-                      }
-                    ]
-                  },
                   "name": {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
+                    "type": "string"
                   },
                   "codeValue": {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
+                    "type": "string"
                   },
-                  "name": {
-                    "type": "array",
-                    "items": {
-                      "type": "string",
-                      "format": "uri"
-                    }
+                  "url": {
+                    "type": "string",
+                    "format": "uri"
                   }
                 }
               }
