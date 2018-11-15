@@ -4,19 +4,42 @@ from typing import ValuesView, Dict, Optional
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
 
-
 with open('config.yaml') as fd:
     CONFIG = yaml.load(fd)
+
+DIRECT_MAPPING_FIELD_PROPERTIES = {
+    "title": "http://purl.org/dc/terms/title",
+    "doi": "http://purl.org/ontology/bibo/doi",
+    "abstract": "http://purl.org/ontology/bibo/abstract"
+}
+
+REVERSE_MAPPING = {value: key for key, value in DIRECT_MAPPING_FIELD_PROPERTIES.items()}
+
+INDIRECT_MAPPING_FIELD_PROPERTIES = {
+    "authors": "",
+    "year": ""
+}
 
 
 def get_properties():
     """All candidates of properties for advanced search."""
-    return ["title", "authors", "year", "doi", "abstract"]
+    return list(DIRECT_MAPPING_FIELD_PROPERTIES.keys() | INDIRECT_MAPPING_FIELD_PROPERTIES.keys())
 
 
 def get_total_papers():
     """Total number of papers stored into virtuoso."""
     return 100000
+
+
+def get_pattern_for(key: str, value: str, index: int) -> str:
+    property_uri = DIRECT_MAPPING_FIELD_PROPERTIES.get(key)
+    var_name = 'o' * (index + 1)
+    if property_uri:
+        tmp = f'?publication <{property_uri}> ?{var_name} . '
+        tmp += f'FILTER contains(lcase(str(?{var_name})), "{value.lower()}") .'
+    else:
+        raise NotImplementedError("property not supported yet")
+    return tmp
 
 
 def form_to_sparql(form_data: str) -> Optional[str]:
@@ -32,20 +55,21 @@ def form_to_sparql(form_data: str) -> Optional[str]:
         except ValueError:
             return None
 
-        varname = 'o' * (i + 1)  # need different variable per filter
+        try:
+            tmp = get_pattern_for(key, val, i)
+        except NotImplementedError as e:
+            print(e)
 
-        tmp = f'?foo <http://fubar.org/properties/{key}> ?{varname} . '
-        tmp += f'FILTER contains(lcase(str(?{varname})), "{val.lower()}") .'
         stmts.append(tmp)
 
     statements = '\n'.join(stmts)
     query = f'''
-    SELECT ?foo ?bar ?baz
+    SELECT ?publication ?p ?o
     FROM <http://foo.bar.baz>
     WHERE
     {{
         {statements}
-        ?foo ?bar ?baz
+        ?publication ?p ?o
     }}
     '''
 
@@ -68,10 +92,10 @@ def execute_query(form_data: str) -> ValuesView[Dict[str, str]]:
     # parse result
     output: Dict[str, Dict[str, str]] = collections.defaultdict(dict)
     for entry in results['results']['bindings']:
-        idx = entry['foo']['value']
-        key = entry['bar']['value'].split('/')[-1][3:].lower()
-        val = entry['baz']['value']
-
+        idx = entry['publication']['value']
+        key = entry['p']['value']
+        val = entry['o']['value']
+        key = REVERSE_MAPPING.get(key, key)
         output[idx][key] = val
 
     return output.values()

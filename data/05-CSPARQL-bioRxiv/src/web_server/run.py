@@ -21,8 +21,9 @@ app = ScriptNameStripper(__name__)
 
 @app.route('/')
 def index():
+    properties = get_properties()
     return render_template(
-        'index.html', properties=get_properties(),
+        'index.html', properties=properties,
         data=None, query=None)
 
 
@@ -39,7 +40,7 @@ def query():
         page=page, found=len(res), total=get_total_papers(),
         record_name='papers', format_total=True, format_number=True,
         search=True, bs_version=4)
-    res = list(res)[(int(page)*10-10):(int(page)*10)]
+    res = list(res)[(int(page) * 10 - 10):(int(page) * 10)]
     return render_template(
         'index.html', data=res, properties=get_properties(),
         query=request.args.get('q'), pagination=pagination)
