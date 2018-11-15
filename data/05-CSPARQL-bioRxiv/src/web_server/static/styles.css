@@ -21,3 +21,11 @@ small {
     margin-left: 0;
     font-size: 12px;
 }
+
+.custom-select {
+    width: 300px;
+}
+
+.search-query {
+    width: 400px;
+}
