@@ -91,7 +91,7 @@
         }
         return {
           query,
-          advance: queryList.length > 1,
+          advance: true,
           queryList
         }
       },
@@ -133,9 +133,6 @@
           <div className="App">
             <form className="form-group row" action="/query">
               <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                  <button className="btn btn-outline-secondary" type="button" id="button-addon1" onClick={() => this.setState({advance: !this.state.advance})}>Advanced</button>
-                </div>
                 <input type="text" className="form-control" name="q" placeholder="use keywords such as: hasDoi:10.1000/182" aria-label="search field"  aria-describedby="button-addon1" value={this.state.query} onChange={event => this.updateValue(event.target.value)} />
                 <div className="input-group-append">
                   <button className="btn btn-outline-secondary" type="submit" id="button-addon1"><i className="fa fa-search"></i></button>
