@@ -6,6 +6,7 @@ from biosamples_v4.utilities import is_successful
 
 marref_base_url = "http://localhost:7777/marref/api"
 validation_url = "http://localhost:7788/validate"
+biosamples_url = "http://localhost:8081/biosamples"
 
 
 def get_marref_accessions():
@@ -25,15 +26,8 @@ def get_marref_sample_bioschemas(mmp_id):
     res.raise_for_status()
 
 
-def prepare_validation_object(object, schema):
-    return {
-        "schema": schema,
-        "object": object
-    }
-
-
-def validate(validation_object):
-    res = requests.post(validation_url, data=validation_object)
+def validate(value, schema):
+    res = requests.post(validation_url, json={"schema": schema, "object": value})
     return res.json()
 
 
@@ -45,6 +39,5 @@ if __name__ == "__main__":
 
     for acc in marref_accessions[:10]:
         jsonld = get_marref_sample_bioschemas(acc)
-        validation_object = prepare_validation_object(object=jsonld, schema=bioschemas_sample_schema)
-        validation_response = validate(validation_object)
-        print(json.dumps(validation_object))
+        validation_response = validate(value=jsonld, schema=bioschemas_sample_schema)
+        print(json.dumps(validation_response, indent=2))
