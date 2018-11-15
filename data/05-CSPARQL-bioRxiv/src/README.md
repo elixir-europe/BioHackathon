@@ -36,6 +36,9 @@ $ poetry run python publication_fetcher/twitter_stream.py
 ```bash
 $ npm install
 $ npm run-script build
+```
+
+```bash
 $ poetry run python web_server/run.py
 ```
 
