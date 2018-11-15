@@ -2,17 +2,17 @@
 <script type="application/ld+json">
 {
     "@context": {
-    "schema":"http://schema.org/", 
+    "schema":"http://schema.org/",
     "bs":"http://bioschemas.org/"
     },
     "@type": "schema:Dataset",
-    "@id": "https://www.ebi.ac.uk/chembl/beta/#dataset",
+    "@id": "https://www.ebi.ac.uk/chembl/beta/#data",
     "schema:name": "ChEMBL",
     "schema:description": "A manually curated database of bioactive molecules with drug-like properties. It brings together chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs.",
     "schema:url": "https://www.ebi.ac.uk/chembl/beta/",
     "schema:identifier": "http://doi.org/10.6019/CHEMBL.database.24.1",
     "schema:keywords": "database, molecule, chemical, curated, bioactivities",
-    "schema:includedInDataCatalog": "https://www.ebi.ac.uk/chembl/beta",
+    "schema:includedInDataCatalog": "https://www.ebi.ac.uk/chembl/beta/",
     "schema:creator": {
         "@context": "http://schema.org/",
         "@type": "Organization",
@@ -22,41 +22,142 @@
     "schema:version": "chembl_24",
     "schema:license": "Creative Commons Attribution-Share Alike 3.0 Unported License",
     "schema:distribution": [{
-            "@context": "http://schema.org/",
-            "@type": "DataDownload",
-            "name": "chembl_24",
-            "encodingFormat": "application/gzip",
-            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.sdf.gz",
-            "uploadDate": "2018-06-18",
-            "url":"https://chembl.gitbook.io/chembl-interface-documentation/downloads"
-        },
-        {
-            "@context": "http://schema.org/",
-            "@type": "DataDownload",
-            "name": "chembl_24",
-            "encodingFormat": "application/gzip",
-            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_oracle12c.tar.gz",
-            "uploadDate": "2018-06-18",
-            "url":"https://chembl.gitbook.io/chembl-interface-documentation/downloads"
-        },
-        {
-            "@context": "http://schema.org/",
-            "@type": "DataDownload",
-            "name": "chembl_24",
-            "encodingFormat": "application/gzip",
-            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_mysql.tar.gz",
-            "uploadDate": "2018-06-18",
-            "url":"https://chembl.gitbook.io/chembl-interface-documentation/downloads"
-        },
-        {
-            "@context": "http://schema.org/",
-            "@type": "DataDownload",
-            "name": "chembl_24",
-            "encodingFormat": "application/gzip",
-            "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.fa.gz",
-            "uploadDate": "2018-06-18",
-            "url":"https://chembl.gitbook.io/chembl-interface-documentation/downloads"
-        }          
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.fa.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.fps.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1.sdf.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_bio.fa.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_chemreps.txt.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_mysql.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_oracle10g.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_oracle11g.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_oracle12c.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_postgresql.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/gzip",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_sqlite.tar.gz",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "text/plain",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_schema_documentation.txt",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "text/plain",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_release_notes.txt",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "text/plain",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_uniprot_mapping.txt",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "text/html",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_schema_documentation.html",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "image/png",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_schema.png",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            },{
+                "@context": "http://schema.org/",
+                "@type": "DataDownload",
+                "name": "chembl_24",
+                "encodingFormat": "application/xml",
+                "contentURL": "ftp://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest/chembl_24_1_monomer_library.xml",
+                "uploadDate": "2018-06-18",
+                "url": "https://chembl.gitbook.io/chembl-interface-documentation/downloads"
+            }
     ]
 }
 </script>
