@@ -33,7 +33,7 @@ def get_total_papers():
 
 def get_pattern_for(key: str, value: str, index: int) -> str:
     property_uri = DIRECT_MAPPING_FIELD_PROPERTIES.get(key)
-    var_name = 'o' * (index + 1)
+    var_name = 'o' * (index + 2)
     if property_uri:
         tmp = f'?publication <{property_uri}> ?{var_name} . '
         tmp += f'FILTER contains(lcase(str(?{var_name})), "{value.lower()}") .'
@@ -96,6 +96,8 @@ def execute_query(form_data: str) -> ValuesView[Dict[str, str]]:
         key = entry['p']['value']
         val = entry['o']['value']
         key = REVERSE_MAPPING.get(key, key)
+        if key == 'doi':
+            output[idx]["url"] = f'http://doi.org/{val}'
         output[idx][key] = val
 
     return output.values()
