@@ -59,8 +59,8 @@ def form_to_sparql(form_data: str) -> Optional[str]:
             tmp = get_pattern_for(key, val, i)
         except NotImplementedError as e:
             print(e)
-
-        stmts.append(tmp)
+        else:
+            stmts.append(tmp)
 
     statements = '\n'.join(stmts)
     query = f'''
