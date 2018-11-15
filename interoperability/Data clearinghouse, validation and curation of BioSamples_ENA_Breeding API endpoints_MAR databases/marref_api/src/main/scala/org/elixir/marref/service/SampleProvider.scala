@@ -20,8 +20,8 @@ class SampleProvider() extends SampleProviderTrait {
 
   val marrefModel: MarrefModel = Json.parse[MarrefModel](dbString)
 
-  override def getAllSamples(stringify: SampleModel => String): String = {
-    s"[${marrefModel.records.record.map{sm => stringify(sm)}.mkString(",")}]"
+  override def getAllSamples(stringify: SampleModel => String): ResponseEntity[Any] = {
+    ResponseEntity.ok(s"[${marrefModel.records.record.map{sm => stringify(sm)}.mkString(",")}]")
   }
 
   private def getSampleObj(id:String): Option[SampleModel] = {

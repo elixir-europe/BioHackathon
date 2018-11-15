@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.{GetMapping, PathVariable, Reques
 @RequestMapping(path = Array("/marref/api"), produces = Array("application/ld+json"))
 class BioSchemasController(val sampleProvider: SampleProviderTrait) {
   @GetMapping(path = Array("/samples"))
-  def getAllSamples: String = {
+  def getAllSamples: ResponseEntity[Any] = {
     sampleProvider.getAllSamples((sm: SampleModel) => sm.toJsonld())
   }
 

@@ -6,19 +6,19 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation._
 
 @RestController
-@RequestMapping(path = Array("/marref/api"))
+@RequestMapping(path = Array("/marref/api"), produces= Array("application/json"))
 class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples"))
-  def getAllSamples: String = {
+  def getAllSamples: ResponseEntity[Any] = {
     sampleProvider.getAllSamples((sm: SampleModel) => sm.toJson())
   }
 
-  @GetMapping(path = Array("/ids")) //ex: /ids?name=MMP
-  def getAllIds(@RequestParam(name="accession", defaultValue="mmp", required=false) name: String): ResponseEntity[Any] = {
+  @GetMapping(path = Array("/ids")) //ex: /ids?accession=marref
+  def getAllIds(@RequestParam(name="accession", defaultValue="marref", required=false) name: String): ResponseEntity[Any] = {
     name match {
-      case "mmp" => ResponseEntity.ok(sampleProvider.getAllMmpIds())
-      case "bs" => ResponseEntity.ok(sampleProvider.getAllBsIds())
+      case "marref" => ResponseEntity.ok(sampleProvider.getAllMmpIds())
+      case "biosample" => ResponseEntity.ok(sampleProvider.getAllBsIds())
       case _ => ResponseEntity.status(501).build()
     }
   }
