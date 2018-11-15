@@ -1,0 +1,209 @@
+{
+  "@context": "http://schema.org",
+  "@type": [
+    "BioChemEntity",
+    "Sample"
+  ],
+  "@id": "https://mmp.sfb.uit.no/databases/marref/#/records/MMP07276874",
+  "identifier": [
+    "mmp:MMP07276874",
+    "biosample:SAMN07276874"
+  ],
+  "name": "Aeromonas salmonicida S44",
+  "description": "We apply a combination of whole genome sequencing and phenotypic testing to define the evolution of A. salmonicida population to antibiotic pressure.",
+  "url": "https://mmp.sfb.uit.no/databases/marref/#/records/MMP07276874",
+  "dataset": [
+    "http://identifiers.org/insdc.gca/GCA_002214305.1",
+    "http://identifiers.org/bioproject/PRJNA391845",
+    "https://www.arb-silva.de/search/show/ssu/insdc/391845",
+    "https://www.arb-silva.de/search/show/lsu/insdc/391845",
+    "http://identifiers.org/insdc/CP022181",
+    "http://identifiers.org/insdc/CP022176",
+    "http://identifiers.org/insdc/CP022177",
+    "http://identifiers.org/insdc/CP022178",
+    "http://identifiers.org/insdc/CP022179",
+    "http://identifiers.org/insdc/CP022180",
+    "http://identifiers.org/refseq/NZ_CP022176.1:NZ_CP022177.1:NZ_CP022178.1:NZ_CP022179.1:NZ_CP022180.1:NZ_CP022181.1",
+    "http://www.uniprot.org/proteomes/UP000197161"
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Sequencing Depth",
+      "value": "79"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Sequencing Centers",
+      "value": "Institute of Microbiology Chinese Academy of Sciences"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Comments",
+      "value": "We apply a combination of whole genome sequencing and phenotypic testing to define the evolution of A. salmonicida population to antibiotic pressure."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Isolation Comments",
+      "value": "NotDefined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Isolation Country",
+      "value": "China"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Collection Date",
+      "value": "2014-12"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Depth",
+      "value": "NotDefined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Latitude and Longitude",
+      "value": "NotDefined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Project Name",
+      "value": "NotDefined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Curation Date",
+      "value": "2017-11-08"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MMP ID",
+      "value": "MMP07276874"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Silva Accession SSU",
+      "value": "391845"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Silva Accession LSU",
+      "value": "391845"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Uniprot Accession",
+      "value": "UP000197161"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA Assembly accession identifier",
+      "value": "GCA_002214305.1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA BioProject accession identifier",
+      "value": "PRJNA391845"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA BioSample accession identifier",
+      "value": "SAMN07276874"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022181"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022176"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022177"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022178"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022179"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ENA GenBank accession identifier",
+      "value": "CP022180"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "NCBI Refseq accession identifier",
+      "value": "NZ_CP022176.1:NZ_CP022177.1:NZ_CP022178.1:NZ_CP022179.1:NZ_CP022180.1:NZ_CP022181.1"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Temperature Range",
+      "value": "NotDefined"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Geographic Location (GAZ)",
+      "value": "Yantai City Prefecture",
+      "valueReference": {
+        "@type": "CategoryCode",
+        "codeValue": "GAZ:00025867",
+        "url": "https://www.ebi.ac.uk/ols/ontologies/gaz/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FGAZ_00025867"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Environment Feature",
+      "value": "Fish farm ",
+      "valueReference": {
+        "@type": "CategoryCode",
+        "name": "Fish farm ",
+        "codeValue": "ENVO:00000294",
+        "url": "http://identifiers.org/envo/ENVO:00000294"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Environment Material",
+      "value": "NotDefined",
+      "valueReference": {
+        "@type": "CategoryCode",
+        "codeValue": "NotDefined",
+        "url": "http://identifiers.org/envo/ENVO:00000294"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Organism",
+      "value": "Aeromonas salmonicida",
+      "valueReference": {
+        "@type": "CategoryCode",
+        "name": "NCBI Taxon Identifier",
+        "codeValue": "NCBITaxon:UrlModel(http://identifiers.org/taxonomy/645,645)",
+        "url": "http://identifiers.org/taxonomy/645"
+      }
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Full Scientific Name",
+      "value": "Aeromonas salmonicida S44",
+      "valueReference": {
+        "@type": "CategoryCode",
+        "name": "Aeromonas salmonicida S44",
+        "codeValue": "NCBITaxon:UrlModel(http://identifiers.org/taxonomy/645,645)",
+        "url": "http://identifiers.org/taxonomy/645"
+      }
+    }
+  ]
+}
