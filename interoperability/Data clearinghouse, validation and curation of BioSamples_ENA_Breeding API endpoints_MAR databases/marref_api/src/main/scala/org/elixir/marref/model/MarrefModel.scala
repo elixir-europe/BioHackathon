@@ -104,83 +104,94 @@ case class SampleModel(annotationProvider: Option[String] = None,
       url = mmpID.map{_.url}.getOrElse("NotDefined"),
       dataset = Seq(), //Todo
       additionalProperty = Seq(
-        Property(name = "Sequencing Depth",
+        Seq(Property(name = "Sequencing Depth",
           value = sequencingDepth.map{_.item.mkString(", ")}.getOrElse("NotFound")
-        ),
-        Property(name = "Sequencing Centers",
+        )),
+        Seq(Property(name = "Sequencing Centers",
           value = sequencingCenters.getOrElse("NotFound")
-        ),
-        Property(name = "Comments",
+        )),
+        Seq(Property(name = "Comments",
           value = comments.getOrElse("NotFound")
-        ),
-        Property(name = "Isolation Comments",
+        )),
+        Seq(Property(name = "Isolation Comments",
           value = isolationComments.getOrElse("NotFound")
-        ),
-        Property(name = "Isolation Country",
+        )),
+        Seq(Property(name = "Isolation Country",
           value = isolationCountry.getOrElse("NotFound")
-        ),
-        /*Property(name = "Publication PMID",
-          value = publicationPmid.map{_.accession}.getOrElse("NotFound")
-        ),*/
+        )),
+        publicationPmid.toSeq.flatMap{_.accession}.map{a =>
+          Property(name = "Publication PMID",
+            value = a.value
+          )
+        },
         /*Property(name = "Collection Date",
           value = collectionDate.map{_.year}.getOrElse("NotFound")
         ),*/
-        Property(name = "Depth",
+        Seq(Property(name = "Depth",
           value = depth.map{_.value}.getOrElse("NotFound")
-        ),
-        Property(name = "Latitude and Longitude",
+        )),
+        Seq(Property(name = "Latitude and Longitude",
           value = latLon.map{_.str}.getOrElse("NotFound")
-        ),
-        Property(name = "Project Name",
+        )),
+        Seq(Property(name = "Project Name",
           value = projectName.getOrElse("NotFound")
-        ),
-        Property(name = "Curation Date",
+        )),
+        Seq(Property(name = "Curation Date",
           value = curationDate.getOrElse("NotFound")
-        ),
-        Property(name = "MMP ID",
+        )),
+        Seq(Property(name = "MMP ID",
           value = mmpID.map{_.value}.getOrElse("NotFound")
-        ),
-        Property(name = "Silva Accession SSU",
+        )),
+        Seq(Property(name = "Silva Accession SSU",
           value = silvaAccessionSSU.map{_.value}.getOrElse("NotFound")
-        ),
-        Property(name = "Silva Accession LSU",
+        )),
+        Seq(Property(name = "Silva Accession LSU",
           value = silvaAccessionLSU.map{_.value}.getOrElse("NotFound")
-        ),
-        /*Property(name = "Uniprot Accession",
-          value = uniprotAccession.map{_.accession}.getOrElse("NotFound")
-        ),*/
-        Property(name = "ENA Assembly accession identifier",
+        )),
+        uniprotAccession.toSeq.flatMap{_.accession}.map{a =>
+          Property(name = "Uniprot Accession",
+            value = a.value
+          )
+        },
+        Seq(Property(name = "ENA Assembly accession identifier",
           value = assemblyAccession.map{_.value}.getOrElse("NotFound")
-        ),
-        Property(name = "ENA BioProject accession identifier",
+        )),
+        Seq(Property(name = "ENA BioProject accession identifier",
           value = bioprojectAccession.map{_.value}.getOrElse("NotFound")
-        ),
-        Property(name = "ENA BioSample accession identifier",
+        )),
+        Seq(Property(name = "ENA BioSample accession identifier",
           value = biosampleAccession.map{_.value}.getOrElse("NotFound")
-        ),
-        /*Property(name = "ENA GenBank accession identifier",
-          value = genbankAccession.map{_.accession}.getOrElse("NotFound")
-        ),
-        Property(name = "NCBI Refseq accession identifier",
-          value = ncbiRefseqAccession.map{_.accession}.getOrElse("NotFound")
-        ),
-        Property(name = "Culture Collection(s)",
-          value = cultureCollection.map{_.item}.getOrElse("NotFound")
-        ),*/
-        Property(name = "Temperature Range",
+        )),
+        genbankAccession.toSeq.flatMap{_.accession}.map{a =>
+          Property(name = "ENA GenBank accession identifier",
+            value = a.value
+          )
+        },
+        ncbiRefseqAccession.toSeq.flatMap{_.accession}.map{a =>
+          Property(name = "NCBI Refseq accession identifier",
+            value = a.value
+          )
+        },
+        cultureCollection.toSeq.flatMap{_.item.map{i =>
+          Property(name = "Culture Collection(s)",
+            value = i
+          )
+        }},
+        Seq(Property(name = "Temperature Range",
           value = temperatureRange.getOrElse("NotFound")
-        ),
-        /*Property(name = "Reference for Biomaterial",
-          value = refBiomaterial.map{_.accession}.getOrElse("NotFound")
-        ),*/
-        Property(name = "Geographic Location (GAZ)",
+        )),
+        refBiomaterial.toSeq.flatMap{_.accession}.map{a =>
+          Property(name = "Reference for Biomaterial",
+            value = a.value)
+        },
+        Seq(Property(name = "Geographic Location (GAZ)",
           value = geoLocNameGaz.getOrElse("NotFound"),
           valueReference = Some(ValueReference(
             codeValue = geoLocNameGazEnvo.map{_.value}.getOrElse("NotFound"),
             url = geoLocNameGazEnvo.map{_.url}.getOrElse("NotFound")
-          ))
+          )))
         ),
-        {
+        Seq({
           val ov = envFeature.map{_.value.split('(').head.stripLineEnd}
           Property(name = "Environment Feature",
           value = ov.getOrElse("NotFound"),
@@ -189,8 +200,8 @@ case class SampleModel(annotationProvider: Option[String] = None,
             codeValue = envFeature.flatMap{_.value.split('(').tail.headOption}.flatMap{_.split(')').headOption}.getOrElse("NotFound"),
             url = envFeature.map{_.url}.getOrElse("NotFound")
           ))
-        )},
-        {
+        )}),
+        Seq({
           val ov = envMaterial.map{_.value.split('(').head.stripLineEnd}
           Property(name = "Environment Material",
           value = ov.getOrElse("NotFound"),
@@ -199,8 +210,24 @@ case class SampleModel(annotationProvider: Option[String] = None,
             codeValue = envMaterial.flatMap{_.value.split('(').tail.headOption}.flatMap{_.split(')').headOption}.getOrElse("NotFound"),
             url = envFeature.map{_.url}.getOrElse("NotFound")
           ))
-        )}
-      )
+        )}),
+        Seq(Property(name = "Organism",
+          value = organism.getOrElse("NotFound"),
+          valueReference = Some(ValueReference(
+            name = Some("NCBI Taxon Identifier"),
+            codeValue = ncbiTaxonIdentifier.map{i => s"NCBITaxon:$i"}.getOrElse("NotFound"),
+            url = ncbiTaxonIdentifier.map{_.url}.getOrElse("NotFound")
+          ))
+        )),
+        Seq(Property(name = "Full Scientific Name",
+          value = fullScientificName.getOrElse("NotFound"),
+          valueReference = Some(ValueReference(
+            name = fullScientificName,
+            codeValue = ncbiTaxonIdentifier.map{i => s"NCBITaxon:$i"}.getOrElse("NotFound"),
+            url = ncbiTaxonIdentifier.map{_.url}.getOrElse("NotFound")
+          ))
+        ))
+      ).flatten
     )
   }
   def toJsonld(): String = Json.serialize(toBioschema())
