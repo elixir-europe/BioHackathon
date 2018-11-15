@@ -15,8 +15,8 @@ services:
 
   json-schema-validator:
     build:
-      context: ./json-schema-validator
-    image: json-schema-validator:latest
+      dockerfile: 
+    image: json-scema-validator:latest
     links:
     - marref
     ports:
