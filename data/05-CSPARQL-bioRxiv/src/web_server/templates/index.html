@@ -46,7 +46,7 @@
    <script type="text/jsx">
 
      /*** @jsx React.DOM */
-     const search_items = ["hasTitle", "hasAuthors", "hasYear", "hasUrl", "hasDOI", "hasAbstract"];
+     const search_items = {{ properties|tojson }};
      var Builder = React.createClass({
       render: function() {
         return (
