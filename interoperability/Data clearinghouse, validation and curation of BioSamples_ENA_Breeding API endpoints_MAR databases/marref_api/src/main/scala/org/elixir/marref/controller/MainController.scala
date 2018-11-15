@@ -11,7 +11,7 @@ class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples"))
   def getAllSamples: ResponseEntity[Any] = {
-    sampleProvider.getAllSamples((sm: SampleModel) => sm.toJson())
+    sampleProvider.getAllSamples((sm: SampleModel) => sm.toJson)
   }
 
   @GetMapping(path = Array("/ids")) //ex: /ids?accession=marref
@@ -25,6 +25,6 @@ class MainController(val sampleProvider: SampleProviderTrait) {
 
   @GetMapping(path = Array("/samples/{id}"))
   def getSample(@PathVariable id: String) : ResponseEntity[Any] = {
-    sampleProvider.getSample(id, (sm: SampleModel) => sm.toJson())
+    sampleProvider.getSample(id, (sm: SampleModel) => sm.toJson)
   }
 }
