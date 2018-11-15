@@ -19,9 +19,18 @@ class SampleProvider() extends SampleProviderTrait {
   bufferedSource.close
 
   val marrefModel: MarrefModel = Json.parse[MarrefModel](dbString)
+  val count = marrefModel.records.record.length
 
-  override def getAllSamples(stringify: SampleModel => String): ResponseEntity[Any] = {
-    ResponseEntity.ok(s"[${marrefModel.records.record.map{sm => stringify(sm)}.mkString(",")}]")
+  override def getAllSamples(stringify: SampleModel => String, page: Int, size: Int): ResponseEntity[Any] = {
+    val fistIndex: Int = page * size
+    val lastIndex: Int = (page+1) * size
+    ResponseEntity.ok(
+      s""""pageMeta": {
+         |"pageSize": $size,
+         |"pageNumber": $page,
+         |"totalSamples": $count
+         |},
+         |"content": [${marrefModel.records.record.slice(fistIndex, lastIndex).map{sm => stringify(sm)}.mkString(",")}]""".stripMargin)
   }
 
   private def getSampleObj(id:String): Option[SampleModel] = {
