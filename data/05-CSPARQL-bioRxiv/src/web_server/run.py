@@ -9,7 +9,12 @@ from web_server.sparql_wrapper import (
     get_properties)
 
 
-app = Flask(__name__)
+class ScriptNameStripper(Flask):
+   def __call__(self, environ, start_response):
+       environ['SCRIPT_NAME'] = ''
+       return super(ScriptNameStripper, self).__call__(environ, start_response)
+
+app = ScriptNameStripper(__name__)
 
 
 @app.route('/')
