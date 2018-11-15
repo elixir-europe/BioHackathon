@@ -78,6 +78,9 @@
         let query = "{{ query if query is not none }}";
         let queryList = query.split(" ").map(item => {
           items = item.split(":");
+          if (items[0] === "") {
+            items[0] = search_items[0];
+          }
           if (items[1] === undefined) {
             items[1] = "";
           }
@@ -101,25 +104,27 @@
           queryList[index][1] = content;
         }
         this.setState({queryList});
-        this.updateAdvancedQuery();
+        this.updateAdvancedQuery(queryList);
       },
 
       removeQueryList: function(index) {
-        this.setState({queryList: this.state.queryList.filter((n, i) => i !== index)});
-        this.updateAdvancedQuery();
+        let queryList = this.state.queryList.filter((n, i) => i !== index);
+        this.setState({queryList});
+        this.updateAdvancedQuery(queryList);
       },
 
       addQueryList: function() {
-        this.setState({queryList: this.state.queryList.concat([[search_items[0], ""]]) });
-        this.updateAdvancedQuery();
+        let queryList = this.state.queryList.concat([[search_items[0], ""]]);
+        this.setState({queryList });
+        this.updateAdvancedQuery(queryList);
       },
 
       updateValue: function(value) {
         this.setState({query: value});
       },
 
-      updateAdvancedQuery: function() {
-        let advancedQuery = this.state.queryList.filter(item => item[1] !== "").map(query => `${query[0]}:${query[1]}`).join(" ");
+      updateAdvancedQuery: function(queryList) {
+        let advancedQuery = queryList.filter(item => item[1] !== "").map(query => `${query[0]}:${query[1]}`).join(" ");
         this.setState({query: advancedQuery});
       },
 
