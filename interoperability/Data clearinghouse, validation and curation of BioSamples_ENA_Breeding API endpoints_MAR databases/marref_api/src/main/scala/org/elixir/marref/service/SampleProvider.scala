@@ -42,4 +42,9 @@ class SampleProvider() extends SampleProviderTrait {
     val list: Seq[String] = marrefModel.records.record.flatMap{_.mmpID}.map{_.value}
     Json.serialize[Seq[String]](list)
   }
+
+  override def getAllBsIds(): String = {
+    val list: Seq[String] = marrefModel.records.record.flatMap{_.biosampleAccession}.map{_.value}
+    Json.serialize[Seq[String]](list)
+  }
 }

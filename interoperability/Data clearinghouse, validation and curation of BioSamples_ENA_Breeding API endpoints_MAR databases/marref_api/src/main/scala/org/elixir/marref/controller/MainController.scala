@@ -15,9 +15,10 @@ class MainController(val sampleProvider: SampleProviderTrait) {
   }
 
   @GetMapping(path = Array("/ids")) //ex: /ids?name=MMP
-  def getAllIds(@RequestParam(name="name", defaultValue="MMP", required=false) name: String): ResponseEntity[Any] = {
+  def getAllIds(@RequestParam(name="accession", defaultValue="MMP", required=false) name: String): ResponseEntity[Any] = {
     name match {
       case "MMP" => ResponseEntity.ok(sampleProvider.getAllMmpIds())
+      case "BS" => ResponseEntity.ok(sampleProvider.getAllBsIds())
       case _ => ResponseEntity.status(501).build()
     }
   }
