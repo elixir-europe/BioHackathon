@@ -1,0 +1,34 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.obolibrary.org/obo/CHEBI_23888>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
+  schema:name "drug"^^xsd:string ;
+  schema:termCode "CHEBI:23888"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23888> .
+
+<http://purl.enanomapper.org/onto/ENM_8000194>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <http://purl.enanomapper.net/onto/enanomapper.owl> ;
+  schema:name "food flavouring and nutrient"^^xsd:string ;
+  schema:termCode "ENM_8000194"^^xsd:string ;
+  schema:url <https://www.ebi.ac.uk/ols/ontologies/enm/terms?iri=http%3A%2F%2Fpurl.enanomapper.org%2Fonto%2FENM_8000194> .
+
+<example>
+  a schema:ChemicalSubstance ;
+  schema:alternateName "SiO2"^^xsd:string ;
+  schema:chemicalRole "http://purl.bioontology.org/ontology/npo#NPO_1909"^^xsd:string ;
+  schema:hasBioChemEntityPart [
+    a schema:BioChemEntity ;
+    schema:chemicalRole "http://purl.bioontology.org/ontology/npo#NPO_1617"^^xsd:string ;
+    schema:identifier <CHEBI:30563> ;
+    schema:name "silicon dioxide"^^xsd:string ;
+    schema:url <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30563>
+  ] ;
+  schema:identifier <http://njh.me/NWKI-e624f68e-2e00-30e4-b4bb-9e34383580cb/study> ;
+  schema:molecularFormula "SiO2"^^xsd:string ;
+  schema:name "JRCNM10404"^^xsd:string ;
+  schema:potentialUse <http://purl.obolibrary.org/obo/CHEBI_23888>, <http://purl.enanomapper.org/onto/ENM_8000194> ;
+  schema:sameAs <https://www.wikidata.org/wiki/Q58630711> ;
+  schema:url <https://data.enanomapper.net/substance/NWKI-e624f68e-2e00-30e4-b4bb-9e34383580cb/study> .
