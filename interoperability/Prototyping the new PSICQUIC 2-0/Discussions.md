@@ -20,4 +20,4 @@
   - Extend all related modules (`jami-interactionviewer-json`, `jami-mitab`, etc.). For the xml-related module create a new schema 3.0.1 that includes the causal output and keep the current version (3.0.0) intact. **Note:** To be discussed with the PSI-MI community.
 
 - JAMI extra:
-  - Prune the empty interfaces (that seem to be there only for syntactic-sugar purposes) in the jami-core model - the ones that don't include any method names, e.g. `ExperimentalEntity.java` and `ExperimentalParticipantCandidate.java`
+  - ~~Prune the empty interfaces (that seem to be there only for syntactic-sugar purposes) in the jami-core model - the ones that don't include any method names, e.g. `ExperimentalEntity.java` and `ExperimentalParticipantCandidate.java`~~ It broke a lot of things in other libraries and so it was decided to revert the changes and to not implement this.
