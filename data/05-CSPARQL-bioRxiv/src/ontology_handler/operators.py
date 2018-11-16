@@ -3,7 +3,6 @@ from typing import TYPE_CHECKING
 import rdflib
 import requests
 import yaml
-from rdflib.collection import Collection
 from rdflib.namespace import RDF, DCTERMS, XSD, RDFS, FOAF
 
 if TYPE_CHECKING:
@@ -62,7 +61,6 @@ def add_entity(pub: 'SemanticPublication') -> None:
     if pub.authors:
         list_authors = rdflib.BNode()
         g.add((subject, BIBO.authorList, list_authors))
-        seq_authors = []
         for author in pub.authors:
             author_node = rdflib.BNode()
             g.add((author_node, RDF.type, FOAF.person))
@@ -81,8 +79,7 @@ def add_entity(pub: 'SemanticPublication') -> None:
             full_name = f'{given_names} {surname}'
             g.add((author_node, FOAF.name,
                    rdflib.Literal(full_name, datatype=XSD.string)))
-            seq_authors.append(author_node)
-        Collection(g, list_authors, seq=seq_authors)
+            g.add((list_authors, RDFS.member, author_node))
     # add to ontology
     query = """
     INSERT IN GRAPH <http://foo.bar.baz>
