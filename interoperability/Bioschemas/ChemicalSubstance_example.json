@@ -33,5 +33,19 @@
             "name": "food flavouring and nutrient",
             "url": "https://www.ebi.ac.uk/ols/ontologies/enm/terms?iri=http%3A%2F%2Fpurl.enanomapper.org%2Fonto%2FENM_8000194"
         }],
-	"chemicalRole": ["http://purl.bioontology.org/ontology/npo#NPO_1909"]
+	"chemicalRole": [
+		{
+			"@type": "DefinedTerm",
+			"@id": "http://purl.bioontology.org/ontology/npo#NPO_1909",
+			"inDefinedTermSet":
+				{
+					"@type":"DefinedTermSet",
+					"@id":"https://github.com/enanomapper/ontologies/blob/master/enanomapper.owl",
+					"name": "eNanoMapper ontology"
+				},
+			"termCode": "NPO_1909",
+			"name": "engineered nanomaterial",
+			"url": "http://bioportal.bioontology.org/ontologies/ENM/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2Fnpo%23NPO_1909"
+		}
+  ]["http://purl.bioontology.org/ontology/npo#NPO_1909"]
 }
