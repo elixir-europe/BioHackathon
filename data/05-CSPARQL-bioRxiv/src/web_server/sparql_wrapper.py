@@ -20,9 +20,15 @@ def get_year_pattern(property: str, value: str, var_name: str) -> str:
     return tmp
 
 
+def get_topic_pattern(property: str, value: str, var_name: str) -> str:
+    tmp = f'?publication <{property}> <http://edamontology.org/{value}> . '
+    return tmp
+
+
 INDIRECT_MAPPING_FIELD_PROPERTIES = {
     "authors": (None, ""),
-    "year": (get_year_pattern, "http://purl.org/dc/terms/created")
+    "year": (get_year_pattern, "http://purl.org/dc/terms/created"),
+    "topic": (get_topic_pattern, "http://edamontology.org/has_topic")
 }
 
 REVERSE_MAPPING = {value: key
