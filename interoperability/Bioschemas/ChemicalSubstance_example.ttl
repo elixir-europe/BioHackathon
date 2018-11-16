@@ -1,6 +1,17 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://purl.bioontology.org/ontology/npo#NPO_1909>
+  a schema:DefinedTerm ;
+  schema:inDefinedTermSet <https://github.com/enanomapper/ontologies/blob/master/enanomapper.owl> ;
+  schema:name "engineered nanomaterial"^^xsd:string ;
+  schema:termCode "NPO_1909"^^xsd:string ;
+  schema:url <http://bioportal.bioontology.org/ontologies/ENM/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2Fnpo%23NPO_1909> .
+
+<https://github.com/enanomapper/ontologies/blob/master/enanomapper.owl>
+  a schema:DefinedTermSet ;
+  schema:name "eNanoMapper ontology"^^xsd:string .
+
 <http://purl.obolibrary.org/obo/CHEBI_23888>
   a schema:DefinedTerm ;
   schema:inDefinedTermSet <ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl> ;
@@ -18,7 +29,7 @@
 <example>
   a schema:ChemicalSubstance ;
   schema:alternateName "SiO2"^^xsd:string ;
-  schema:chemicalRole "http://purl.bioontology.org/ontology/npo#NPO_1909"^^xsd:string ;
+  schema:chemicalRole <http://purl.bioontology.org/ontology/npo#NPO_1909> ;
   schema:hasBioChemEntityPart [
     a schema:BioChemEntity ;
     schema:chemicalRole "http://purl.bioontology.org/ontology/npo#NPO_1617"^^xsd:string ;
