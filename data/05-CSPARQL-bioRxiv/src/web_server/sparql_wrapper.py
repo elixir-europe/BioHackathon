@@ -13,12 +13,20 @@ DIRECT_MAPPING_FIELD_PROPERTIES = {
     "abstract": "http://purl.org/ontology/bibo/abstract"
 }
 
-REVERSE_MAPPING = {value: key for key, value in DIRECT_MAPPING_FIELD_PROPERTIES.items()}
+
+def get_year_pattern(property: str, value: str, var_name: str) -> str:
+    tmp = f'?publication <{property}> ?{var_name} . '
+    tmp += f'FILTER strStarts(str(?{var_name}), "{value}") . '
+    return tmp
+
 
 INDIRECT_MAPPING_FIELD_PROPERTIES = {
-    "authors": "",
-    "year": ""
+    "authors": (None, ""),
+    "year": (get_year_pattern, "http://purl.org/dc/terms/created")
 }
+
+REVERSE_MAPPING = {value: key for key, value in DIRECT_MAPPING_FIELD_PROPERTIES.items()}
+REVERSE_MAPPING.update({value[1]: key for key, value in INDIRECT_MAPPING_FIELD_PROPERTIES.items()})
 
 
 def get_properties() -> List[int]:
@@ -47,7 +55,11 @@ def get_pattern_for(key: str, value: str, index: int) -> str:
         tmp = f'?publication <{property_uri}> ?{var_name} . '
         tmp += f'FILTER contains(lcase(str(?{var_name})), "{value.lower()}") .'
     else:
-        raise NotImplementedError("property not supported yet")
+        try:
+            method_for_pattern, property_uri = INDIRECT_MAPPING_FIELD_PROPERTIES[key]
+            tmp = method_for_pattern(property_uri, value, var_name)
+        except KeyError:
+            raise NotImplementedError("property not supported yet")
     return tmp
 
 
@@ -109,5 +121,7 @@ def execute_query(form_data: str) -> ValuesView[Dict[str, str]]:
         if key == 'doi':
             output[idx]["url"] = f'http://doi.org/{val}'
         output[idx][key] = val
+        if key == 'year':
+            output[idx][key] = val[:4]
 
     return output.values()
