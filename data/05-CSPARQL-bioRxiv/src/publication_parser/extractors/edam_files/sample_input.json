@@ -1,0 +1,18 @@
+{
+  "name": "g:Profiler",
+  "webpageUrls": [ "https://biit.cs.ut.ee/gprofiler/" ],
+  "docUrls": [ "https://biit.cs.ut.ee/gprofiler/help.cgi" ],
+  "publicationIds": [
+    {
+      "doi": "10.1093/nar/gkw199"
+    }
+  ],
+  "annotations": [
+    "http://edamontology.org/topic_1775",
+    "operation_2436",
+    "data_3021",
+    "http://edamontology.org/format_1964"
+  ],
+  "branches": [ "topic", "operation", "data", "format"],
+  "matches": 3
+}

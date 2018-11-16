@@ -1,0 +1,10 @@
+#!/bin/bash
+
+FULLPATH="$(dirname $(readlink -f $0))"
+
+source ${CONDA_PREFIX=${3-~/berryconda3}}/bin/activate
+source ~/.poetry/env
+
+cd ${FULLPATH}
+envsubst < asterix.lighttpd.conf.template > asterix.lighttpd.conf
+exec uwsgi --socket ${1-/tmp/asterix.sock} --chmod-socket=660 --chown-socket=$(whoami):www-data --protocol=uwsgi --master --manage-script-name --enable-threads --threads ${2-4} --wsgi web_server.run:app

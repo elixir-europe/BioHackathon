@@ -159,4 +159,11 @@ ISSUE: even with good known model (disgenet) and proper request, at data level s
 
 Start to write Shape Expression (SHex) for Orphanet (Ordo) model
 
-
+## Hack Day 3 & 4 progress
+---
+Having a nice peacock logo ! 
+![PeacockSparql](images/peacocksparql.png)
+- finishing setup of queries http://185.54.113.31:8181
+- having wikidata query facility running http://185.54.113.31:8282/ 
+- Shape Expression is definitely needed for endpoint resource
+- try to work on docker version
