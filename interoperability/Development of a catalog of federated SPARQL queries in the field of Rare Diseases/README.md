@@ -167,3 +167,58 @@ Having a nice peacock logo !
 - having wikidata query facility running http://185.54.113.31:8282/ 
 - Shape Expression is definitely needed for endpoint resource
 - try to work on docker version
+
+## Summary of the hacking days
+---
+13 Development of a catalogue of federated SPARQL queries in the field of Rare Diseases 
+
+Participants: Marc Hanauer, Tarcisio Mendes, Hirokazu Chiba, Rajaram Kaliyaperumal, Andra Waagmeester, Chris Evelo
+
+Expected outcomes
+We try to leverage the knowledge of Rare Diseases by using accessible Sparql Endpoint (Orphanet, Disgenet, EBI, wikidata, wikipathways, UniProt etc.) and provide a catalogue of relevant federated sparql queries.
+Main goals are to :
+- Provide a catalogue of  relevant resources in the Rare Diseases field, available through SPARQL
+-Describe Sparql Endpoint 
+-Federated queries across sources
+
+Achievements
+During this Biohackathon in Paris, we set out to develop a documentation system/ catalogue for federated queries. We set up a wikibase system which will be avalaible as docker image. (about wikibase https://www.mediawiki.org/wiki/Wikibase/fr). The wibase system that includes blazegraph and  Wikidata Query facility.
+We arbitrary selected Orphanet, Wikipathways, UniProt,  Wikidata and a set of EBI resources as test case endpoints. This wikibase allows us to provide a starting point writing queries in natural language, describing sources to use and purposes. Queries in natural language were translated into SPARQL 1.1 federated queries across Orphanet, Disgenet, ChEMBL, UniProt and wikipathways SPARQL endpoints. 
+
+The underlying process leads to several difficulties :
+Availability of sparql endpoint
+Sparql endpoint not allowing federating queries
+Even with queries exemple, lack of documentation and data schema to design federated queries.
+
+Those difficulties raise the needs and mandatory inputs to put in place the proper documentation and information embedded in the wikibase. 
+
+The documentation captures
+A section where domain experts can request queries in natural language with a lot of details. 
+The domain expert should describe in detail the needed resources. 
+
+A description of the resources
+This should contain a well-described schema of all data that is needed to successful (federated-) SPARQL queries to answer the questions stated in proper English
+This should contain details of each SPARQL endpoint under scrutiny
+    Version
+    Brand
+    Contact details of administration and support
+    A yummy score for each SPARQL endpoint (yummydata.org scoring different endpoints according to availability and quality criteria). 
+
+A section with  SPARQL query templates 
+From each SPARQL query should also be possible to generate code snippets to embed the SPARQL query in a particular programming language such as follows:
+        Java
+        R
+        Python
+        Ruby
+
+Each SPARQL query run from this section
+
+Implementation
+We deployed a Wikibase docker system [https://github.com/wmde/wikibase-docker]
+We selected the peacock as our mascotte/logo.
+
+The Peacock SPARQL system runs at: http://185.54.113.31:8181/wiki/Main_Page
+It contains description of 5 endpoints (Wikidata, Orphanet, Disgenet, Wikipathways and UniProt)
+It contains 8 sparql queries exemple across different resource
+Request can be run at http://185.54.113.31:8282
+TODO: finalize and deploy the changes that were made to Wikibase to create Peacock docker
