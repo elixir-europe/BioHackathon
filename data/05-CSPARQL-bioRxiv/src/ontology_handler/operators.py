@@ -37,11 +37,13 @@ def add_entity(pub: 'SemanticPublication') -> None:
 
     if pub.format:
         for dd in pub.format:
-            g.add((subject, CUSTOM.containsDataFormat, rdflib.URIRef(dd['uri'])))
+            g.add(
+                (subject, CUSTOM.containsDataFormat, rdflib.URIRef(dd['uri'])))
 
     if pub.operation:
         for dd in pub.operation:
-            g.add((subject, CUSTOM.containsOperation, rdflib.URIRef(dd['uri'])))
+            g.add(
+                (subject, CUSTOM.containsOperation, rdflib.URIRef(dd['uri'])))
 
     if pub.topic:
         for dd in pub.topic:

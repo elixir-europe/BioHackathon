@@ -25,13 +25,18 @@ INDIRECT_MAPPING_FIELD_PROPERTIES = {
     "year": (get_year_pattern, "http://purl.org/dc/terms/created")
 }
 
-REVERSE_MAPPING = {value: key for key, value in DIRECT_MAPPING_FIELD_PROPERTIES.items()}
-REVERSE_MAPPING.update({value[1]: key for key, value in INDIRECT_MAPPING_FIELD_PROPERTIES.items()})
+REVERSE_MAPPING = {value: key
+                   for key, value in DIRECT_MAPPING_FIELD_PROPERTIES.items()}
+REVERSE_MAPPING.update(
+    {value[1]: key
+     for key, value in INDIRECT_MAPPING_FIELD_PROPERTIES.items()})
 
 
 def get_properties() -> List[int]:
     """All candidates of properties for advanced search."""
-    return list(DIRECT_MAPPING_FIELD_PROPERTIES.keys() | INDIRECT_MAPPING_FIELD_PROPERTIES.keys())
+    return list(
+        DIRECT_MAPPING_FIELD_PROPERTIES.keys() |
+        INDIRECT_MAPPING_FIELD_PROPERTIES.keys())
 
 
 def get_total_papers() -> int:
@@ -56,7 +61,8 @@ def get_pattern_for(key: str, value: str, index: int) -> str:
         tmp += f'FILTER contains(lcase(str(?{var_name})), "{value.lower()}") .'
     else:
         try:
-            method_for_pattern, property_uri = INDIRECT_MAPPING_FIELD_PROPERTIES[key]
+            method_for_pattern, property_uri = \
+                INDIRECT_MAPPING_FIELD_PROPERTIES[key]
             tmp = method_for_pattern(property_uri, value, var_name)
         except KeyError:
             raise NotImplementedError("property not supported yet")
