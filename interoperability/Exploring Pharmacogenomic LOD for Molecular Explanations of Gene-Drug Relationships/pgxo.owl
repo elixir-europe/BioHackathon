@@ -103,7 +103,7 @@
 
     <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotDecreaseChanceOf">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/doesNotInfluence"/>
-        <owl:inverseOf rdf:resource="http://pgxo.loria.fr/hasChanceNotDecreasedBy"/>
+        <owl:inverseOf rdf:resource="http://pgxo.loria.fr/hasNotChanceDecreasedBy"/>
     </owl:ObjectProperty>
     
 
@@ -121,7 +121,7 @@
 
     <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotIncreaseChanceOf">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/doesNotInfluence"/>
-        <owl:inverseOf rdf:resource="http://pgxo.loria.fr/hasChanceNotIncreasedBy"/>
+        <owl:inverseOf rdf:resource="http://pgxo.loria.fr/hasNotChanceIncreasedBy"/>
     </owl:ObjectProperty>
     
 
@@ -135,26 +135,27 @@
     
 
 
-    <!-- http://pgxo.loria.fr/doesNotMetabolizes -->
+    <!-- http://pgxo.loria.fr/doesNotMetabolize -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotMetabolizes">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotMetabolize">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/doesNotInfluence"/>
+        <owl:inverseOf rdf:resource="http://pgxo.loria.fr/isNotMetabolizedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://pgxo.loria.fr/doesNotTransports -->
+    <!-- http://pgxo.loria.fr/doesNotTransport -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotTransports">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotTransport">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotAssociatedWith"/>
         <owl:inverseOf rdf:resource="http://pgxo.loria.fr/isNotTransportedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://pgxo.loria.fr/doesNotTreats -->
+    <!-- http://pgxo.loria.fr/doesNotTreat -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotTreats">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/doesNotTreat">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotAssociatedWith"/>
         <owl:inverseOf rdf:resource="http://pgxo.loria.fr/isNotTreatedBy"/>
     </owl:ObjectProperty>
@@ -178,17 +179,17 @@
     
 
 
-    <!-- http://pgxo.loria.fr/hasChanceNotDecreasedBy -->
+    <!-- http://pgxo.loria.fr/hasNotChanceDecreasedBy -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/hasChanceNotDecreasedBy">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/hasNotChanceDecreasedBy">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotInfluencedBy"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://pgxo.loria.fr/hasChanceNotIncreasedBy -->
+    <!-- http://pgxo.loria.fr/hasNotChanceIncreasedBy -->
 
-    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/hasChanceNotIncreasedBy">
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/hasNotChanceIncreasedBy">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotInfluencedBy"/>
     </owl:ObjectProperty>
     
@@ -305,6 +306,14 @@
 
     <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/isNotInfluencedBy">
         <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotAssociatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pgxo.loria.fr/isNotMetabolizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://pgxo.loria.fr/isNotMetabolizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://pgxo.loria.fr/isNotInfluencedBy"/>
     </owl:ObjectProperty>
     
 
