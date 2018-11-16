@@ -1,5 +1,5 @@
 import collections
-from typing import ValuesView, Dict, Optional
+from typing import ValuesView, Dict, Optional, List
 
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -21,14 +21,23 @@ INDIRECT_MAPPING_FIELD_PROPERTIES = {
 }
 
 
-def get_properties():
+def get_properties() -> List[int]:
     """All candidates of properties for advanced search."""
     return list(DIRECT_MAPPING_FIELD_PROPERTIES.keys() | INDIRECT_MAPPING_FIELD_PROPERTIES.keys())
 
 
-def get_total_papers():
+def get_total_papers() -> int:
     """Total number of papers stored into virtuoso."""
-    return 100000
+    query = """
+    select count(distinct ?s) as ?count where {
+        ?s a <http://purl.org/ontology/bibo/AcademicArticle>
+    }
+    """
+    sparql = SPARQLWrapper(CONFIG['sparql_endpoint'])
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+    return int(results["results"]["bindings"][0]['count']['value'])
 
 
 def get_pattern_for(key: str, value: str, index: int) -> str:
@@ -59,8 +68,8 @@ def form_to_sparql(form_data: str) -> Optional[str]:
             tmp = get_pattern_for(key, val, i)
         except NotImplementedError as e:
             print(e)
-
-        stmts.append(tmp)
+        else:
+            stmts.append(tmp)
 
     statements = '\n'.join(stmts)
     query = f'''
@@ -69,6 +78,7 @@ def form_to_sparql(form_data: str) -> Optional[str]:
     WHERE
     {{
         {statements}
+        ?publication a <http://purl.org/ontology/bibo/AcademicArticle> .
         ?publication ?p ?o
     }}
     '''

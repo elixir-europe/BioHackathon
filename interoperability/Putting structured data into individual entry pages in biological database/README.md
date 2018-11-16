@@ -1,6 +1,10 @@
 # Putting structured data into individual entry pages in biological database
 
-### Representative: Jun-ichi Onami (Sorry! changed to... ) -> Tatsuya Kushida, Shigeru Yatsuzuka
+
+## Representatives
+---
+Jun-ichi Onami, Tatsuya Kushida, Shigeru Yatsuzuka
+
 
 ## Community
 ---
@@ -28,14 +32,22 @@ database developers, schema developers, search service developers
 
 ## Related works and references
 ---
-
- [ref1](https://biosciencedbc.jp/dbsearch/result.php?lang=ja&page=1&target_node=dobiscuit&target_node_type=database&phrase=Adria), [ref2](https://support.google.com/webmasters/answer/3110870?hl=en)
+ * [NBDC search](https://biosciencedbc.jp/dbsearch/result.php?lang=ja&page=1&target_node=dobiscuit&target_node_type=database&phrase=Adria)
+ * [Google answer](https://support.google.com/webmasters/answer/3110870?hl=en)
+ * BioSchemas Tool http://bioschemas.org/specifications/Tool/
+ * Bio.Tools schema https://github.com/bio-tools/biotoolsSchema
+ * Bio.Tools experimental RDF https://github.com/bio-tools/biotoolsRdf/tree/master/model
+ * Google Software App https://developers.google.com/search/docs/data-types/software-app
 
 ## GitHub or any other public repositories of your FOSS products (if any)
 ---
-
+This project lives in https://github.com/onamijunichi/24-ToolsMetadata
 
 
 ## Hackers
 ---
+    Jun-ichi Onami
+    Shigeru Yatsuzuka
+    Tatsuya Kushida
+    Matúš Kalaš
 

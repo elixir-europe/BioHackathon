@@ -57,10 +57,10 @@ During our hacking session we are going to focus on two different use cases:
 For the BioSamples and MarRef use case we are planning the session this way:
 
 #### Day 1
-- Integration of Bioschemas into MarRef
-- Start extraction of bioschemas markup using BioSchemas crawler
+- Integration of Bioschemas into MarRef 
+    - We are going to build a simple API service for MarRef to serve json-ld (Scala)
 - Possibly start to work on a JSON schema version of the Sample bioschemas profile for validation purposes
-
+    
 #### Day 2
 - Continue to work on JSON schema to validate the bioschemas exported from MarRef
 - Start to curate BioSamples creating curation objects based on MarRef exported metadata

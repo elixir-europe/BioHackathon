@@ -124,3 +124,39 @@ http://scrumblr.ca/bh2018-orphanet
 YOU !
 ---
 
+## Hack Day 1 progress
+---
+
+- Setup a wikibase which will contain sources description, "queries" in natural languages and federated queries examples
+(wikibase is an extension of mediawiki)
+```
+https://www.mediawiki.org/wiki/Wikibase/Installation#Download_from_Git
+```
+
+
+http://185.54.113.31:8181/wiki/Main_Page
+
+
+- Based on "natural languages queries" (a use case), start to explore Orphanet Ontology and Disgenet 
+```
+- For a given disease in Orphanet find all known related genes in Orphanet itself 
+- For a given disease in Orphanet find all known related genes in DisGeNET 
+Compare the output of the two queries. 
+```
+
+- Parallel task: play with the ORDO/HPO association model (dealing with collection)
+
+## Hack Day 2 progress
+---
+Enrich the wikibase with sparql queries
+- For each gene of a given rare disease (i.e. ORDO) find all known drugs to target that gene in ChEMBL. 
+- Gene disease association from manually curated sources (in disgenet)
+- List Genes and related diseases in Orphanet (obtain Gene name, Symbol, Orphanet ID, HGNC xref, Disease name and Orphanumber )
+etc.
+
+ISSUE: even with good known model (disgenet) and proper request, at data level some errors occurs (concept mapping issues)
+=> add in wikibase an issue report (or linked to proper issue tracker for the source if exists)
+
+Start to write Shape Expression (SHex) for Orphanet (Ordo) model
+
+
