@@ -1,5 +1,5 @@
 import collections
-from typing import ValuesView, Dict, Optional
+from typing import ValuesView, Dict, Optional, List
 
 import yaml
 from SPARQLWrapper import SPARQLWrapper, JSON
@@ -21,12 +21,12 @@ INDIRECT_MAPPING_FIELD_PROPERTIES = {
 }
 
 
-def get_properties():
+def get_properties() -> List[int]:
     """All candidates of properties for advanced search."""
     return list(DIRECT_MAPPING_FIELD_PROPERTIES.keys() | INDIRECT_MAPPING_FIELD_PROPERTIES.keys())
 
 
-def get_total_papers():
+def get_total_papers() -> int:
     """Total number of papers stored into virtuoso."""
     query = """
     select count(distinct ?s) as ?count where {
