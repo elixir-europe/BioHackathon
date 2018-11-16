@@ -216,7 +216,7 @@ def get_text_from_element(element, strip_spaces=False, separator=''):
         result += separator
     result = result.strip()
     if strip_spaces:
-        result = re.sub('\s+', ' ', result)
+        result = re.sub(r'\s+', ' ', result)
     return result
 
 
