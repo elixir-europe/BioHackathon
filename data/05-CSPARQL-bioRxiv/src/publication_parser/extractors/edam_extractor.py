@@ -46,7 +46,7 @@ class EdamExtractor(SemanticExtractor):
                 try:
                     lst = []
                     for item in response['mapping']['results'][key]:
-                        lst.append({"value": item['label'], "uri": item['edamUri']})
+                        lst.append({"uri": item['edamUri']})
                     filtered_response[key] = lst
                 except TypeError as e:
                     print(type(e))
