@@ -3,6 +3,10 @@ cache
 twitter_credentials.json
 asterix.lighttpd.conf
 
+# Minified files
+web_server/static/js/entry.map
+web_server/static/js/entry.js
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
