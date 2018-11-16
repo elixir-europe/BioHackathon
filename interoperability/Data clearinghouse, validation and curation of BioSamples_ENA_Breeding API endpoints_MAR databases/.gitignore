@@ -2,3 +2,4 @@
 data.json.zip
 marref_api/src/main/resources/marrefdb.json
 biosamples-cache.sqlite
+configuration.ini
