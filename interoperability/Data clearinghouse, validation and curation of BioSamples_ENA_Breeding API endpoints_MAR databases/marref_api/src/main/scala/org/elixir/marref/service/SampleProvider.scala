@@ -19,8 +19,21 @@ class SampleProvider() extends SampleProviderTrait {
   bufferedSource.close
 
   val marrefModel: MarrefModel = Json.parse[MarrefModel](dbString)
+  val count = marrefModel.records.record.length
 
-  override def getAllSamples(): String = dbString
+  override def getAllSamples(stringify: SampleModel => String, page: Int, size: Int): ResponseEntity[Any] = {
+    val fistIndex: Int = page * size
+    val lastIndex: Int = (page+1) * size
+    ResponseEntity.ok(
+      s"""{
+         |"pageMeta": {
+         |"pageSize": $size,
+         |"pageNumber": $page,
+         |"totalSamples": $count
+         |},
+         |"content": [${marrefModel.records.record.slice(fistIndex, lastIndex).map{sm => stringify(sm)}.mkString(",")}]
+         |}""".stripMargin)
+  }
 
   private def getSampleObj(id:String): Option[SampleModel] = {
     def getId(sm: SampleModel): Option[String] = if(id.startsWith("MMP"))
@@ -40,6 +53,11 @@ class SampleProvider() extends SampleProviderTrait {
 
   override def getAllMmpIds(): String = {
     val list: Seq[String] = marrefModel.records.record.flatMap{_.mmpID}.map{_.value}
+    Json.serialize[Seq[String]](list)
+  }
+
+  override def getAllBsIds(): String = {
+    val list: Seq[String] = marrefModel.records.record.flatMap{_.biosampleAccession}.map{_.value}
     Json.serialize[Seq[String]](list)
   }
 }

@@ -8,15 +8,16 @@ case class ValueReference(`@type`: String = "CategoryCode",
 case class Property(`@type`: String = "PropertyValue",
                     name: String,
                     value: String,
-                    valueReference: Option[ValueReference] = None
+                    valueReference: Option[Seq[ValueReference]] = None
                    )
 
 case class TopLevel(`@context`: String,
                    `@type`: Seq[String],
+                   `@id`: String,
                    identifier: Seq[String],
-                   name: String,
+                   name: Seq[String],
                    description: String,
                    url: String,
-                   dataset: Seq[String],
+                   //dataset: Seq[String],
                    additionalProperty: Seq[Property]
                    )
