@@ -1,0 +1,17 @@
+[AAP]
+aap_url =
+aap_username =
+aap_password =
+aap_bh_user =
+aap_bh_password =
+aap_bh_curation_domain =
+
+[BIOSAMPLES]
+local_url =
+remote_url =
+
+[MARREF]
+local_url =
+
+[VALIDATION]
+validation_url =
