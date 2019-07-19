@@ -22,7 +22,7 @@ David Salgado has kindly compiled a [spreadhseet](https://goo.gl/sgCrEh) in orde
 
 ## Programme
 ### Agenda
-Updated information can be found and will be updated on the [programme section](http://bh2018paris.info/programme.html) of the website.
+Updated information can be found and will be updated on the [programme section](https://2018.biohackathon-europe.org/programme.html) of the website.
 ### Symposium
 The first afternoon is dedicated to learning about the different projects proposed at the BioHackathon. We have 10 minutes per presentation. We have 28 presentation and we are almost 150 people, so we decided not to have time for questions and anwsers after the talks but encorage participants to use the [Gitter community channel](https://gitter.im/bh2018paris) and the coffee breaks to ask questions.
 ### Hacking time
@@ -57,7 +57,7 @@ Though we defined and prioritised a set of projects, following the spirit of the
 ### Participants and accommodation at the venue
 Please find in this [spreadsheet](https://docs.google.com/spreadsheets/d/1A93q7WguYwzQZ0ImhsyL0bwTvgVj3-JF48aK6Ew5T7w/edit?usp=sharing) the list of participants and the final assignment of rooms for people staying at the venue.
 ### How to get to the venue 
-Updated information can be found on the website on the [travel section](http://bh2018paris.info/venue.html#venue-access). The nearest train station to the venue is “Ponthierry Pringy”, 5 min by taxi.
+Updated information can be found on the website on the [travel section](https://2018.biohackathon-europe.org/venue.html#venue-access). The nearest train station to the venue is “Ponthierry Pringy”, 5 min by taxi.
 ### Shared transport
 Feel free to add your travelling arrangements to this [spreadsheet](https://docs.google.com/spreadsheets/d/1A93q7WguYwzQZ0ImhsyL0bwTvgVj3-JF48aK6Ew5T7w/edit#gid=1988643929) to organise yourselves any shared transport
 ### On arrival  
