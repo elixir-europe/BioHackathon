@@ -1,4 +1,6 @@
-# BioHackathon
+# BioHackathon Europe projects 2018
+
+**This is an archived repository**
 
 [![Join the chat at https://gitter.im/bh2018paris/Lobby](https://badges.gitter.im/bh2018paris/Lobby.svg)](https://gitter.im/bh2018paris/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
